@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { categories } from "@/content/categories";
 import { ImageFrame } from "@/components/ui/ImageFrame";
+import type { Dictionary } from "@/i18n/dictionaries";
+import { localizeHref, type Locale } from "@/i18n/config";
 
 const SPEED_DESKTOP = 0.45; // px per frame
 const SPEED_MOBILE = 0.28; // §10 모바일 — 자동 애니메이션 속도를 낮춘다
@@ -14,7 +15,17 @@ const SPEED_MOBILE = 0.28; // §10 모바일 — 자동 애니메이션 속도�
  * 마우스 오버·포커스·터치 중에는 일시 정지하며 드래그와 스와이프를 지원한다.
  * 모션 감소 설정에서는 자동 이동을 끄고 수동 탐색만 제공한다.
  */
-export function CategoryMarqueeTrack({ readyMap }: { readyMap: Record<string, boolean> }) {
+export function CategoryMarqueeTrack({
+  readyMap,
+  categories,
+  locale,
+  ui,
+}: {
+  readyMap: Record<string, boolean>;
+  categories: Dictionary["categories"];
+  locale: Locale;
+  ui: Dictionary["ui"]["marquee"];
+}) {
   const scrollerRef = useRef<HTMLDivElement>(null);
   const [playing, setPlaying] = useState(true);
   const [reducedMotion, setReducedMotion] = useState(false);
@@ -111,7 +122,7 @@ export function CategoryMarqueeTrack({ readyMap }: { readyMap: Record<string, bo
         {items.map((category, index) => (
           <Link
             key={`${category.id}-${index}`}
-            href={category.href}
+            href={localizeHref(locale, category.href)}
             aria-hidden={index >= categories.length}
             tabIndex={index >= categories.length ? -1 : undefined}
             onClick={(event) => {
@@ -123,7 +134,7 @@ export function CategoryMarqueeTrack({ readyMap }: { readyMap: Record<string, bo
             <ImageFrame
               ready={readyMap[category.image] ?? false}
               src={category.image}
-              alt={`${category.name} 카테고리 이미지`}
+              alt={`${category.name} ${ui.imageSuffix}`}
               ratio="3/4"
               sizes="(min-width: 768px) 280px, 220px"
               className="transition-transform duration-700 ease-[var(--ease-soft)] group-hover:scale-[1.02]"
@@ -150,10 +161,10 @@ export function CategoryMarqueeTrack({ readyMap }: { readyMap: Record<string, bo
           className="border border-line px-4 py-2 text-[12px] tracking-wide text-ink-muted transition-colors hover:border-ink/40 hover:text-ink disabled:opacity-45"
         >
           {reducedMotion
-            ? "자동 이동 꺼짐 (모션 감소 설정)"
+            ? ui.reduced
             : playing
-              ? "자동 이동 멈춤"
-              : "자동 이동 재생"}
+              ? ui.pause
+              : ui.play}
         </button>
       </div>
     </div>

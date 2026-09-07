@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "title": "LIAN丽安整形外科｜细致设计自然之美",
+    "description": "尊重个人面部与身体比例的定制化美学诊疗，由整形外科专科医生陪伴咨询、治疗与恢复全过程。",
+    "ogLocale": "zh_CN"
+  },
+  "site": {
+    "name": "LIAN丽安整形外科",
+    "nameEn": "LIAN Plastic Surgery",
+    "tagline": "细致设计自然之美",
+    "phone": "02-0000-0000",
+    "phoneHref": "tel:0200000000",
+    "address": "首尔特别市江南区000路00号0层",
+    "addressDetail": "地铁0号线000站0号出口步行3分钟",
+    "parking": "可使用大楼地下停车场。到院咨询可享2小时免费停车。",
+    "transit": ["从地铁0号线000站0号出口步行3分钟", "乘坐干线公交000、000路，在000站下车"],
+    "landmark": "请从000大楼1层大厅乘坐专用电梯前往0层。",
+    "hours": [
+      { "day": "工作日", "time": "10:00 – 19:00" },
+      { "day": "星期四", "time": "10:00 – 21:00（夜间门诊）" },
+      { "day": "星期六", "time": "10:00 – 16:00" },
+      { "day": "星期日及法定节假日", "time": "休诊" }
+    ],
+    "business": {
+      "ceo": "代表院长 000",
+      "registration": "营业执照号 000-00-00000",
+      "manager": "个人信息保护负责人 000"
+    },
+    "social": [
+      { "label": "Instagram", "href": "#" },
+      { "label": "Naver博客", "href": "#" },
+      { "label": "KakaoTalk咨询", "href": "#" }
+    ]
+  },
+  "nav": [
+    { "label": "About Us", "subLabel": "医院介绍", "href": "/about" },
+    { "label": "Service", "subLabel": "诊疗项目", "href": "/service" },
+    { "label": "Blog", "subLabel": "专业内容", "href": "/blog" },
+    { "label": "Inquire", "subLabel": "咨询预约", "href": "/inquire" }
+  ],
+  "home": {
+    "hero": {
+      "kicker": "Natural by Design",
+      "headline": ["自然之美，", "源于细致设计"],
+      "description": "我们认为整形并非改变原本的自己，而是梳理与协调已有的比例。从咨询到恢复，始终坚持同一标准。",
+      "primaryCta": { "label": "申请咨询", "href": "#inquire" },
+      "secondaryCta": { "label": "了解诊疗理念", "href": "#philosophy" },
+      "trust": ["整形外科专科医生亲自咨询", "基于个人比例的定制设计", "贯穿恢复期的术后管理"],
+      "image": { "src": "/images/hero.png", "alt": "自然光下，一位女性倚靠粉色芍药的面部特写" }
+    },
+    "philosophy": {
+      "kicker": "Our Philosophy",
+      "heading": ["不追随潮流，", "从面部平衡出发"],
+      "paragraphs": [
+        "即使是同一种治疗，也并非适合每个人。我们不会先决定手术方法，而是先观察面部与身体的整体比例。",
+        "比起当下最流行的形态，我们更重视多年后依然自然协调的结果。因此，咨询、手术与治疗、恢复以及术后管理被视为一个连续过程。"
+      ],
+      "principles": ["尊重个人面部与身体比例的定制化方案", "重视长期自然平衡，而非短期流行趋势", "在医生专业判断与求美者需求之间共同决策"],
+      "cta": { "label": "详细了解诊疗理念", "href": "/about" },
+      "image": { "src": "/images/philosophy.jpg", "alt": "自然光照入的安静空间，已做好咨询准备" }
+    },
+    "services": {
+      "kicker": "Core Services",
+      "heading": "您希望改善哪些问题？",
+      "description": "选择感兴趣的部位，即可先了解代表项目与常见困扰。更详细的信息可在各诊疗页面查看。"
+    },
+    "marquee": { "kicker": "Explore", "heading": "浏览诊疗项目分类" },
+    "beforeAfter": {
+      "kicker": "Before & After",
+      "heading": "变化源于严谨的过程",
+      "description": "照片在相同角度、光线和表情条件下拍摄。左右拖动控制柄即可进行比较。",
+      "procedure": "自然粘连双眼皮 · 眼睑矫正",
+      "timing": "术前 / 术后3个月",
+      "condition": "相同角度 · 相同光线 · 自然表情",
+      "disclaimer": "治疗效果与恢复过程因个人情况而异，也可能发生副作用。相关注意事项将在咨询时由医生详细说明。",
+      "cta": { "label": "查看详细案例", "href": "/service/cases" },
+      "before": { "src": "/images/ba-before.jpg", "alt": "手术前正面照片" },
+      "after": { "src": "/images/ba-after.jpg", "alt": "手术后3个月正面照片" }
+    },
+    "body": {
+      "kicker": "Body Contouring",
+      "heading": ["不只关注体重，", "更重视线条的流动"],
+      "description": "即使体重相同，脂肪分布位置不同也会呈现不同轮廓。我们在规划减少部位的同时，也谨慎考虑需要保留的曲线。",
+      "lead": "基于体型的脂肪塑形",
+      "areas": ["腹部", "腰部", "大腿", "上臂", "背部及内衣线"],
+      "primaryCta": { "label": "申请咨询", "href": "#inquire" },
+      "secondaryCta": { "label": "了解身体塑形项目", "href": "/service/body" },
+      "image": { "src": "/images/body-feature.jpg", "alt": "柔和自然光下，以克制构图呈现身体线条的画面" }
+    },
+    "differences": {
+      "kicker": "Why Us",
+      "heading": "贯穿诊疗的四项标准",
+      "items": [
+        { "title": "根据个人比例定制设计", "description": "不套用固定形态，而是依据面部与身体比例的测量结果制定方案。" },
+        { "title": "专科医生亲自咨询", "description": "从咨询、手术到术后观察，均由负责的专科医生亲自进行。" },
+        { "title": "重视安全的诊疗系统", "description": "术前检查、麻醉管理及紧急应对流程均按标准化程序执行。" },
+        { "title": "延续至恢复期的术后管理", "description": "诊疗并不止于手术结束，而是持续到您安心回归日常生活。" }
+      ],
+      "notice": "本内容用于说明诊疗原则，实际治疗效果与恢复过程因个人情况而异。"
+    },
+    "team": {
+      "kicker": "Medical Team",
+      "heading": "先了解为您提供诊疗的医生",
+      "description": "所有咨询与手术均由整形外科专科医生亲自进行。学历、经历、学会活动及专业领域可在医生详情页查看。",
+      "cta": { "label": "查看医疗团队", "href": "/about/doctors" }
+    },
+    "trust": {
+      "kicker": "Trust",
+      "heading": "以可验证依据建立信任",
+      "description": "仅公开可核实的资质与标准。求美者评价仅在取得同意后发布。",
+      "notice": "所刊评价经作者同意后节选发布，恢复过程与满意度因个人情况而异。"
+    },
+    "inquire": {
+      "kicker": "Inquire",
+      "heading": ["有任何疑问，", "都可以先问我们"],
+      "description": "留下简单信息后，工作人员会与您联系。咨询并不代表必须接受治疗。",
+      "primaryCta": { "label": "快速咨询", "href": "#inquire" },
+      "secondaryCta": { "label": "详细咨询页面", "href": "/inquire" },
+      "image": { "src": "/images/inquire.jpg", "alt": "在温暖灯光下轻松交谈的画面" },
+      "phoneLabel": "电话咨询",
+      "hoursNotice": "门诊时间内可接听电话，其他时段提交的咨询将在下一个工作日依次回复。"
+    },
+    "blog": { "kicker": "Journal", "heading": "到院前值得阅读的内容", "cta": { "label": "查看全部文章", "href": "/blog" } },
+    "location": { "kicker": "Visit", "heading": "来院路线" }
+  },
+  "categories": [
+    { "id": "eyes", "name": "眼部整形", "nameEn": "Eyes", "lead": "自然粘连双眼皮", "description": "综合考虑眼裂方向、眼睑厚度以及眉眼间距后设计自然线条。", "concerns": ["眼神显疲惫", "双眼不对称", "修复手术", "眼睑矫正"], "image": "/images/category-eyes.jpg", "href": "/service/eyes" },
+    { "id": "nose", "name": "鼻部整形", "nameEn": "Nose", "lead": "定制鼻梁与鼻尖塑形", "description": "兼顾正面与侧面的协调感，比单纯追求高度更重视整体比例。", "concerns": ["鼻梁偏低", "鼻头宽大", "鼻部歪斜", "鼻修复"], "image": "/images/category-nose.jpg", "href": "/service/nose" },
+    { "id": "contour", "name": "面部轮廓", "nameEn": "Contour", "lead": "颧骨与下颌角轮廓手术", "description": "不仅考虑骨骼大小，也综合分析软组织与面部长度的平衡。", "concerns": ["面部偏宽", "下颌角明显", "颧骨突出", "面部不对称"], "image": "/images/category-contour.jpg", "href": "/service/contour" },
+    { "id": "lifting", "name": "面部提升", "nameEn": "Lifting", "lead": "面部拉皮与线雕提升", "description": "先判断松弛源自皮肤、脂肪还是深层组织，再选择合适方法。", "concerns": ["法令纹", "下颌线松弛", "面部凹陷", "颈纹"], "image": "/images/category-lifting.jpg", "href": "/service/lifting" },
+    { "id": "skin", "name": "皮肤与微整形", "nameEn": "Skin", "lead": "激光与注射治疗", "description": "根据恢复期与回归日常生活的时间安排，调整治疗强度。", "concerns": ["色素问题", "毛孔", "细纹", "皮肤弹性"], "image": "/images/category-skin.jpg", "href": "/service/skin" },
+    { "id": "body", "name": "身体塑形", "nameEn": "Body", "lead": "个性化身体轮廓塑形", "description": "目标并非单纯减重，而是让整体线条更加协调流畅。", "concerns": ["腹部", "大腿", "上臂", "产后体型"], "image": "/images/category-body.jpg", "href": "/service/body" }
+  ],
+  "doctors": [
+    { "id": "doctor-1", "name": "000 院长", "role": "代表院长 · 整形外科专科医生", "specialties": ["眼部整形", "鼻部整形", "修复手术"], "philosophy": "我会先清楚说明手术能够改变什么，以及哪些部分更适合保持原状。", "image": "/images/doctor-1.jpg", "href": "/about/doctors/doctor-1", "imageAlt": "000院长肖像" },
+    { "id": "doctor-2", "name": "000 院长", "role": "整形外科专科医生", "specialties": ["面部轮廓", "面部提升"], "philosophy": "完善的计划应当包括恢复时间以及安心回归日常生活的时间点。", "image": "/images/doctor-2.jpg", "href": "/about/doctors/doctor-2", "imageAlt": "000院长肖像" },
+    { "id": "doctor-3", "name": "000 院长", "role": "整形外科专科医生", "specialties": ["身体塑形", "皮肤与微整形"], "philosophy": "比起一次手术本身，之后的持续管理同样有助于长期维持状态。", "image": "/images/doctor-3.jpg", "href": "/about/doctors/doctor-3", "imageAlt": "000院长肖像" }
+  ],
+  "posts": [
+    { "id": "post-1", "category": "项目指南", "title": "双眼皮手术方法如何分类，又该依据什么选择？", "excerpt": "切开法与非切开法的选择，应依据眼睑厚度与皮肤松弛程度，而不是流行趋势。", "date": "2026-08-28", "image": "/images/blog-1.jpg", "href": "/blog/post-1", "imageAlt": "双眼皮手术方法选择指南配图" },
+    { "id": "post-2", "category": "恢复与注意事项", "title": "术后肿胀的变化过程与各阶段观察重点", "excerpt": "每个人的恢复速度不同，但各阶段需要观察的基本标准相对明确。", "date": "2026-08-14", "image": "/images/blog-2.jpg", "href": "/blog/post-2", "imageAlt": "术后恢复与肿胀指南配图" },
+    { "id": "post-3", "category": "医生专栏", "title": "面诊时值得询问的五个问题", "excerpt": "提出什么问题会影响判断质量。这里整理了到院咨询前值得准备的内容。", "date": "2026-07-30", "image": "/images/blog-3.jpg", "href": "/blog/post-3", "imageAlt": "整形外科咨询问题指南配图" }
+  ],
+  "reviews": [
+    { "id": "review-1", "quote": "我希望看起来仍然像自己，而不是单纯变成另一个样子，咨询时我们重点讨论了这一点。", "author": "0**", "meta": "眼部整形 · 30多岁" },
+    { "id": "review-2", "quote": "除了手术本身，医生还具体说明了恢复期需要注意的事项，这一点让我很安心。", "author": "0**", "meta": "面部轮廓 · 20多岁" },
+    { "id": "review-3", "quote": "医生坦诚告诉我有些项目现在不必做，反而让我更加信任建议。", "author": "0**", "meta": "面部提升 · 40多岁" }
+  ],
+  "trustFacts": [
+    { "label": "整形外科专科医生", "value": "3名", "basis": "依据已核实的专科医生资格" },
+    { "label": "诊疗经历", "value": "00年", "basis": "自代表院长取得专科医生资格后累计" },
+    { "label": "专业学会活动", "value": "正式会员", "basis": "依据已核实的学会注册信息" },
+    { "label": "专科医生一对一咨询", "value": "100%", "basis": "所有咨询均由专科医生亲自进行" }
+  ],
+  "ui": {
+    "header": { "skip": "跳至主要内容", "mainNav": "主导航", "mobileNav": "移动端导航", "consult": "申请咨询", "phone": "电话咨询", "openMenu": "打开菜单", "closeMenu": "关闭菜单", "language": "选择语言", "languages": { "ko": "한국어", "en": "English", "zh": "简体中文", "ja": "日本語" } },
+    "footer": { "menu": "菜单", "service": "诊疗项目", "contact": "联系方式", "location": "来院路线", "privacy": "个人信息处理方针", "terms": "使用条款", "disclaimer": "本网站的医疗信息仅供一般参考，不能替代诊断或治疗。治疗效果及副作用因个人情况而异，请务必咨询具备资质的专科医生。" },
+    "mobileCta": { "phone": "电话咨询", "directions": "路线导航", "consult": "申请咨询" },
+    "quickInquiry": { "dialogLabel": "快速咨询申请", "kicker": "Quick Inquiry", "title": "申请快速咨询", "closeLabel": "关闭咨询面板", "doneTitle": "咨询申请已提交", "doneBody": "工作人员将在门诊时间内于1个工作日内与您联系。", "urgent": "如需紧急咨询，请致电{phone}。", "close": "关闭", "name": "姓名", "namePlaceholder": "请输入姓名", "phone": "联系电话", "category": "感兴趣的项目", "categoryEmpty": "尚未决定", "method": "希望的咨询方式", "methods": ["电话咨询", "KakaoTalk咨询", "到院咨询"], "message": "咨询内容", "optional": "选填", "messagePlaceholder": "请简单描述您希望咨询的问题", "consent": "我同意为咨询目的收集及使用个人信息。", "consentDetail": "收集项目：姓名、联系电话、感兴趣的项目 · 保存期限：咨询结束后1年", "details": "查看详情", "submitting": "提交中...", "submit": "提交咨询申请" },
+    "services": { "tabLabel": "诊疗项目分类", "concerns": "常见困扰", "detailsSuffix": "了解详情", "imageSuffix": "代表图片" },
+    "marquee": { "imageSuffix": "分类图片", "reduced": "自动滚动已关闭（减少动态效果）", "pause": "暂停自动滚动", "play": "继续自动滚动" },
+    "beforeAfter": { "before": "术前", "after": "术后", "sliderLabel": "调整术前与术后图片的比较位置", "valueText": "术前显示{before}%，术后显示{after}%", "status": "当前显示：术前{before}% · 术后{after}%", "procedure": "项目名称", "timing": "拍摄时间", "condition": "拍摄标准" },
+    "location": { "address": "地址", "phone": "联系电话", "hours": "门诊时间", "parking": "停车信息", "transit": "公共交通", "directions": "路线导航", "consult": "申请咨询", "mapLabel": "{name}位置地图。{address}", "mapPending": "地图待接入", "mapNotice": "地址确认后将接入地图服务" }
+  }
+}

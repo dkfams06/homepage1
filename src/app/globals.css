@@ -17,9 +17,9 @@
   --color-champagne: #c4ae93;
   --color-line: #e8ded6;
 
-  --font-display: var(--font-cormorant), var(--font-serif-kr), serif;
-  --font-serif: var(--font-serif-kr), serif;
-  --font-sans: var(--font-sans-kr), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-cormorant), var(--font-local-serif, var(--font-serif-kr)), serif;
+  --font-serif: var(--font-local-serif, var(--font-serif-kr)), serif;
+  --font-sans: var(--font-local-sans, var(--font-sans-kr)), ui-sans-serif, system-ui, sans-serif;
 
   --ease-soft: cubic-bezier(0.22, 0.61, 0.36, 1);
 }
@@ -29,6 +29,21 @@
     scroll-behavior: smooth;
     /* 고정 헤더 높이만큼 앵커 오프셋 */
     scroll-padding-top: 5rem;
+  }
+
+  html[lang="ko"] {
+    --font-local-serif: var(--font-serif-kr);
+    --font-local-sans: var(--font-sans-kr);
+  }
+
+  html[lang="zh"] {
+    --font-local-serif: var(--font-serif-sc);
+    --font-local-sans: var(--font-sans-sc);
+  }
+
+  html[lang="ja"] {
+    --font-local-serif: var(--font-serif-jp);
+    --font-local-sans: var(--font-sans-jp);
   }
 
   body {

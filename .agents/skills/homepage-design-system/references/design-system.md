@@ -27,8 +27,10 @@ Maintain at least WCAG AA contrast. Known anchors: ink on background is about 14
 - Use Cormorant Garamond for restrained English display text.
 - Use Noto Serif KR for Korean editorial headings.
 - Use Noto Sans KR for body text and controls.
+- Use Noto Serif SC and Noto Sans SC for Simplified Chinese.
+- Use Noto Serif JP and Noto Sans JP for Japanese.
 - Keep headings short with generous line height. Limit paragraph measure to roughly 44–52 characters where practical.
-- Allow English translations to expand without clipping, fixed-height text boxes, or fragile forced line breaks.
+- Allow English, Simplified Chinese, and Japanese translations to render without clipping, fixed-height text boxes, or fragile forced line breaks.
 
 ## Layout and components
 
@@ -55,8 +57,8 @@ Maintain at least WCAG AA contrast. Known anchors: ink on background is about 14
 
 ## Localization guardrails
 
-- Keep locale-prefixed routes such as `/ko/...` and `/en/...`.
-- Add copy to both locale dictionaries in the same change.
+- Keep locale-prefixed routes for `/ko/...`, `/en/...`, `/zh/...`, and `/ja/...`.
+- Add copy to all four locale dictionaries in the same change.
 - Localize metadata, navigation, form labels, validation/status text, accessibility labels, image alt text, and internal URLs.
 - Format dates, numbers, and contact information for the active locale where presentation differs.
 - Verify text expansion at 130% and do not rely on Korean-only word length.

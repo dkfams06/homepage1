@@ -1,26 +1,33 @@
-import { trust } from "@/content/home";
-import { reviews, trustFacts } from "@/content/reviews";
 import { Container, Section, SectionHeading } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
+import type { Dictionary } from "@/i18n/dictionaries";
 
 /**
  * 후기 및 신뢰 정보 — MAIN_PAGE_PLAN.md §6.9
  * 수치는 산정 기준을 함께 표기한다.
  */
-export function TrustSection() {
+export function TrustSection({
+  content,
+  facts,
+  reviews,
+}: {
+  content: Dictionary["home"]["trust"];
+  facts: Dictionary["trustFacts"];
+  reviews: Dictionary["reviews"];
+}) {
   return (
     <Section tone="base">
       <Container>
         <SectionHeading
-          kicker={trust.kicker}
-          heading={trust.heading}
-          description={trust.description}
+          kicker={content.kicker}
+          heading={content.heading}
+          description={content.description}
           align="center"
           className="mx-auto max-w-[46ch]"
         />
 
         <dl className="mt-14 grid gap-px border border-line bg-line sm:grid-cols-2 md:mt-18 lg:grid-cols-4">
-          {trustFacts.map((fact, index) => (
+          {facts.map((fact, index) => (
             <Reveal
               key={fact.label}
               delay={index * 80}
@@ -56,7 +63,7 @@ export function TrustSection() {
 
         <Reveal delay={140}>
           <p className="mt-8 text-center text-[12px] leading-relaxed text-ink-muted/75">
-            게시된 후기는 작성자의 동의를 받아 일부만 발췌한 내용이며, 개인에 따라 경과와 만족도는 달라질 수 있습니다.
+            {content.notice}
           </p>
         </Reveal>
       </Container>

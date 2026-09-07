@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Cormorant_Garamond, Noto_Sans_KR, Noto_Serif_KR } from "next/font/google";
+import {
+  Cormorant_Garamond,
+  Noto_Sans_JP,
+  Noto_Sans_KR,
+  Noto_Sans_SC,
+  Noto_Serif_JP,
+  Noto_Serif_KR,
+  Noto_Serif_SC,
+} from "next/font/google";
 import { QuickInquiry } from "@/components/QuickInquiry";
 import { Header } from "@/components/sections/Header";
 import { Footer } from "@/components/sections/Footer";
@@ -28,6 +36,34 @@ const sansKr = Noto_Sans_KR({
   weight: ["400", "500"],
   variable: "--font-sans-kr",
   display: "swap",
+});
+
+const serifSc = Noto_Serif_SC({
+  weight: ["400", "600"],
+  variable: "--font-serif-sc",
+  display: "swap",
+  preload: false,
+});
+
+const sansSc = Noto_Sans_SC({
+  weight: ["400", "500"],
+  variable: "--font-sans-sc",
+  display: "swap",
+  preload: false,
+});
+
+const serifJp = Noto_Serif_JP({
+  weight: ["400", "600"],
+  variable: "--font-serif-jp",
+  display: "swap",
+  preload: false,
+});
+
+const sansJp = Noto_Sans_JP({
+  weight: ["400", "500"],
+  variable: "--font-sans-jp",
+  display: "swap",
+  preload: false,
 });
 
 export function generateStaticParams() {
@@ -73,7 +109,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`${cormorant.variable} ${serifKr.variable} ${sansKr.variable}`}
+      className={`${cormorant.variable} ${serifKr.variable} ${sansKr.variable} ${serifSc.variable} ${sansSc.variable} ${serifJp.variable} ${sansJp.variable}`}
     >
       <body>
         <Header locale={locale} site={dictionary.site} nav={dictionary.nav} ui={dictionary.ui.header} />

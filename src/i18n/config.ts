@@ -1,8 +1,15 @@
-export const locales = ["ko", "en"] as const;
+export const locales = ["ko", "en", "zh", "ja"] as const;
 
 export type Locale = (typeof locales)[number];
 
 export const defaultLocale: Locale = "ko";
+
+export const localeTags: Record<Locale, string> = {
+  ko: "ko-KR",
+  en: "en-US",
+  zh: "zh-CN",
+  ja: "ja-JP",
+};
 
 export function isLocale(value: string): value is Locale {
   return locales.includes(value as Locale);

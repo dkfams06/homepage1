@@ -2,14 +2,25 @@
 
 import Link from "next/link";
 import { useId, useState } from "react";
-import { categories } from "@/content/categories";
 import { ImageFrame } from "@/components/ui/ImageFrame";
+import type { Dictionary } from "@/i18n/dictionaries";
+import { localizeHref, type Locale } from "@/i18n/config";
 
 /**
  * 핵심 시술 분야 탭 — MAIN_PAGE_PLAN.md §6.3
  * 메인에서는 요약만 제공하고 전문 설명은 개별 Service 페이지가 담당한다.
  */
-export function ServiceExplorerTabs({ readyMap }: { readyMap: Record<string, boolean> }) {
+export function ServiceExplorerTabs({
+  readyMap,
+  categories,
+  locale,
+  ui,
+}: {
+  readyMap: Record<string, boolean>;
+  categories: Dictionary["categories"];
+  locale: Locale;
+  ui: Dictionary["ui"]["services"];
+}) {
   const [activeId, setActiveId] = useState(categories[0].id);
   const baseId = useId();
   const active = categories.find((category) => category.id === activeId) ?? categories[0];
@@ -19,7 +30,7 @@ export function ServiceExplorerTabs({ readyMap }: { readyMap: Record<string, boo
       {/* 카테고리 세로 메뉴. 모바일에서는 가로 스크롤 탭으로 전환된다. */}
       <div
         role="tablist"
-        aria-label="시술 카테고리"
+        aria-label={ui.tabLabel}
         aria-orientation="horizontal"
         className="-mx-6 flex snap-x gap-2 overflow-x-auto px-6 pb-2 lg:mx-0 lg:flex-col lg:gap-0 lg:overflow-visible lg:px-0 lg:pb-0"
       >
@@ -74,7 +85,7 @@ export function ServiceExplorerTabs({ readyMap }: { readyMap: Record<string, boo
           key={active.id}
           ready={readyMap[active.image] ?? false}
           src={active.image}
-          alt={`${active.name} 대표 이미지`}
+          alt={`${active.name} ${ui.imageSuffix}`}
           ratio="3/4"
           sizes="(min-width: 1024px) 30vw, (min-width: 640px) 40vw, 100vw"
         />
@@ -86,7 +97,7 @@ export function ServiceExplorerTabs({ readyMap }: { readyMap: Record<string, boo
           </div>
 
           <div className="flex flex-col gap-3">
-            <p className="text-[13px] tracking-wide text-ink-muted/80">관련 고민</p>
+            <p className="text-[13px] tracking-wide text-ink-muted/80">{ui.concerns}</p>
             <ul className="flex flex-wrap gap-2">
               {active.concerns.map((concern) => (
                 <li
@@ -100,10 +111,10 @@ export function ServiceExplorerTabs({ readyMap }: { readyMap: Record<string, boo
           </div>
 
           <Link
-            href={active.href}
+            href={localizeHref(locale, active.href)}
             className="mt-1 self-start border-b border-rose/40 pb-1 text-sm tracking-wide text-rose transition-colors hover:border-rose"
           >
-            {active.name} 자세히 보기
+            {locale === "ko" ? `${active.name} ${ui.detailsSuffix}` : `${ui.detailsSuffix}: ${active.name}`}
           </Link>
         </div>
       </div>

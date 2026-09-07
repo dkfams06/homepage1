@@ -1,8 +1,8 @@
 "use client";
 
 import { useCallback, useRef, useState } from "react";
-import { beforeAfter } from "@/content/home";
 import { ImageFrame } from "@/components/ui/ImageFrame";
+import type { Dictionary } from "@/i18n/dictionaries";
 
 /**
  * Before & After 드래그 비교 — MAIN_PAGE_PLAN.md §6.5
@@ -12,9 +12,13 @@ import { ImageFrame } from "@/components/ui/ImageFrame";
 export function BeforeAfterCompare({
   beforeReady,
   afterReady,
+  content,
+  ui,
 }: {
   beforeReady: boolean;
   afterReady: boolean;
+  content: Dictionary["home"]["beforeAfter"];
+  ui: Dictionary["ui"]["beforeAfter"];
 }) {
   const [position, setPosition] = useState(50);
   const frameRef = useRef<HTMLDivElement>(null);
@@ -49,8 +53,8 @@ export function BeforeAfterCompare({
         {/* After — 아래층 전체 노출 */}
         <ImageFrame
           ready={afterReady}
-          src={beforeAfter.after.src}
-          alt={beforeAfter.after.alt}
+          src={content.after.src}
+          alt={content.after.alt}
           ratio="4/5"
           sizes="(min-width: 1024px) 45vw, 100vw"
           className="absolute inset-0"
@@ -63,8 +67,8 @@ export function BeforeAfterCompare({
         >
           <ImageFrame
             ready={beforeReady}
-            src={beforeAfter.before.src}
-            alt={beforeAfter.before.alt}
+            src={content.before.src}
+            alt={content.before.alt}
             ratio="4/5"
             sizes="(min-width: 1024px) 45vw, 100vw"
             className="absolute inset-0"
@@ -72,10 +76,10 @@ export function BeforeAfterCompare({
         </div>
 
         <span className="absolute top-4 left-4 bg-ink/70 px-3 py-1.5 text-[12px] tracking-[0.14em] text-white uppercase">
-          Before
+          {ui.before}
         </span>
         <span className="absolute top-4 right-4 bg-rose/85 px-3 py-1.5 text-[12px] tracking-[0.14em] text-white uppercase">
-          After
+          {ui.after}
         </span>
 
         {/* 중앙 구분선과 핸들 */}
@@ -98,15 +102,19 @@ export function BeforeAfterCompare({
           max={100}
           value={position}
           onChange={(event) => setPosition(Number(event.target.value))}
-          aria-label="Before와 After 비교 위치 조절"
-          aria-valuetext={`Before ${position}퍼센트, After ${100 - position}퍼센트 노출`}
+          aria-label={ui.sliderLabel}
+          aria-valuetext={ui.valueText
+            .replace("{before}", String(position))
+            .replace("{after}", String(100 - position))}
           className="absolute inset-0 h-full w-full cursor-ew-resize opacity-0"
         />
       </div>
 
       {/* §11 접근성 — 이미지에만 의존하지 않고 현재 상태를 텍스트로 제공한다 */}
       <p aria-live="polite" className="text-[13px] text-ink-muted">
-        Before {position}% · After {100 - position}% 노출 중
+        {ui.status
+          .replace("{before}", String(position))
+          .replace("{after}", String(100 - position))}
       </p>
     </figure>
   );

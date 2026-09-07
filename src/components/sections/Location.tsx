@@ -1,12 +1,19 @@
-import { location } from "@/content/home";
-import { site } from "@/content/site";
 import { Container, Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import { CtaLink } from "@/components/ui/Button";
 import { InquiryButton } from "@/components/ui/InquiryButton";
+import type { Dictionary } from "@/i18n/dictionaries";
 
 /** 오시는 길 — MAIN_PAGE_PLAN.md §6.12 */
-export function Location() {
+export function Location({
+  content,
+  site,
+  ui,
+}: {
+  content: Dictionary["home"]["location"];
+  site: Dictionary["site"];
+  ui: Dictionary["ui"]["location"];
+}) {
   const mapSearch = `https://map.naver.com/p/search/${encodeURIComponent(site.address)}`;
 
   return (
@@ -15,22 +22,22 @@ export function Location() {
         <div className="grid gap-12 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1fr)] lg:gap-20">
           <div className="flex flex-col gap-8">
             <Reveal className="flex flex-col gap-4">
-              <p className="kicker">{location.kicker}</p>
-              <h2 className="font-serif text-3xl sm:text-4xl">{location.heading}</h2>
+              <p className="kicker">{content.kicker}</p>
+              <h2 className="font-serif text-3xl sm:text-4xl">{content.heading}</h2>
             </Reveal>
 
             <Reveal delay={100}>
               <dl className="flex flex-col divide-y divide-line border-y border-line">
-                <Row term="주소">
+                <Row term={ui.address}>
                   {site.address}
                   <span className="mt-1 block text-[13px] text-ink-muted">{site.addressDetail}</span>
                 </Row>
-                <Row term="대표 전화">
+                <Row term={ui.phone}>
                   <a href={site.phoneHref} className="text-rose underline underline-offset-4">
                     {site.phone}
                   </a>
                 </Row>
-                <Row term="진료 시간">
+                <Row term={ui.hours}>
                   <ul className="flex flex-col gap-1.5">
                     {site.hours.map((entry) => (
                       <li key={entry.day} className="flex gap-4">
@@ -40,8 +47,8 @@ export function Location() {
                     ))}
                   </ul>
                 </Row>
-                <Row term="주차 안내">{site.parking}</Row>
-                <Row term="대중교통">
+                <Row term={ui.parking}>{site.parking}</Row>
+                <Row term={ui.transit}>
                   <ul className="flex flex-col gap-1.5">
                     {site.transit.map((line) => (
                       <li key={line}>{line}</li>
@@ -53,9 +60,9 @@ export function Location() {
 
             <Reveal delay={160} className="flex flex-wrap items-center gap-3">
               <CtaLink href={mapSearch} variant="secondary">
-                길찾기
+                {ui.directions}
               </CtaLink>
-              <InquiryButton variant="primary">상담 신청</InquiryButton>
+              <InquiryButton variant="primary">{ui.consult}</InquiryButton>
             </Reveal>
           </div>
 
@@ -65,11 +72,11 @@ export function Location() {
               className="placeholder-weave flex flex-col items-center justify-center gap-2 border border-line text-center"
               style={{ aspectRatio: "4/3" }}
               role="img"
-              aria-label={`${site.name} 위치 지도. ${site.address}`}
+              aria-label={ui.mapLabel.replace("{name}", site.name).replace("{address}", site.address)}
             >
-              <span className="kicker text-ink/45">Map Pending</span>
+              <span className="kicker text-ink/45">{ui.mapPending}</span>
               <span className="text-[12px] text-ink/45">
-                지도 연동 예정 · 주소 확정 후 적용
+                {ui.mapNotice}
               </span>
             </div>
             <p className="border-l-2 border-champagne pl-4 text-[13px] leading-[1.85] text-ink-muted">

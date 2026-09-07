@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { localizeHref, type Locale } from "@/i18n/config";
 
 /**
  * CTA 강도 — MAIN_PAGE_PLAN.md §13
@@ -24,14 +25,19 @@ export function CtaLink({
   variant = "primary",
   className = "",
   children,
+  locale,
 }: {
   href: string;
   variant?: CtaVariant;
   className?: string;
   children: ReactNode;
+  locale?: Locale;
 }) {
   return (
-    <Link href={href} className={`${base} ${variants[variant]} ${className}`}>
+    <Link
+      href={locale ? localizeHref(locale, href) : href}
+      className={`${base} ${variants[variant]} ${className}`}
+    >
       {children}
     </Link>
   );

@@ -1,10 +1,22 @@
 import Link from "next/link";
-import { nav, site } from "@/content/site";
-import { categories } from "@/content/categories";
 import { Container } from "@/components/ui/Section";
+import type { Dictionary } from "@/i18n/dictionaries";
+import { localizeHref, type Locale } from "@/i18n/config";
 
 /** 푸터 — MAIN_PAGE_PLAN.md §6.13 */
-export function Footer() {
+export function Footer({
+  locale,
+  site,
+  nav,
+  categories,
+  ui,
+}: {
+  locale: Locale;
+  site: Dictionary["site"];
+  nav: Dictionary["nav"];
+  categories: Dictionary["categories"];
+  ui: Dictionary["ui"]["footer"];
+}) {
   const year = new Date().getFullYear();
 
   return (
@@ -33,32 +45,35 @@ export function Footer() {
           </div>
 
           <div className="grid gap-10 sm:grid-cols-3">
-            <FooterColumn title="Menu">
+            <FooterColumn title={ui.menu}>
               {nav.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="transition-colors hover:text-rose">
-                    {item.labelKo}
+                  <Link href={localizeHref(locale, item.href)} className="transition-colors hover:text-rose">
+                    {item.subLabel}
                   </Link>
                 </li>
               ))}
               <li>
-                <Link href="#location" className="transition-colors hover:text-rose">
-                  오시는 길
+                <Link
+                  href={`${localizeHref(locale, "/")}#location`}
+                  className="transition-colors hover:text-rose"
+                >
+                  {ui.location}
                 </Link>
               </li>
             </FooterColumn>
 
-            <FooterColumn title="Service">
+            <FooterColumn title={ui.service}>
               {categories.map((category) => (
                 <li key={category.id}>
-                  <Link href={category.href} className="transition-colors hover:text-rose">
+                  <Link href={localizeHref(locale, category.href)} className="transition-colors hover:text-rose">
                     {category.name}
                   </Link>
                 </li>
               ))}
             </FooterColumn>
 
-            <FooterColumn title="Contact">
+            <FooterColumn title={ui.contact}>
               <li>
                 <a href={site.phoneHref} className="transition-colors hover:text-rose">
                   {site.phone}
@@ -84,13 +99,13 @@ export function Footer() {
           <div className="flex flex-wrap items-center justify-between gap-4">
             <ul className="flex flex-wrap gap-x-5 gap-y-2 text-[12px]">
               <li>
-                <Link href="/privacy" className="font-medium transition-colors hover:text-rose">
-                  개인정보처리방침
+                <Link href={localizeHref(locale, "/privacy")} className="font-medium transition-colors hover:text-rose">
+                  {ui.privacy}
                 </Link>
               </li>
               <li>
-                <Link href="/terms" className="text-ink-muted transition-colors hover:text-rose">
-                  이용약관
+                <Link href={localizeHref(locale, "/terms")} className="text-ink-muted transition-colors hover:text-rose">
+                  {ui.terms}
                 </Link>
               </li>
             </ul>
@@ -99,8 +114,7 @@ export function Footer() {
             </p>
           </div>
           <p className="text-[12px] leading-relaxed text-ink-muted/70">
-            본 사이트의 의료 정보는 일반적인 안내이며 진단이나 처방을 대신하지 않습니다. 시술 결과와
-            부작용은 개인에 따라 다를 수 있으므로 반드시 전문의와 상담하시기 바랍니다.
+            {ui.disclaimer}
           </p>
         </div>
       </Container>

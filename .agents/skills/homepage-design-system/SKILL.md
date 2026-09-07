@@ -13,7 +13,7 @@ Preserve the project's visual language while extending it consistently across ne
 2. Read `references/design-system.md` before making UI or UX decisions.
 3. Inspect `src/app/globals.css` and existing components before adding tokens or primitives.
 4. Reuse existing components in `src/components/ui/` and established section patterns where they fit.
-5. Treat Korean and English as first-class layouts. Read the locale from the route and source every user-facing string from the locale dictionary.
+5. Treat Korean, English, Simplified Chinese, and Japanese as first-class layouts. Read the locale from the route and source every user-facing string from the locale dictionary.
 6. Localize every internal link. Never add a route or CTA that silently drops the current locale.
 7. Check desktop, tablet, mobile, keyboard use, reduced motion, text expansion, and contrast.
 8. Run type checking, linting, and a production build after code changes.

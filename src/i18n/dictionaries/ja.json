@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "title": "LIAN美容外科｜自然な美しさを、丁寧にデザイン",
+    "description": "一人ひとりの顔と身体のバランスを尊重したオーダーメイド診療。美容外科専門医がカウンセリングから施術、回復まで寄り添います。",
+    "ogLocale": "ja_JP"
+  },
+  "site": {
+    "name": "LIAN美容外科",
+    "nameEn": "LIAN Plastic Surgery",
+    "tagline": "自然な美しさを、丁寧にデザインします",
+    "phone": "02-0000-0000",
+    "phoneHref": "tel:0200000000",
+    "address": "ソウル特別市江南区000路00、0階",
+    "addressDetail": "地下鉄0号線000駅0番出口より徒歩3分",
+    "parking": "建物地下駐車場をご利用いただけます。カウンセリング時は2時間無料です。",
+    "transit": ["地下鉄0号線000駅0番出口より徒歩3分", "幹線バス000・000番、000停留所下車"],
+    "landmark": "000ビル1階ロビーから専用エレベーターで0階までお越しください。",
+    "hours": [
+      { "day": "平日", "time": "10:00 – 19:00" },
+      { "day": "木曜日", "time": "10:00 – 21:00（夜間診療）" },
+      { "day": "土曜日", "time": "10:00 – 16:00" },
+      { "day": "日曜・祝日", "time": "休診" }
+    ],
+    "business": {
+      "ceo": "代表院長 000",
+      "registration": "事業者登録番号 000-00-00000",
+      "manager": "個人情報管理責任者 000"
+    },
+    "social": [
+      { "label": "Instagram", "href": "#" },
+      { "label": "Naverブログ", "href": "#" },
+      { "label": "KakaoTalk相談", "href": "#" }
+    ]
+  },
+  "nav": [
+    { "label": "About Us", "subLabel": "当院について", "href": "/about" },
+    { "label": "Service", "subLabel": "診療案内", "href": "/service" },
+    { "label": "Blog", "subLabel": "コラム", "href": "/blog" },
+    { "label": "Inquire", "subLabel": "お問い合わせ", "href": "/inquire" }
+  ],
+  "home": {
+    "hero": {
+      "kicker": "Natural by Design",
+      "headline": ["自然な美しさを、", "丁寧にデザインします"],
+      "description": "顔を別のものに変えるのではなく、本来備わっているバランスを整えることだと考えています。カウンセリングから回復まで、一貫した基準で寄り添います。",
+      "primaryCta": { "label": "カウンセリング予約", "href": "#inquire" },
+      "secondaryCta": { "label": "診療理念を見る", "href": "#philosophy" },
+      "trust": ["美容外科専門医による直接相談", "個人の比率に基づくオーダーメイド設計", "回復まで続くアフターケア"],
+      "image": { "src": "/images/hero.png", "alt": "自然光の中、ピンクの芍薬に寄り添う女性の顔のクローズアップ" }
+    },
+    "philosophy": {
+      "kicker": "Our Philosophy",
+      "heading": ["流行ではなく、", "顔全体の調和から考えます"],
+      "paragraphs": [
+        "同じ施術でも、適している方とそうでない方がいます。私たちは先に術式を決めるのではなく、顔と身体のバランスを丁寧に読み取ることから始めます。",
+        "今だけ美しく見える形よりも、年月を重ねても自然に感じられる形を基準にします。カウンセリング、手術・施術、回復、アフターケアを一つの連続したプロセスとして考えています。"
+      ],
+      "principles": ["一人ひとりの顔と身体の比率を尊重した提案", "流行よりも自然な調和と長期的な結果を重視", "医師の専門的判断と患者さまの希望を踏まえた共同決定"],
+      "cta": { "label": "診療理念を詳しく見る", "href": "/about" },
+      "image": { "src": "/images/philosophy.jpg", "alt": "自然光が差し込む落ち着いた空間で、カウンセリングの準備が整えられた様子" }
+    },
+    "services": {
+      "kicker": "Core Services",
+      "heading": "どのようなお悩みがありますか？",
+      "description": "気になる部位を選ぶと、代表的な施術とよくあるお悩みを確認できます。詳しい内容は各診療ページでご案内します。"
+    },
+    "marquee": { "kicker": "Explore", "heading": "施術カテゴリーを見る" },
+    "beforeAfter": {
+      "kicker": "Before & After",
+      "heading": "変化は、丁寧なプロセスから生まれます",
+      "description": "同じ角度・照明・表情の条件で撮影した写真です。ハンドルを左右に動かして比較できます。",
+      "procedure": "自然癒着二重術・眼瞼矯正",
+      "timing": "手術前 / 手術後3か月",
+      "condition": "同一角度・同一照明・無表情で撮影",
+      "disclaimer": "施術結果や回復経過には個人差があり、副作用が生じる可能性があります。詳しくはカウンセリング時に医師よりご説明します。",
+      "cta": { "label": "症例を詳しく見る", "href": "/service/cases" },
+      "before": { "src": "/images/ba-before.jpg", "alt": "手術前の正面写真" },
+      "after": { "src": "/images/ba-after.jpg", "alt": "手術後3か月の正面写真" }
+    },
+    "body": {
+      "kicker": "Body Contouring",
+      "heading": ["体重だけではなく、", "ラインの流れを整えます"],
+      "description": "同じ体重でも、脂肪のつき方によって印象は異なります。減らす量だけでなく、残す位置まで丁寧に計画します。",
+      "lead": "体型に合わせたボディデザイン",
+      "areas": ["腹部", "ウエスト", "太もも", "二の腕", "背中・ブラライン"],
+      "primaryCta": { "label": "カウンセリング予約", "href": "#inquire" },
+      "secondaryCta": { "label": "ボディ施術を詳しく見る", "href": "/service/body" },
+      "image": { "src": "/images/body-feature.jpg", "alt": "柔らかな自然光の中、控えめな構図で身体のラインを表現したイメージ" }
+    },
+    "differences": {
+      "kicker": "Why Us",
+      "heading": "診療を支える4つの基準",
+      "items": [
+        { "title": "個人の比率を考慮したデザイン", "description": "決められた形に当てはめず、顔と身体の比率を確認したうえで計画を立てます。" },
+        { "title": "専門医による直接カウンセリング", "description": "カウンセリングから手術、経過確認まで担当の専門医が直接行います。" },
+        { "title": "安全に配慮した診療システム", "description": "術前検査、麻酔管理、緊急時対応の手順を標準化して運用します。" },
+        { "title": "回復までつながるアフターケア", "description": "手術が終わった時点ではなく、日常生活へ戻る時点までを診療の範囲と考えます。" }
+      ],
+      "notice": "本内容は診療方針についてのご案内です。施術結果や回復経過には個人差があります。"
+    },
+    "team": {
+      "kicker": "Medical Team",
+      "heading": "担当する医師を、まず明確にお伝えします",
+      "description": "すべてのカウンセリングと手術は美容外科専門医が直接行います。学歴、経歴、学会活動、専門分野は医師紹介ページでご確認いただけます。",
+      "cta": { "label": "医療チームを見る", "href": "/about/doctors" }
+    },
+    "trust": {
+      "kicker": "Trust",
+      "heading": "印象ではなく、確認できる根拠を",
+      "description": "確認可能な資格と基準のみを掲載します。体験談は同意を得た内容に限り公開します。",
+      "notice": "掲載している体験談は、ご本人の同意を得て一部を抜粋したものです。経過や満足度には個人差があります。"
+    },
+    "inquire": {
+      "kicker": "Inquire",
+      "heading": ["気になることを、", "まずはご相談ください"],
+      "description": "簡単な情報をお送りいただければ、担当者よりご連絡します。カウンセリングを受けても施術を決める必要はありません。",
+      "primaryCta": { "label": "簡単相談を申し込む", "href": "#inquire" },
+      "secondaryCta": { "label": "詳しいお問い合わせ", "href": "/inquire" },
+      "image": { "src": "/images/inquire.jpg", "alt": "温かな照明の空間で、落ち着いて会話する様子" },
+      "phoneLabel": "電話相談",
+      "hoursNotice": "診療時間内に対応し、時間外に受け付けたお問い合わせは次の診療日に順次ご案内します。"
+    },
+    "blog": { "kicker": "Journal", "heading": "ご来院前に読んでいただきたい内容", "cta": { "label": "すべての記事を見る", "href": "/blog" } },
+    "location": { "kicker": "Visit", "heading": "アクセス" }
+  },
+  "categories": [
+    { "id": "eyes", "name": "目元整形", "nameEn": "Eyes", "lead": "自然癒着二重術", "description": "目の方向やまぶたの厚さ、眉と目の距離まで確認し、自然なラインを設計します。", "concerns": ["眠そうな目元", "左右差", "修正手術", "眼瞼矯正"], "image": "/images/category-eyes.jpg", "href": "/service/eyes" },
+    { "id": "nose", "name": "鼻整形", "nameEn": "Nose", "lead": "鼻筋・鼻先のオーダーメイド整形", "description": "高さだけを求めず、正面と横顔の両方が自然に整う比率を重視します。", "concerns": ["低い鼻筋", "丸い鼻先", "曲がった鼻", "鼻の修正手術"], "image": "/images/category-nose.jpg", "href": "/service/nose" },
+    { "id": "contour", "name": "輪郭形成", "nameEn": "Contour", "lead": "頬骨・エラの輪郭手術", "description": "骨の大きさだけでなく、軟部組織と顔全体の長さのバランスも考慮します。", "concerns": ["顔幅", "角張った顎", "頬骨の張り", "左右差"], "image": "/images/category-contour.jpg", "href": "/service/contour" },
+    { "id": "lifting", "name": "リフトアップ", "nameEn": "Lifting", "lead": "フェイスリフト・糸リフト", "description": "たるみの原因が皮膚、脂肪、深部組織のどこにあるかを見極めて方法を選びます。", "concerns": ["ほうれい線", "フェイスラインのたるみ", "頬のボリューム減少", "首のしわ"], "image": "/images/category-lifting.jpg", "href": "/service/lifting" },
+    { "id": "skin", "name": "肌・プチ整形", "nameEn": "Skin", "lead": "レーザー・注入治療", "description": "ダウンタイムと日常生活へ戻る時期を確認し、施術の強度を調整します。", "concerns": ["色素", "毛穴", "小じわ", "肌の弾力"], "image": "/images/category-skin.jpg", "href": "/service/skin" },
+    { "id": "body", "name": "ボディ", "nameEn": "Body", "lead": "体型別ボディデザイン", "description": "体重を減らすだけでなく、ラインの流れを整える視点で各部位を設計します。", "concerns": ["腹部", "太もも", "二の腕", "産後の体型"], "image": "/images/category-body.jpg", "href": "/service/body" }
+  ],
+  "doctors": [
+    { "id": "doctor-1", "name": "000 院長", "role": "代表院長・美容外科専門医", "specialties": ["目元整形", "鼻整形", "修正手術"], "philosophy": "手術で変えられることと、変えないほうがよいことを最初に分けてご説明します。", "image": "/images/doctor-1.jpg", "href": "/about/doctors/doctor-1", "imageAlt": "000院長のプロフィール写真" },
+    { "id": "doctor-2", "name": "000 院長", "role": "美容外科専門医", "specialties": ["輪郭形成", "リフトアップ"], "philosophy": "回復期間と日常生活へ戻る時期まで含めて計画することが、カウンセリングの始まりだと考えています。", "image": "/images/doctor-2.jpg", "href": "/about/doctors/doctor-2", "imageAlt": "000院長のプロフィール写真" },
+    { "id": "doctor-3", "name": "000 院長", "role": "美容外科専門医", "specialties": ["ボディ", "肌・プチ整形"], "philosophy": "一度の手術だけでなく、その後の継続的なケアが状態の維持につながると考えています。", "image": "/images/doctor-3.jpg", "href": "/about/doctors/doctor-3", "imageAlt": "000院長のプロフィール写真" }
+  ],
+  "posts": [
+    { "id": "post-1", "category": "施術情報", "title": "二重手術の方法はどう分かれ、何を基準に選ぶのか", "excerpt": "切開法と非切開法を選ぶ基準は流行ではなく、まぶたの厚さと皮膚のたるみの程度です。", "date": "2026-08-28", "image": "/images/blog-1.jpg", "href": "/blog/post-1", "imageAlt": "二重手術の方法を解説する記事のメイン画像" },
+    { "id": "post-2", "category": "回復・注意事項", "title": "手術後の腫れの経過と時期ごとの確認ポイント", "excerpt": "回復の速さには個人差がありますが、時期ごとに確認すべき基準は比較的明確です。", "date": "2026-08-14", "image": "/images/blog-2.jpg", "href": "/blog/post-2", "imageAlt": "手術後の回復と腫れについて解説する記事のメイン画像" },
+    { "id": "post-3", "category": "医師コラム", "title": "カウンセリングで確認したい5つの質問", "excerpt": "何を質問するかが判断の質を左右します。来院前に整理しておきたい内容をご紹介します。", "date": "2026-07-30", "image": "/images/blog-3.jpg", "href": "/blog/post-3", "imageAlt": "美容外科カウンセリングの質問を紹介する記事のメイン画像" }
+  ],
+  "reviews": [
+    { "id": "review-1", "quote": "違う顔になるよりも、もともとこうだったように見せたいという希望を、カウンセリングで丁寧に話し合いました。", "author": "0**", "meta": "目元整形・30代" },
+    { "id": "review-2", "quote": "手術そのものだけでなく、回復中に気をつけることを具体的に教えていただけた点が安心につながりました。", "author": "0**", "meta": "輪郭形成・20代" },
+    { "id": "review-3", "quote": "今は必要のない施術について正直に伝えてくださり、かえって信頼できました。", "author": "0**", "meta": "リフトアップ・40代" }
+  ],
+  "trustFacts": [
+    { "label": "美容外科専門医", "value": "3名", "basis": "確認済みの専門医資格に基づく" },
+    { "label": "診療経験", "value": "00年", "basis": "代表院長の専門医取得後からの累計" },
+    { "label": "学会活動", "value": "正会員", "basis": "確認済みの学会登録情報に基づく" },
+    { "label": "専門医による1対1相談", "value": "100%", "basis": "すべての相談を専門医が直接担当" }
+  ],
+  "ui": {
+    "header": { "skip": "本文へ移動", "mainNav": "メインナビゲーション", "mobileNav": "モバイルナビゲーション", "consult": "カウンセリング予約", "phone": "電話相談", "openMenu": "メニューを開く", "closeMenu": "メニューを閉じる", "language": "言語を選択", "languages": { "ko": "한국어", "en": "English", "zh": "简体中文", "ja": "日本語" } },
+    "footer": { "menu": "メニュー", "service": "診療案内", "contact": "お問い合わせ", "location": "アクセス", "privacy": "個人情報保護方針", "terms": "利用規約", "disclaimer": "本サイトの医療情報は一般的なご案内であり、診断や治療に代わるものではありません。施術結果や副作用には個人差があるため、必ず資格を持つ専門医にご相談ください。" },
+    "mobileCta": { "phone": "電話相談", "directions": "アクセス", "consult": "相談予約" },
+    "quickInquiry": { "dialogLabel": "簡単カウンセリング予約", "kicker": "Quick Inquiry", "title": "簡単カウンセリング予約", "closeLabel": "相談パネルを閉じる", "doneTitle": "相談を受け付けました", "doneBody": "診療時間内の1営業日以内に担当者よりご連絡します。", "urgent": "お急ぎの場合は{phone}までお電話ください。", "close": "閉じる", "name": "お名前", "namePlaceholder": "お名前を入力してください", "phone": "電話番号", "category": "ご希望の施術", "categoryEmpty": "まだ決めていません", "method": "ご希望の連絡方法", "methods": ["電話", "KakaoTalk", "来院相談"], "message": "ご相談内容", "optional": "任意", "messagePlaceholder": "気になる点を簡単にご記入ください", "consent": "カウンセリングのための個人情報の収集・利用に同意します。", "consentDetail": "収集項目：氏名、電話番号、ご希望の施術・保管期間：相談完了後1年間", "details": "詳しく見る", "submitting": "送信中...", "submit": "相談を申し込む" },
+    "services": { "tabLabel": "施術カテゴリー", "concerns": "よくあるお悩み", "detailsSuffix": "詳しく見る", "imageSuffix": "イメージ" },
+    "marquee": { "imageSuffix": "カテゴリー画像", "reduced": "自動スクロール停止中（視差効果を軽減）", "pause": "自動スクロールを停止", "play": "自動スクロールを再開" },
+    "beforeAfter": { "before": "術前", "after": "術後", "sliderLabel": "術前と術後の比較位置を調整", "valueText": "術前{before}パーセント、術後{after}パーセントを表示", "status": "術前{before}%・術後{after}%を表示中", "procedure": "施術名", "timing": "撮影時期", "condition": "撮影条件" },
+    "location": { "address": "住所", "phone": "代表電話", "hours": "診療時間", "parking": "駐車場", "transit": "公共交通機関", "directions": "アクセス", "consult": "カウンセリング予約", "mapLabel": "{name}の所在地。{address}", "mapPending": "地図準備中", "mapNotice": "住所確定後に地図を連携します" }
+  }
+}
