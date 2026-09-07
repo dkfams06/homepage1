@@ -52,7 +52,8 @@ export function Header({
     return () => document.removeEventListener("keydown", onKeyDown);
   }, []);
 
-  const solid = scrolled || menuOpen;
+  const isHome = pathname === `/${locale}` || pathname === `/${locale}/`;
+  const solid = !isHome || scrolled || menuOpen;
 
   return (
     <>
