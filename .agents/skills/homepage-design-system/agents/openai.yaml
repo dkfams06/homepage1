@@ -1,0 +1,4 @@
+interface:
+  display_name: "Homepage Design System"
+  short_description: "Preserve this clinic website design system"
+  default_prompt: "Use $homepage-design-system to design or review this project while preserving its established visual language."

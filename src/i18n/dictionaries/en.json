@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "title": "LIAN Plastic Surgery | Natural Beauty, Thoughtfully Designed",
+    "description": "Personalized aesthetic care guided by your natural facial and body proportions, from consultation through treatment and recovery.",
+    "ogLocale": "en_US"
+  },
+  "site": {
+    "name": "LIAN Plastic Surgery",
+    "nameEn": "LIAN Plastic Surgery",
+    "tagline": "Natural beauty, thoughtfully designed",
+    "phone": "02-0000-0000",
+    "phoneHref": "tel:0200000000",
+    "address": "Floor 0, 00 000-ro, Gangnam-gu, Seoul",
+    "addressDetail": "3 minutes on foot from Exit 0 of 000 Station, Line 0",
+    "parking": "Underground parking is available. Two hours of complimentary parking are provided with a consultation.",
+    "transit": ["3 minutes on foot from Exit 0 of 000 Station, Line 0", "Take trunk bus 000 or 000 and get off at 000 stop"],
+    "landmark": "From the lobby of 000 Building, take the dedicated elevator to Floor 0.",
+    "hours": [
+      { "day": "Weekdays", "time": "10:00 – 19:00" },
+      { "day": "Thursday", "time": "10:00 – 21:00 (Evening clinic)" },
+      { "day": "Saturday", "time": "10:00 – 16:00" },
+      { "day": "Sunday & holidays", "time": "Closed" }
+    ],
+    "business": {
+      "ceo": "Medical Director 000",
+      "registration": "Business registration 000-00-00000",
+      "manager": "Privacy Officer 000"
+    },
+    "social": [
+      { "label": "Instagram", "href": "#" },
+      { "label": "Naver Blog", "href": "#" },
+      { "label": "KakaoTalk", "href": "#" }
+    ]
+  },
+  "nav": [
+    { "label": "About Us", "subLabel": "Our clinic", "href": "/about" },
+    { "label": "Service", "subLabel": "Treatments", "href": "/service" },
+    { "label": "Blog", "subLabel": "Insights", "href": "/blog" },
+    { "label": "Inquire", "subLabel": "Contact", "href": "/inquire" }
+  ],
+  "home": {
+    "hero": {
+      "kicker": "Natural by Design",
+      "headline": ["Natural beauty,", "thoughtfully designed"],
+      "description": "We do not believe in changing who you are. We refine the proportions you already have, with one consistent standard from consultation through recovery.",
+      "primaryCta": { "label": "Request a consultation", "href": "#inquire" },
+      "secondaryCta": { "label": "Our philosophy", "href": "#philosophy" },
+      "trust": ["Specialist-led consultation", "Proportion-based planning", "Care through recovery"],
+      "image": { "src": "/images/hero.png", "alt": "Close portrait of a woman resting among pink peonies in natural light" }
+    },
+    "philosophy": {
+      "kicker": "Our Philosophy",
+      "heading": ["Beyond trends,", "we begin with balance"],
+      "paragraphs": [
+        "The same procedure does not suit everyone. We begin by reading the proportions of the face and body before discussing a surgical method.",
+        "Our standard is not what looks most fashionable today, but what can remain natural years from now. Consultation, treatment, recovery, and follow-up are one connected process."
+      ],
+      "principles": ["Personalized care that respects natural proportions", "Long-term balance over short-lived trends", "A shared decision between medical judgment and patient goals"],
+      "cta": { "label": "Explore our philosophy", "href": "/about" },
+      "image": { "src": "/images/philosophy.jpg", "alt": "A calm, naturally lit space prepared for a consultation" }
+    },
+    "services": {
+      "kicker": "Core Services",
+      "heading": "What would you like to address?",
+      "description": "Choose an area to review representative treatments and common concerns. Detailed guidance continues on each treatment page."
+    },
+    "marquee": { "kicker": "Explore", "heading": "Explore treatment categories" },
+    "beforeAfter": {
+      "kicker": "Before & After",
+      "heading": "Thoughtful change begins with the process",
+      "description": "Images are taken with consistent angle, lighting, and expression. Move the handle to compare each view.",
+      "procedure": "Natural adhesion eyelid surgery · Ptosis correction",
+      "timing": "Before surgery / 3 months after",
+      "condition": "Same angle · Same lighting · Neutral expression",
+      "disclaimer": "Results and recovery vary by individual, and side effects may occur. Your surgeon will explain the relevant considerations during consultation.",
+      "cta": { "label": "View detailed cases", "href": "/service/cases" },
+      "before": { "src": "/images/ba-before.jpg", "alt": "Front view before surgery" },
+      "after": { "src": "/images/ba-after.jpg", "alt": "Front view three months after surgery" }
+    },
+    "body": {
+      "kicker": "Body Contouring",
+      "heading": ["Not simply weight,", "but the flow of your silhouette"],
+      "description": "The same weight can look different depending on where volume sits. We plan what to preserve as carefully as what to reduce.",
+      "lead": "Proportion-led body contouring",
+      "areas": ["Abdomen", "Waist", "Thighs", "Upper arms", "Back & bra line"],
+      "primaryCta": { "label": "Request a consultation", "href": "#inquire" },
+      "secondaryCta": { "label": "Explore body treatments", "href": "/service/body" },
+      "image": { "src": "/images/body-feature.jpg", "alt": "A restrained editorial image of a body silhouette in soft natural light" }
+    },
+    "differences": {
+      "kicker": "Why Us",
+      "heading": "Four standards that guide every decision",
+      "items": [
+        { "title": "Planning around your proportions", "description": "We do not fit you to a predetermined shape. Every plan begins with measured facial and body relationships." },
+        { "title": "Direct specialist consultation", "description": "The responsible specialist leads consultation, treatment, and follow-up." },
+        { "title": "A safety-focused clinical system", "description": "Pre-operative checks, anesthesia management, and emergency protocols follow standardized procedures." },
+        { "title": "Care that continues through recovery", "description": "Our care does not end with a procedure. It continues until you return to daily life." }
+      ],
+      "notice": "This section explains our care principles. Results and recovery vary by individual."
+    },
+    "team": {
+      "kicker": "Medical Team",
+      "heading": "Know who will guide your care",
+      "description": "Specialists lead every consultation and procedure. Education, experience, memberships, and focus areas are presented on each doctor's profile.",
+      "cta": { "label": "Meet the medical team", "href": "/about/doctors" }
+    },
+    "trust": {
+      "kicker": "Trust",
+      "heading": "Evidence before impressions",
+      "description": "We publish only verifiable qualifications and clearly defined information. Testimonials are shared only with consent.",
+      "notice": "Testimonials are excerpted with the author's consent. Experience, progress, and satisfaction vary by individual."
+    },
+    "inquire": {
+      "kicker": "Inquire",
+      "heading": ["Start with", "a simple question"],
+      "description": "Leave a few details and our team will contact you. A consultation does not require you to proceed with treatment.",
+      "primaryCta": { "label": "Quick inquiry", "href": "#inquire" },
+      "secondaryCta": { "label": "Detailed inquiry", "href": "/inquire" },
+      "image": { "src": "/images/inquire.jpg", "alt": "A relaxed conversation in a warmly lit setting" },
+      "phoneLabel": "Call us",
+      "hoursNotice": "Calls are answered during clinic hours. Later inquiries are handled on the next business day."
+    },
+    "blog": { "kicker": "Journal", "heading": "Helpful reading before your visit", "cta": { "label": "View all articles", "href": "/blog" } },
+    "location": { "kicker": "Visit", "heading": "Visit the clinic" }
+  },
+  "categories": [
+    { "id": "eyes", "name": "Eye Surgery", "nameEn": "Eyes", "lead": "Natural-adhesion eyelid surgery", "description": "We consider eye direction, lid thickness, and the distance between brow and eye before defining a crease.", "concerns": ["Tired-looking eyes", "Asymmetry", "Revision", "Ptosis"], "image": "/images/category-eyes.jpg", "href": "/service/eyes" },
+    { "id": "nose", "name": "Rhinoplasty", "nameEn": "Nose", "lead": "Personalized bridge and tip refinement", "description": "We prioritize proportion over height so the nose feels balanced from both front and profile views.", "concerns": ["Low bridge", "Wide tip", "Deviated nose", "Revision"], "image": "/images/category-nose.jpg", "href": "/service/nose" },
+    { "id": "contour", "name": "Facial Contour", "nameEn": "Contour", "lead": "Cheekbone and jaw contouring", "description": "Planning considers soft tissue and overall facial length in addition to bone structure.", "concerns": ["Wide face", "Angular jaw", "Prominent cheekbones", "Asymmetry"], "image": "/images/category-contour.jpg", "href": "/service/contour" },
+    { "id": "lifting", "name": "Lifting", "nameEn": "Lifting", "lead": "Facelift and thread lifting", "description": "We identify whether laxity comes from skin, volume, or deeper tissue before choosing an approach.", "concerns": ["Smile lines", "Jawline laxity", "Volume loss", "Neck lines"], "image": "/images/category-lifting.jpg", "href": "/service/lifting" },
+    { "id": "skin", "name": "Skin & Injectables", "nameEn": "Skin", "lead": "Laser and injectable treatments", "description": "Downtime and your return to daily life guide the intensity and sequence of care.", "concerns": ["Pigmentation", "Pores", "Fine lines", "Elasticity"], "image": "/images/category-skin.jpg", "href": "/service/skin" },
+    { "id": "body", "name": "Body", "nameEn": "Body", "lead": "Individualized body contouring", "description": "The goal is not weight loss, but a more balanced flow through each contour.", "concerns": ["Abdomen", "Thighs", "Upper arms", "Post-pregnancy shape"], "image": "/images/category-body.jpg", "href": "/service/body" }
+  ],
+  "doctors": [
+    { "id": "doctor-1", "name": "Dr. 000", "role": "Medical Director · Plastic Surgeon", "specialties": ["Eyes", "Nose", "Revision"], "philosophy": "I begin by explaining what surgery can change—and what is better left unchanged.", "image": "/images/doctor-1.jpg", "href": "/about/doctors/doctor-1", "imageAlt": "Portrait of Dr. 000" },
+    { "id": "doctor-2", "name": "Dr. 000", "role": "Plastic Surgeon", "specialties": ["Facial Contour", "Lifting"], "philosophy": "A sound plan includes recovery time and the point when you can comfortably return to daily life.", "image": "/images/doctor-2.jpg", "href": "/about/doctors/doctor-2", "imageAlt": "Portrait of Dr. 000" },
+    { "id": "doctor-3", "name": "Dr. 000", "role": "Plastic Surgeon", "specialties": ["Body", "Skin & Injectables"], "philosophy": "Long-term care after treatment is as important as the procedure itself.", "image": "/images/doctor-3.jpg", "href": "/about/doctors/doctor-3", "imageAlt": "Portrait of Dr. 000" }
+  ],
+  "posts": [
+    { "id": "post-1", "category": "Treatment Guide", "title": "How are eyelid surgery methods selected?", "excerpt": "The choice between incisional and non-incisional methods depends on lid thickness and skin laxity—not trends.", "date": "2026-08-28", "image": "/images/blog-1.jpg", "href": "/blog/post-1", "imageAlt": "Guide to choosing an eyelid surgery method" },
+    { "id": "post-2", "category": "Recovery", "title": "How swelling changes after surgery", "excerpt": "Recovery speed varies, but there are clear checkpoints to observe at each stage.", "date": "2026-08-14", "image": "/images/blog-2.jpg", "href": "/blog/post-2", "imageAlt": "Guide to recovery and swelling after surgery" },
+    { "id": "post-3", "category": "Doctor's Column", "title": "Five questions to ask during a consultation", "excerpt": "The questions you ask shape the quality of your decision. Here is what to prepare before your visit.", "date": "2026-07-30", "image": "/images/blog-3.jpg", "href": "/blog/post-3", "imageAlt": "Questions to prepare for a plastic surgery consultation" }
+  ],
+  "reviews": [
+    { "id": "review-1", "quote": "I wanted to look like myself rather than simply look different, and that became the focus of my consultation.", "author": "0**", "meta": "Eye surgery · 30s" },
+    { "id": "review-2", "quote": "The detailed guidance on what to watch during recovery was just as valuable as the procedure itself.", "author": "0**", "meta": "Facial contour · 20s" },
+    { "id": "review-3", "quote": "Being told I did not need a procedure yet made me trust the recommendation even more.", "author": "0**", "meta": "Lifting · 40s" }
+  ],
+  "trustFacts": [
+    { "label": "Plastic surgeons", "value": "3", "basis": "Based on verified specialist certification" },
+    { "label": "Clinical experience", "value": "00 yrs", "basis": "From the medical director's specialist certification date" },
+    { "label": "Professional membership", "value": "Member", "basis": "Based on verified society registration" },
+    { "label": "Specialist consultations", "value": "100%", "basis": "All consultations led directly by a specialist" }
+  ],
+  "ui": {
+    "header": { "skip": "Skip to main content", "mainNav": "Main navigation", "mobileNav": "Mobile navigation", "consult": "Consultation", "phone": "Call", "openMenu": "Open menu", "closeMenu": "Close menu", "language": "Select language", "otherLanguage": "KO" },
+    "footer": { "menu": "Menu", "service": "Service", "contact": "Contact", "location": "Directions", "privacy": "Privacy Policy", "terms": "Terms of Use", "disclaimer": "The medical information on this site is general guidance and does not replace diagnosis or treatment. Results and side effects vary by individual; consult a qualified specialist." },
+    "mobileCta": { "phone": "Call", "directions": "Directions", "consult": "Consultation" },
+    "quickInquiry": { "dialogLabel": "Quick consultation request", "kicker": "Quick Inquiry", "title": "Request a consultation", "closeLabel": "Close consultation panel", "doneTitle": "Your request has been received", "doneBody": "Our team will contact you within one business day during clinic hours.", "urgent": "For urgent inquiries, call {phone}.", "close": "Close", "name": "Name", "namePlaceholder": "Enter your name", "phone": "Phone", "category": "Area of interest", "categoryEmpty": "I have not decided yet", "method": "Preferred contact", "methods": ["Phone", "KakaoTalk", "In-person visit"], "message": "Message", "optional": "Optional", "messagePlaceholder": "Tell us briefly what you would like to discuss", "consent": "I agree to the collection and use of my personal information for consultation.", "consentDetail": "Collected: name, phone, area of interest · Retained: one year after consultation", "details": "View details", "submitting": "Submitting...", "submit": "Request consultation" },
+    "services": { "tabLabel": "Treatment categories", "concerns": "Common concerns", "detailsSuffix": "Learn more", "imageSuffix": "representative image" },
+    "marquee": { "imageSuffix": "category image", "reduced": "Auto-scroll off (reduced motion)", "pause": "Pause auto-scroll", "play": "Resume auto-scroll" },
+    "beforeAfter": { "before": "Before", "after": "After", "sliderLabel": "Adjust the Before and After comparison", "valueText": "Before {before} percent, After {after} percent visible", "status": "Before {before}% · After {after}% visible", "procedure": "Procedure", "timing": "Timing", "condition": "Photo standard" },
+    "location": { "address": "Address", "phone": "Phone", "hours": "Clinic hours", "parking": "Parking", "transit": "Public transit", "directions": "Directions", "consult": "Consultation", "mapLabel": "Map location for {name}. {address}", "mapPending": "Map Pending", "mapNotice": "Map integration will be added after the address is finalized" }
+  }
+}

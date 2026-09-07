@@ -1,0 +1,4 @@
+interface:
+  display_name: "Homepage Image Generation"
+  short_description: "Create consistent clinic website imagery"
+  default_prompt: "Use $homepage-image-generation to plan, generate, review, and save imagery for this clinic website."
