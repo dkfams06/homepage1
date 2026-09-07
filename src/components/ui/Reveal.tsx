@@ -21,19 +21,45 @@ export function Reveal({ children, as: Tag = "div", className = "", delay = 0 }:
     const el = ref.current;
     if (!el) return;
 
+    const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    if (motion.matches || !window.IntersectionObserver) return;
+    const animations: Animation[] = [];
+    const show = () => {
+      el.dataset.visible = "true";
+      animations.forEach((animation) => animation.finish());
+    };
+    motion.addEventListener("change", show);
+    el.addEventListener("focusin", show);
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           el.dataset.visible = "true";
+          if (!motion.matches) {
+            const heading = el.querySelector("h1, h2");
+            const lines = heading ? Array.from(heading.children) : [];
+            const targets = lines.length ? lines : heading ? [heading] : [];
+            targets.forEach((target, index) => {
+              animations.push(target.animate(
+                [{ opacity: 0, transform: "translateY(12px)" }, { opacity: 1, transform: "translateY(0)" }],
+                { duration: 700, delay: Math.min(delay, 200) + index * 75, easing: "cubic-bezier(0.22, 0.61, 0.36, 1)", fill: "backwards" },
+              ));
+            });
+          }
           observer.unobserve(el);
         }
       },
-      { threshold: 0.12, rootMargin: "0px 0px -8% 0px" },
+      { threshold: 0, rootMargin: "0px 0px -5% 0px" },
     );
 
+    if (el.getBoundingClientRect().top > window.innerHeight * 0.95) el.dataset.visible = "false";
     observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
+    return () => {
+      observer.disconnect();
+      motion.removeEventListener("change", show);
+      el.removeEventListener("focusin", show);
+      animations.forEach((animation) => animation.cancel());
+    };
+  }, [delay]);
 
   return (
     <Tag

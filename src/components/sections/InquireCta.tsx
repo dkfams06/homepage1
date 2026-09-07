@@ -59,6 +59,7 @@ export function InquireCta({
 
           <Reveal delay={100}>
             <AssetImage
+              magnetic
               src={content.image.src}
               alt={content.image.alt}
               ratio="4/5"

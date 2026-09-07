@@ -19,6 +19,7 @@ export function Philosophy({
         <div className="grid items-center gap-12 md:gap-16 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1fr)] lg:gap-24">
           <Reveal className="order-2 lg:order-1">
             <AssetImage
+              magnetic
               src={content.image.src}
               alt={content.image.alt}
               ratio="4/5"
