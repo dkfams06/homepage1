@@ -66,16 +66,27 @@
     },
     "marquee": { "kicker": "Explore", "heading": "浏览诊疗项目分类" },
     "beforeAfter": {
-      "kicker": "Before & After",
-      "heading": "变化源于严谨的过程",
-      "description": "照片在相同角度、光线和表情条件下拍摄。左右拖动控制柄即可进行比较。",
-      "procedure": "自然粘连双眼皮 · 眼睑矫正",
-      "timing": "术前 / 术后3个月",
-      "condition": "相同角度 · 相同光线 · 自然表情",
-      "disclaimer": "治疗效果与恢复过程因个人情况而异，也可能发生副作用。相关注意事项将在咨询时由医生详细说明。",
-      "cta": { "label": "查看详细案例", "href": "/service/cases" },
-      "before": { "src": "/images/ba-before.jpg", "alt": "手术前正面照片" },
-      "after": { "src": "/images/ba-after.jpg", "alt": "手术后3个月正面照片" }
+      "kicker": "AI Comparison Study",
+      "heading": "虚拟图像对比展示",
+      "description": "同一虚拟人物的两种AI生成图像。可拖动滑块进行比较；图像不代表真实患者或治疗效果。",
+      "procedure": "虚拟眼部对比",
+      "timing": "AI生成 · 无临床拍摄时间",
+      "condition": "相同构图的虚拟图像",
+      "disclaimer": "AI虚拟对比 · 非真实治疗效果",
+      "cta": {
+        "label": "查看虚拟对比",
+        "href": "/service/cases"
+      },
+      "before": {
+        "src": "/images/ai-comparison-demo.jpg",
+        "alt": "AI虚拟对比图A · 非真实患者"
+      },
+      "after": {
+        "src": "/images/ai-comparison-demo.jpg",
+        "alt": "AI虚拟对比图B · 非真实患者"
+      },
+      "isIllustration": true,
+      "notice": "AI虚拟对比 · 非真实治疗效果"
     },
     "body": {
       "kicker": "Body Contouring",
@@ -99,10 +110,13 @@
       "notice": "本内容用于说明诊疗原则，实际治疗效果与恢复过程因个人情况而异。"
     },
     "team": {
-      "kicker": "Medical Team",
-      "heading": "先了解为您提供诊疗的医生",
-      "description": "所有咨询与手术均由整形外科专科医生亲自进行。学历、经历、学会活动及专业领域可在医生详情页查看。",
-      "cta": { "label": "查看医疗团队", "href": "/about/doctors" }
+      "kicker": "AI Profile Study",
+      "heading": "医疗团队介绍设计预览",
+      "description": "以下人物由AI生成，均为虚拟人物，并非实际医务人员。待真实团队资料和照片确定后将予以替换。",
+      "cta": {
+        "label": "查看虚拟人物介绍",
+        "href": "/about/doctors"
+      }
     },
     "trust": {
       "kicker": "Trust",
@@ -132,9 +146,9 @@
     { "id": "body", "name": "身体塑形", "nameEn": "Body", "lead": "个性化身体轮廓塑形", "description": "目标并非单纯减重，而是让整体线条更加协调流畅。", "concerns": ["腹部", "大腿", "上臂", "产后体型"], "image": "/images/category-body.jpg", "href": "/service/body" }
   ],
   "doctors": [
-    { "id": "doctor-1", "name": "000 院长", "role": "代表院长 · 整形外科专科医生", "specialties": ["眼部整形", "鼻部整形", "修复手术"], "philosophy": "我会先清楚说明手术能够改变什么，以及哪些部分更适合保持原状。", "image": "/images/doctor-1.jpg", "href": "/about/doctors/doctor-1", "imageAlt": "000院长肖像" },
-    { "id": "doctor-2", "name": "000 院长", "role": "整形外科专科医生", "specialties": ["面部轮廓", "面部提升"], "philosophy": "完善的计划应当包括恢复时间以及安心回归日常生活的时间点。", "image": "/images/doctor-2.jpg", "href": "/about/doctors/doctor-2", "imageAlt": "000院长肖像" },
-    { "id": "doctor-3", "name": "000 院长", "role": "整形外科专科医生", "specialties": ["身体塑形", "皮肤与微整形"], "philosophy": "比起一次手术本身，之后的持续管理同样有助于长期维持状态。", "image": "/images/doctor-3.jpg", "href": "/about/doctors/doctor-3", "imageAlt": "000院长肖像" }
+    {"id":"doctor-1","name":"虚拟人物 1","role":"AI虚拟人物 · 非实际医务人员","specialties":[],"philosophy":"仅用于展示人物介绍页面设计，不代表真实学历、经历或专科资格。","image":"/images/ai-doctor-demo-1.jpg","href":"/about/doctors/doctor-1","imageAlt":"AI虚拟人物 · 非实际医务人员 1"},
+    {"id":"doctor-2","name":"虚拟人物 2","role":"AI虚拟人物 · 非实际医务人员","specialties":[],"philosophy":"仅用于展示人物介绍页面设计，不代表真实学历、经历或专科资格。","image":"/images/ai-doctor-demo-2.jpg","href":"/about/doctors/doctor-2","imageAlt":"AI虚拟人物 · 非实际医务人员 2"},
+    {"id":"doctor-3","name":"虚拟人物 3","role":"AI虚拟人物 · 非实际医务人员","specialties":[],"philosophy":"仅用于展示人物介绍页面设计，不代表真实学历、经历或专科资格。","image":"/images/ai-doctor-demo-3.jpg","href":"/about/doctors/doctor-3","imageAlt":"AI虚拟人物 · 非实际医务人员 3"}
   ],
   "posts": [
     { "id": "post-1", "category": "项目指南", "title": "双眼皮手术方法如何分类，又该依据什么选择？", "excerpt": "切开法与非切开法的选择，应依据眼睑厚度与皮肤松弛程度，而不是流行趋势。", "date": "2026-08-28", "image": "/images/blog-1.jpg", "href": "/blog/post-1", "imageAlt": "双眼皮手术方法选择指南配图" },
@@ -159,7 +173,7 @@
     "quickInquiry": { "dialogLabel": "快速咨询申请", "kicker": "Quick Inquiry", "title": "申请快速咨询", "closeLabel": "关闭咨询面板", "doneTitle": "咨询申请已提交", "doneBody": "工作人员将在门诊时间内于1个工作日内与您联系。", "urgent": "如需紧急咨询，请致电{phone}。", "close": "关闭", "name": "姓名", "namePlaceholder": "请输入姓名", "phone": "联系电话", "category": "感兴趣的项目", "categoryEmpty": "尚未决定", "method": "希望的咨询方式", "methods": ["电话咨询", "KakaoTalk咨询", "到院咨询"], "message": "咨询内容", "optional": "选填", "messagePlaceholder": "请简单描述您希望咨询的问题", "consent": "我同意为咨询目的收集及使用个人信息。", "consentDetail": "收集项目：姓名、联系电话、感兴趣的项目 · 保存期限：咨询结束后1年", "details": "查看详情", "submitting": "提交中...", "submit": "提交咨询申请" },
     "services": { "tabLabel": "诊疗项目分类", "concerns": "常见困扰", "detailsSuffix": "了解详情", "imageSuffix": "代表图片" },
     "marquee": { "imageSuffix": "分类图片", "reduced": "自动滚动已关闭（减少动态效果）", "pause": "暂停自动滚动", "play": "继续自动滚动" },
-    "beforeAfter": { "before": "术前", "after": "术后", "sliderLabel": "调整术前与术后图片的比较位置", "valueText": "术前显示{before}%，术后显示{after}%", "status": "当前显示：术前{before}% · 术后{after}%", "procedure": "项目名称", "timing": "拍摄时间", "condition": "拍摄标准" },
+    "beforeAfter": {"before":"虚拟A","after":"虚拟B","sliderLabel":"调整术前与术后图片的比较位置","valueText":"术前显示{before}%，术后显示{after}%","status":"当前显示：术前{before}% · 术后{after}%","procedure":"对比项目","timing":"制作方式","condition":"图像标准"},
     "location": { "address": "地址", "phone": "联系电话", "hours": "门诊时间", "parking": "停车信息", "transit": "公共交通", "directions": "路线导航", "consult": "申请咨询", "mapLabel": "{name}位置地图。{address}", "mapPending": "地图待接入", "mapNotice": "地址确认后将接入地图服务" }
   }
 }

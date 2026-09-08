@@ -56,8 +56,9 @@ export function BeforeAfterCompare({
           src={content.after.src}
           alt={content.after.alt}
           ratio="4/5"
-          sizes="(min-width: 1024px) 45vw, 100vw"
+          sizes={content.isIllustration ? "(min-width: 1024px) 90vw, 200vw" : "(min-width: 1024px) 45vw, 100vw"}
           className="absolute inset-0"
+          objectPosition={content.isIllustration ? "right center" : "center"}
         />
 
         {/* Before — 위층을 좌측부터 position%까지만 보여준다 */}
@@ -70,11 +71,13 @@ export function BeforeAfterCompare({
             src={content.before.src}
             alt={content.before.alt}
             ratio="4/5"
-            sizes="(min-width: 1024px) 45vw, 100vw"
+            sizes={content.isIllustration ? "(min-width: 1024px) 90vw, 200vw" : "(min-width: 1024px) 45vw, 100vw"}
             className="absolute inset-0"
+            objectPosition={content.isIllustration ? "left center" : "center"}
           />
         </div>
 
+        {content.isIllustration && <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 top-0 h-[8%] min-h-14 bg-bg" />}
         <span className="absolute top-4 left-4 bg-ink/70 px-3 py-1.5 text-[12px] tracking-[0.14em] text-white uppercase">
           {ui.before}
         </span>
@@ -108,6 +111,11 @@ export function BeforeAfterCompare({
             .replace("{after}", String(100 - position))}
           className="absolute inset-0 h-full w-full cursor-ew-resize opacity-0"
         />
+        {content.isIllustration && (
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-ink px-4 py-5 text-center text-[13px] leading-relaxed text-white">
+            {content.notice}
+          </div>
+        )}
       </div>
 
       {/* §11 접근성 — 이미지에만 의존하지 않고 현재 상태를 텍스트로 제공한다 */}

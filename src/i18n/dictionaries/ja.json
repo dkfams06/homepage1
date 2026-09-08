@@ -66,16 +66,27 @@
     },
     "marquee": { "kicker": "Explore", "heading": "施術カテゴリーを見る" },
     "beforeAfter": {
-      "kicker": "Before & After",
-      "heading": "変化は、丁寧なプロセスから生まれます",
-      "description": "同じ角度・照明・表情の条件で撮影した写真です。ハンドルを左右に動かして比較できます。",
-      "procedure": "自然癒着二重術・眼瞼矯正",
-      "timing": "手術前 / 手術後3か月",
-      "condition": "同一角度・同一照明・無表情で撮影",
-      "disclaimer": "施術結果や回復経過には個人差があり、副作用が生じる可能性があります。詳しくはカウンセリング時に医師よりご説明します。",
-      "cta": { "label": "症例を詳しく見る", "href": "/service/cases" },
-      "before": { "src": "/images/ba-before.jpg", "alt": "手術前の正面写真" },
-      "after": { "src": "/images/ba-after.jpg", "alt": "手術後3か月の正面写真" }
+      "kicker": "AI Comparison Study",
+      "heading": "仮想画像による比較",
+      "description": "AIで生成した架空の人物の2つの表現です。スライダーを動かして比較できますが、実際の患者や施術結果を示すものではありません。",
+      "procedure": "架空の目元比較",
+      "timing": "AI生成・臨床撮影時期なし",
+      "condition": "同じ構図の仮想画像",
+      "disclaimer": "AI仮想比較・実際の施術結果ではありません",
+      "cta": {
+        "label": "仮想比較を詳しく見る",
+        "href": "/service/cases"
+      },
+      "before": {
+        "src": "/images/ai-comparison-demo.jpg",
+        "alt": "AI仮想比較画像A・実際の患者ではありません"
+      },
+      "after": {
+        "src": "/images/ai-comparison-demo.jpg",
+        "alt": "AI仮想比較画像B・実際の患者ではありません"
+      },
+      "isIllustration": true,
+      "notice": "AI仮想比較・実際の施術結果ではありません"
     },
     "body": {
       "kicker": "Body Contouring",
@@ -99,10 +110,13 @@
       "notice": "本内容は診療方針についてのご案内です。施術結果や回復経過には個人差があります。"
     },
     "team": {
-      "kicker": "Medical Team",
-      "heading": "担当する医師を、まず明確にお伝えします",
-      "description": "すべてのカウンセリングと手術は美容外科専門医が直接行います。学歴、経歴、学会活動、専門分野は医師紹介ページでご確認いただけます。",
-      "cta": { "label": "医療チームを見る", "href": "/about/doctors" }
+      "kicker": "AI Profile Study",
+      "heading": "医療チーム紹介のデザイン見本",
+      "description": "以下はAIで生成した架空の人物で、実際の医療スタッフではありません。正式な情報と写真が確定した後に差し替えます。",
+      "cta": {
+        "label": "架空のプロフィールを見る",
+        "href": "/about/doctors"
+      }
     },
     "trust": {
       "kicker": "Trust",
@@ -132,9 +146,9 @@
     { "id": "body", "name": "ボディ", "nameEn": "Body", "lead": "体型別ボディデザイン", "description": "体重を減らすだけでなく、ラインの流れを整える視点で各部位を設計します。", "concerns": ["腹部", "太もも", "二の腕", "産後の体型"], "image": "/images/category-body.jpg", "href": "/service/body" }
   ],
   "doctors": [
-    { "id": "doctor-1", "name": "000 院長", "role": "代表院長・美容外科専門医", "specialties": ["目元整形", "鼻整形", "修正手術"], "philosophy": "手術で変えられることと、変えないほうがよいことを最初に分けてご説明します。", "image": "/images/doctor-1.jpg", "href": "/about/doctors/doctor-1", "imageAlt": "000院長のプロフィール写真" },
-    { "id": "doctor-2", "name": "000 院長", "role": "美容外科専門医", "specialties": ["輪郭形成", "リフトアップ"], "philosophy": "回復期間と日常生活へ戻る時期まで含めて計画することが、カウンセリングの始まりだと考えています。", "image": "/images/doctor-2.jpg", "href": "/about/doctors/doctor-2", "imageAlt": "000院長のプロフィール写真" },
-    { "id": "doctor-3", "name": "000 院長", "role": "美容外科専門医", "specialties": ["ボディ", "肌・プチ整形"], "philosophy": "一度の手術だけでなく、その後の継続的なケアが状態の維持につながると考えています。", "image": "/images/doctor-3.jpg", "href": "/about/doctors/doctor-3", "imageAlt": "000院長のプロフィール写真" }
+    {"id":"doctor-1","name":"架空の人物 1","role":"AIの架空人物・実際の医療スタッフではありません","specialties":[],"philosophy":"プロフィールのデザインを示す架空の人物です。実在する学歴、経歴、専門医資格を示すものではありません。","image":"/images/ai-doctor-demo-1.jpg","href":"/about/doctors/doctor-1","imageAlt":"AIの架空人物・実際の医療スタッフではありません 1"},
+    {"id":"doctor-2","name":"架空の人物 2","role":"AIの架空人物・実際の医療スタッフではありません","specialties":[],"philosophy":"プロフィールのデザインを示す架空の人物です。実在する学歴、経歴、専門医資格を示すものではありません。","image":"/images/ai-doctor-demo-2.jpg","href":"/about/doctors/doctor-2","imageAlt":"AIの架空人物・実際の医療スタッフではありません 2"},
+    {"id":"doctor-3","name":"架空の人物 3","role":"AIの架空人物・実際の医療スタッフではありません","specialties":[],"philosophy":"プロフィールのデザインを示す架空の人物です。実在する学歴、経歴、専門医資格を示すものではありません。","image":"/images/ai-doctor-demo-3.jpg","href":"/about/doctors/doctor-3","imageAlt":"AIの架空人物・実際の医療スタッフではありません 3"}
   ],
   "posts": [
     { "id": "post-1", "category": "施術情報", "title": "二重手術の方法はどう分かれ、何を基準に選ぶのか", "excerpt": "切開法と非切開法を選ぶ基準は流行ではなく、まぶたの厚さと皮膚のたるみの程度です。", "date": "2026-08-28", "image": "/images/blog-1.jpg", "href": "/blog/post-1", "imageAlt": "二重手術の方法を解説する記事のメイン画像" },
@@ -159,7 +173,7 @@
     "quickInquiry": { "dialogLabel": "簡単カウンセリング予約", "kicker": "Quick Inquiry", "title": "簡単カウンセリング予約", "closeLabel": "相談パネルを閉じる", "doneTitle": "相談を受け付けました", "doneBody": "診療時間内の1営業日以内に担当者よりご連絡します。", "urgent": "お急ぎの場合は{phone}までお電話ください。", "close": "閉じる", "name": "お名前", "namePlaceholder": "お名前を入力してください", "phone": "電話番号", "category": "ご希望の施術", "categoryEmpty": "まだ決めていません", "method": "ご希望の連絡方法", "methods": ["電話", "KakaoTalk", "来院相談"], "message": "ご相談内容", "optional": "任意", "messagePlaceholder": "気になる点を簡単にご記入ください", "consent": "カウンセリングのための個人情報の収集・利用に同意します。", "consentDetail": "収集項目：氏名、電話番号、ご希望の施術・保管期間：相談完了後1年間", "details": "詳しく見る", "submitting": "送信中...", "submit": "相談を申し込む" },
     "services": { "tabLabel": "施術カテゴリー", "concerns": "よくあるお悩み", "detailsSuffix": "詳しく見る", "imageSuffix": "イメージ" },
     "marquee": { "imageSuffix": "カテゴリー画像", "reduced": "自動スクロール停止中（視差効果を軽減）", "pause": "自動スクロールを停止", "play": "自動スクロールを再開" },
-    "beforeAfter": { "before": "術前", "after": "術後", "sliderLabel": "術前と術後の比較位置を調整", "valueText": "術前{before}パーセント、術後{after}パーセントを表示", "status": "術前{before}%・術後{after}%を表示中", "procedure": "施術名", "timing": "撮影時期", "condition": "撮影条件" },
+    "beforeAfter": {"before":"仮想A","after":"仮想B","sliderLabel":"術前と術後の比較位置を調整","valueText":"術前{before}パーセント、術後{after}パーセントを表示","status":"術前{before}%・術後{after}%を表示中","procedure":"比較項目","timing":"制作方法","condition":"画像基準"},
     "location": { "address": "住所", "phone": "代表電話", "hours": "診療時間", "parking": "駐車場", "transit": "公共交通機関", "directions": "アクセス", "consult": "カウンセリング予約", "mapLabel": "{name}の所在地。{address}", "mapPending": "地図準備中", "mapNotice": "住所確定後に地図を連携します" }
   }
 }

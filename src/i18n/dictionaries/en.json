@@ -66,16 +66,27 @@
     },
     "marquee": { "kicker": "Explore", "heading": "Explore treatment categories" },
     "beforeAfter": {
-      "kicker": "Before & After",
-      "heading": "Thoughtful change begins with the process",
-      "description": "Images are taken with consistent angle, lighting, and expression. Move the handle to compare each view.",
-      "procedure": "Natural adhesion eyelid surgery · Ptosis correction",
-      "timing": "Before surgery / 3 months after",
-      "condition": "Same angle · Same lighting · Neutral expression",
-      "disclaimer": "Results and recovery vary by individual, and side effects may occur. Your surgeon will explain the relevant considerations during consultation.",
-      "cta": { "label": "View detailed cases", "href": "/service/cases" },
-      "before": { "src": "/images/ba-before.jpg", "alt": "Front view before surgery" },
-      "after": { "src": "/images/ba-after.jpg", "alt": "Front view three months after surgery" }
+      "kicker": "AI Comparison Study",
+      "heading": "Explore an illustrated comparison",
+      "description": "Two AI-generated variations of a fictional person. Move the slider to compare them. These are not a real patient or treatment results.",
+      "procedure": "Fictional eye comparison",
+      "timing": "AI generated · no clinical timeline",
+      "condition": "Matching fictional compositions",
+      "disclaimer": "AI illustration · not a real treatment result",
+      "cta": {
+        "label": "Explore the illustrated comparison",
+        "href": "/service/cases"
+      },
+      "before": {
+        "src": "/images/ai-comparison-demo.jpg",
+        "alt": "AI comparison image A · not a real patient"
+      },
+      "after": {
+        "src": "/images/ai-comparison-demo.jpg",
+        "alt": "AI comparison image B · not a real patient"
+      },
+      "isIllustration": true,
+      "notice": "AI illustration · not a real treatment result"
     },
     "body": {
       "kicker": "Body Contouring",
@@ -99,10 +110,13 @@
       "notice": "This section explains our care principles. Results and recovery vary by individual."
     },
     "team": {
-      "kicker": "Medical Team",
-      "heading": "Know who will guide your care",
-      "description": "Specialists lead every consultation and procedure. Education, experience, memberships, and focus areas are presented on each doctor's profile.",
-      "cta": { "label": "Meet the medical team", "href": "/about/doctors" }
+      "kicker": "AI Profile Study",
+      "heading": "Medical team design preview",
+      "description": "These AI-generated people are fictional, not actual clinicians. They will be replaced when verified team information and photographs are available.",
+      "cta": {
+        "label": "View fictional profiles",
+        "href": "/about/doctors"
+      }
     },
     "trust": {
       "kicker": "Trust",
@@ -132,9 +146,9 @@
     { "id": "body", "name": "Body", "nameEn": "Body", "lead": "Individualized body contouring", "description": "The goal is not weight loss, but a more balanced flow through each contour.", "concerns": ["Abdomen", "Thighs", "Upper arms", "Post-pregnancy shape"], "image": "/images/category-body.jpg", "href": "/service/body" }
   ],
   "doctors": [
-    { "id": "doctor-1", "name": "Dr. 000", "role": "Medical Director · Plastic Surgeon", "specialties": ["Eyes", "Nose", "Revision"], "philosophy": "I begin by explaining what surgery can change—and what is better left unchanged.", "image": "/images/doctor-1.jpg", "href": "/about/doctors/doctor-1", "imageAlt": "Portrait of Dr. 000" },
-    { "id": "doctor-2", "name": "Dr. 000", "role": "Plastic Surgeon", "specialties": ["Facial Contour", "Lifting"], "philosophy": "A sound plan includes recovery time and the point when you can comfortably return to daily life.", "image": "/images/doctor-2.jpg", "href": "/about/doctors/doctor-2", "imageAlt": "Portrait of Dr. 000" },
-    { "id": "doctor-3", "name": "Dr. 000", "role": "Plastic Surgeon", "specialties": ["Body", "Skin & Injectables"], "philosophy": "Long-term care after treatment is as important as the procedure itself.", "image": "/images/doctor-3.jpg", "href": "/about/doctors/doctor-3", "imageAlt": "Portrait of Dr. 000" }
+    {"id":"doctor-1","name":"Fictional person 1","role":"AI fictional person · not an actual clinician","specialties":[],"philosophy":"A fictional person used to preview the profile design. No real education, experience or specialist qualifications are represented.","image":"/images/ai-doctor-demo-1.jpg","href":"/about/doctors/doctor-1","imageAlt":"AI fictional person · not an actual clinician 1"},
+    {"id":"doctor-2","name":"Fictional person 2","role":"AI fictional person · not an actual clinician","specialties":[],"philosophy":"A fictional person used to preview the profile design. No real education, experience or specialist qualifications are represented.","image":"/images/ai-doctor-demo-2.jpg","href":"/about/doctors/doctor-2","imageAlt":"AI fictional person · not an actual clinician 2"},
+    {"id":"doctor-3","name":"Fictional person 3","role":"AI fictional person · not an actual clinician","specialties":[],"philosophy":"A fictional person used to preview the profile design. No real education, experience or specialist qualifications are represented.","image":"/images/ai-doctor-demo-3.jpg","href":"/about/doctors/doctor-3","imageAlt":"AI fictional person · not an actual clinician 3"}
   ],
   "posts": [
     { "id": "post-1", "category": "Treatment Guide", "title": "How are eyelid surgery methods selected?", "excerpt": "The choice between incisional and non-incisional methods depends on lid thickness and skin laxity—not trends.", "date": "2026-08-28", "image": "/images/blog-1.jpg", "href": "/blog/post-1", "imageAlt": "Guide to choosing an eyelid surgery method" },
@@ -159,7 +173,7 @@
     "quickInquiry": { "dialogLabel": "Quick consultation request", "kicker": "Quick Inquiry", "title": "Request a consultation", "closeLabel": "Close consultation panel", "doneTitle": "Your request has been received", "doneBody": "Our team will contact you within one business day during clinic hours.", "urgent": "For urgent inquiries, call {phone}.", "close": "Close", "name": "Name", "namePlaceholder": "Enter your name", "phone": "Phone", "category": "Area of interest", "categoryEmpty": "I have not decided yet", "method": "Preferred contact", "methods": ["Phone", "KakaoTalk", "In-person visit"], "message": "Message", "optional": "Optional", "messagePlaceholder": "Tell us briefly what you would like to discuss", "consent": "I agree to the collection and use of my personal information for consultation.", "consentDetail": "Collected: name, phone, area of interest · Retained: one year after consultation", "details": "View details", "submitting": "Submitting...", "submit": "Request consultation" },
     "services": { "tabLabel": "Treatment categories", "concerns": "Common concerns", "detailsSuffix": "Learn more", "imageSuffix": "representative image" },
     "marquee": { "imageSuffix": "category image", "reduced": "Auto-scroll off (reduced motion)", "pause": "Pause auto-scroll", "play": "Resume auto-scroll" },
-    "beforeAfter": { "before": "Before", "after": "After", "sliderLabel": "Adjust the Before and After comparison", "valueText": "Before {before} percent, After {after} percent visible", "status": "Before {before}% · After {after}% visible", "procedure": "Procedure", "timing": "Timing", "condition": "Photo standard" },
+    "beforeAfter": {"before":"Concept A","after":"Concept B","sliderLabel":"Adjust the Before and After comparison","valueText":"Before {before} percent, After {after} percent visible","status":"Before {before}% · After {after}% visible","procedure":"Comparison","timing":"Production","condition":"Image basis"},
     "location": { "address": "Address", "phone": "Phone", "hours": "Clinic hours", "parking": "Parking", "transit": "Public transit", "directions": "Directions", "consult": "Consultation", "mapLabel": "Map location for {name}. {address}", "mapPending": "Map Pending", "mapNotice": "Map integration will be added after the address is finalized" }
   }
 }
