@@ -6,33 +6,33 @@ import type { Dictionary } from "@/i18n/dictionaries";
 
 export function HeroVideo({ content }: { content: Dictionary["home"]["hero"]["video"] }) {
   const video = useRef<HTMLVideoElement>(null);
-  const [enabled, setEnabled] = useState(false);
   const [visible, setVisible] = useState(false);
   const [playing, setPlaying] = useState(false);
   const [failed, setFailed] = useState(false);
 
   useEffect(() => {
-    const query = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const sync = () => {
-      if (query.matches) {
-        video.current?.pause();
-        setVisible(false);
-      }
-      setEnabled(!query.matches);
-    };
-    sync();
-    query.addEventListener("change", sync);
-    return () => query.removeEventListener("change", sync);
+    const element = video.current;
+    if (!element) return;
+    element.muted = true;
+    // Also sync if native autoplay started before React attached its handlers.
+    void element.play().then(() => {
+      setVisible(true);
+      setPlaying(true);
+    }).catch(() => {
+      // A network/codec error may also precede hydration. Autoplay denial alone
+      // keeps the manual play button available instead of treating it as failure.
+      if (element.error) setFailed(true);
+    });
   }, []);
 
-  if (!enabled || failed) return null;
+  if (failed) return null;
 
   return (
     <>
       <video
         ref={video}
         src={content.src}
-        autoPlay muted loop playsInline preload="none"
+        autoPlay muted loop playsInline preload="auto"
         aria-hidden="true" tabIndex={-1}
         onPlaying={() => { setVisible(true); setPlaying(true); }}
         onPause={() => setPlaying(false)}

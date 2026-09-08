@@ -23,7 +23,7 @@ for (const locale of ["ko", "en", "zh", "ja"] as const) {
   test(`${locale}: inquiry is unavailable, traps focus, restores it, and links privacy`, async ({ page }) => {
     await page.goto(`/${locale}`);
     // Use the hero CTA, present on desktop and mobile.
-    const trigger = page.locator('#hero button').first();
+    const trigger = page.locator('#hero').getByRole('button', { name: d.home.hero.primaryCta.label, exact: true });
     await trigger.click();
     const dialog = page.getByRole("dialog", { name: d.ui.quickInquiry.dialogLabel });
     await expect(dialog).toBeVisible();

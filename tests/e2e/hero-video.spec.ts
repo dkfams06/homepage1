@@ -13,17 +13,17 @@ test("hero video plays muted inline and can be paused and resumed", async ({ pag
   await page.getByRole("button", { name: "Play video", exact: true }).click();
   await expect(video).toHaveJSProperty("paused", false);
   await page.emulateMedia({ reducedMotion: "reduce" });
-  await expect(video).toHaveCount(0);
-  await expect(page.locator("#hero img")).toBeVisible();
+  await expect(video).toHaveJSProperty("paused", false);
 });
 
-test("reduced motion keeps the hero photograph without downloading video", async ({ page }) => {
-  const requests: string[] = [];
-  page.on("request", request => { if (request.url().includes("/videos/hero.mp4")) requests.push(request.url()); });
+test("hero defaults to continuous playback even with reduced motion enabled", async ({ page }) => {
   await page.goto("/ja");
-  await expect(page.locator("#hero img")).toBeVisible();
-  await expect(page.locator("#hero video")).toHaveCount(0);
-  expect(requests).toHaveLength(0);
+  const video = page.locator("#hero video");
+  await expect.poll(() => video.evaluate((el: HTMLVideoElement) => el.currentTime)).toBeGreaterThan(0);
+  await expect(video).toHaveCSS("opacity", "1");
+  await video.evaluate((el: HTMLVideoElement) => { el.currentTime = el.duration - 0.2; });
+  await expect.poll(() => video.evaluate((el: HTMLVideoElement) => el.currentTime)).toBeLessThan(2);
+  await expect(video).toHaveJSProperty("paused", false);
 });
 
 test("video failure retains the photograph and usable hero content", async ({ page }) => {
