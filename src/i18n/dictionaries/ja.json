@@ -117,6 +117,7 @@
   ],
   "home": {
     "hero": {
+      "video": { "src": "/videos/hero.mp4", "pause": "動画を一時停止", "play": "動画を再生" },
       "kicker": "Natural by Design",
       "headline": ["自然な美しさを、", "丁寧にデザインします"],
       "description": "顔を別のものに変えるのではなく、本来備わっているバランスを整えることだと考えています。カウンセリングから回復まで、一貫した基準で寄り添います。",

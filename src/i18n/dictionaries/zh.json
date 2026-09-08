@@ -117,6 +117,7 @@
   ],
   "home": {
     "hero": {
+      "video": { "src": "/videos/hero.mp4", "pause": "暂停视频", "play": "播放视频" },
       "kicker": "Natural by Design",
       "headline": ["自然之美，", "源于细致设计"],
       "description": "我们认为整形并非改变原本的自己，而是梳理与协调已有的比例。从咨询到恢复，始终坚持同一标准。",

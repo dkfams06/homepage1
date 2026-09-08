@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { HeroVideo } from "@/components/HeroVideo";
 import { Container } from "@/components/ui/Section";
 import { CtaLink } from "@/components/ui/Button";
 import { InquiryButton } from "@/components/ui/InquiryButton";
@@ -8,7 +9,7 @@ import type { Locale } from "@/i18n/config";
 
 /**
  * 히어로 — MAIN_PAGE_PLAN.md §6.1
- * 확정 이미지 hero.png(1672×941)를 와이드로 사용한다.
+ * 사용자 영상 hero.mp4를 배경으로 사용하고 hero.png는 대체 이미지로 유지한다.
  * 텍스트는 좌측 꽃 영역 위에 배치해 얼굴을 가리지 않는다.
  * 모바일에서는 object-position을 따로 지정해 얼굴이 잘리지 않게 한다.
  */
@@ -36,6 +37,8 @@ export function Hero({
       ) : (
         <div className="placeholder-weave absolute inset-0 -z-20" aria-hidden="true" />
       )}
+
+      <HeroVideo content={content.video} />
 
       {/* 텍스트 가독성을 위한 약한 그라데이션 오버레이 — §6.1 이미지 배치 주의사항 */}
       <div

@@ -117,6 +117,7 @@
   ],
   "home": {
     "hero": {
+      "video": { "src": "/videos/hero.mp4", "pause": "Pause video", "play": "Play video" },
       "kicker": "Natural by Design",
       "headline": ["Natural beauty,", "thoughtfully designed"],
       "description": "We do not believe in changing who you are. We refine the proportions you already have, with one consistent standard from consultation through recovery.",

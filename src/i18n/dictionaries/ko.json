@@ -117,6 +117,7 @@
   ],
   "home": {
     "hero": {
+      "video": { "src": "/videos/hero.mp4", "pause": "영상 일시정지", "play": "영상 재생" },
       "kicker": "Natural by Design",
       "headline": ["자연스러운 아름다움을", "섬세하게 설계합니다"],
       "description": "얼굴을 바꾸는 일이 아니라, 이미 가진 비율을 정리하는 일이라고 생각합니다. 상담부터 회복까지 같은 기준으로 함께합니다.",
