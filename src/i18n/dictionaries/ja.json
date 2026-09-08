@@ -1,4 +1,20 @@
 {
+  "aboutMedical": {
+    "heading": "医療チーム紹介",
+    "kicker": "医療チーム",
+    "description": "代表院長から所属医師まで、プロフィールや学術活動をご紹介します。",
+    "chief": "代表院長紹介",
+    "team": "所属医師の紹介",
+    "teamDescription": "プロフィールを選択すると、詳しい経歴や学術活動をご覧いただけます。",
+    "notice": "デザイン確認用のプレビューです。以下の写真は AI で生成した架空の人物で、実際の代表院長や所属医師ではありません。確認済みの医師情報に差し替える予定です。",
+    "details": "詳しいプロフィールを見る",
+    "close": "プロフィールを閉じる",
+    "education": "学歴",
+    "career": "経歴",
+    "publications": "論文・学術活動",
+    "liveSurgery": "ライブサージェリー",
+    "pending": "確認済みの資料を掲載予定"
+  },
   "legal": {
     "notice": "正式な方針・規約を準備中",
     "reviewTitle": "正式公開前の確認事項",
@@ -224,9 +240,9 @@
     { "id": "body", "name": "ボディ", "nameEn": "Body", "lead": "体型別ボディデザイン", "description": "体重を減らすだけでなく、ラインの流れを整える視点で各部位を設計します。", "concerns": ["腹部", "太もも", "二の腕", "産後の体型"], "image": "/images/category-body.jpg", "href": "/service/body" }
   ],
   "doctors": [
-    {"id":"doctor-1","name":"架空の人物 1","role":"AIの架空人物・実際の医療スタッフではありません","specialties":[],"philosophy":"プロフィールのデザインを示す架空の人物です。実在する学歴、経歴、専門医資格を示すものではありません。","image":"/images/ai-doctor-demo-1.jpg","href":"/about/doctors/doctor-1","imageAlt":"AIの架空人物・実際の医療スタッフではありません 1"},
-    {"id":"doctor-2","name":"架空の人物 2","role":"AIの架空人物・実際の医療スタッフではありません","specialties":[],"philosophy":"プロフィールのデザインを示す架空の人物です。実在する学歴、経歴、専門医資格を示すものではありません。","image":"/images/ai-doctor-demo-2.jpg","href":"/about/doctors/doctor-2","imageAlt":"AIの架空人物・実際の医療スタッフではありません 2"},
-    {"id":"doctor-3","name":"架空の人物 3","role":"AIの架空人物・実際の医療スタッフではありません","specialties":[],"philosophy":"プロフィールのデザインを示す架空の人物です。実在する学歴、経歴、専門医資格を示すものではありません。","image":"/images/ai-doctor-demo-3.jpg","href":"/about/doctors/doctor-3","imageAlt":"AIの架空人物・実際の医療スタッフではありません 3"}
+    {"id":"doctor-1","name":"架空の人物 1","role":"AIの架空人物・実際の医療スタッフではありません","education":[],"career":[],"publications":[],"liveSurgery":[],"specialties":[],"philosophy":"プロフィールのデザインを示す架空の人物です。実在する学歴、経歴、専門医資格を示すものではありません。","image":"/images/ai-doctor-demo-1.jpg","href":"/about/doctors/doctor-1","imageAlt":"AIの架空人物・実際の医療スタッフではありません 1"},
+    {"id":"doctor-2","name":"架空の人物 2","role":"AIの架空人物・実際の医療スタッフではありません","education":[],"career":[],"publications":[],"liveSurgery":[],"specialties":[],"philosophy":"プロフィールのデザインを示す架空の人物です。実在する学歴、経歴、専門医資格を示すものではありません。","image":"/images/ai-doctor-demo-2.jpg","href":"/about/doctors/doctor-2","imageAlt":"AIの架空人物・実際の医療スタッフではありません 2"},
+    {"id":"doctor-3","name":"架空の人物 3","role":"AIの架空人物・実際の医療スタッフではありません","education":[],"career":[],"publications":[],"liveSurgery":[],"specialties":[],"philosophy":"プロフィールのデザインを示す架空の人物です。実在する学歴、経歴、専門医資格を示すものではありません。","image":"/images/ai-doctor-demo-3.jpg","href":"/about/doctors/doctor-3","imageAlt":"AIの架空人物・実際の医療スタッフではありません 3"}
   ],
   "posts": [
     { "id": "post-1", "category": "施術情報", "title": "二重手術の方法はどう分かれ、何を基準に選ぶのか", "excerpt": "切開法と非切開法を選ぶ基準は流行ではなく、まぶたの厚さと皮膚のたるみの程度です。", "date": "2026-08-28", "image": "/images/blog-1.jpg", "href": "/blog/post-1", "imageAlt": "二重手術の方法を解説する記事のメイン画像" },

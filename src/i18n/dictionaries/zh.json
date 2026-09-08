@@ -1,4 +1,20 @@
 {
+  "aboutMedical": {
+    "heading": "医疗团队介绍",
+    "kicker": "医疗团队",
+    "description": "从院长到医疗团队，了解个人简介与学术活动。",
+    "chief": "院长介绍",
+    "team": "医疗团队",
+    "teamDescription": "选择个人简介，查看详细履历与学术活动。",
+    "notice": "仅供设计预览。以下照片为 AI 生成的虚构人物，并非实际院长或本院医生。核实真实医疗团队资料后将予以替换。",
+    "details": "查看完整简介",
+    "close": "关闭简介",
+    "education": "教育背景",
+    "career": "从业经历",
+    "publications": "论文与学术活动",
+    "liveSurgery": "手术现场演示",
+    "pending": "经核实的资料待更新"
+  },
   "legal": {
     "notice": "正式政策准备中",
     "reviewTitle": "正式发布前需确认的内容",
@@ -224,9 +240,9 @@
     { "id": "body", "name": "身体塑形", "nameEn": "Body", "lead": "个性化身体轮廓塑形", "description": "目标并非单纯减重，而是让整体线条更加协调流畅。", "concerns": ["腹部", "大腿", "上臂", "产后体型"], "image": "/images/category-body.jpg", "href": "/service/body" }
   ],
   "doctors": [
-    {"id":"doctor-1","name":"虚拟人物 1","role":"AI虚拟人物 · 非实际医务人员","specialties":[],"philosophy":"仅用于展示人物介绍页面设计，不代表真实学历、经历或专科资格。","image":"/images/ai-doctor-demo-1.jpg","href":"/about/doctors/doctor-1","imageAlt":"AI虚拟人物 · 非实际医务人员 1"},
-    {"id":"doctor-2","name":"虚拟人物 2","role":"AI虚拟人物 · 非实际医务人员","specialties":[],"philosophy":"仅用于展示人物介绍页面设计，不代表真实学历、经历或专科资格。","image":"/images/ai-doctor-demo-2.jpg","href":"/about/doctors/doctor-2","imageAlt":"AI虚拟人物 · 非实际医务人员 2"},
-    {"id":"doctor-3","name":"虚拟人物 3","role":"AI虚拟人物 · 非实际医务人员","specialties":[],"philosophy":"仅用于展示人物介绍页面设计，不代表真实学历、经历或专科资格。","image":"/images/ai-doctor-demo-3.jpg","href":"/about/doctors/doctor-3","imageAlt":"AI虚拟人物 · 非实际医务人员 3"}
+    {"id":"doctor-1","name":"虚拟人物 1","role":"AI虚拟人物 · 非实际医务人员","education":[],"career":[],"publications":[],"liveSurgery":[],"specialties":[],"philosophy":"仅用于展示人物介绍页面设计，不代表真实学历、经历或专科资格。","image":"/images/ai-doctor-demo-1.jpg","href":"/about/doctors/doctor-1","imageAlt":"AI虚拟人物 · 非实际医务人员 1"},
+    {"id":"doctor-2","name":"虚拟人物 2","role":"AI虚拟人物 · 非实际医务人员","education":[],"career":[],"publications":[],"liveSurgery":[],"specialties":[],"philosophy":"仅用于展示人物介绍页面设计，不代表真实学历、经历或专科资格。","image":"/images/ai-doctor-demo-2.jpg","href":"/about/doctors/doctor-2","imageAlt":"AI虚拟人物 · 非实际医务人员 2"},
+    {"id":"doctor-3","name":"虚拟人物 3","role":"AI虚拟人物 · 非实际医务人员","education":[],"career":[],"publications":[],"liveSurgery":[],"specialties":[],"philosophy":"仅用于展示人物介绍页面设计，不代表真实学历、经历或专科资格。","image":"/images/ai-doctor-demo-3.jpg","href":"/about/doctors/doctor-3","imageAlt":"AI虚拟人物 · 非实际医务人员 3"}
   ],
   "posts": [
     { "id": "post-1", "category": "项目指南", "title": "双眼皮手术方法如何分类，又该依据什么选择？", "excerpt": "切开法与非切开法的选择，应依据眼睑厚度与皮肤松弛程度，而不是流行趋势。", "date": "2026-08-28", "image": "/images/blog-1.jpg", "href": "/blog/post-1", "imageAlt": "双眼皮手术方法选择指南配图" },

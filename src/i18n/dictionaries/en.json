@@ -1,4 +1,20 @@
 {
+  "aboutMedical": {
+    "heading": "Meet Our Medical Team",
+    "kicker": "Our Medical Team",
+    "description": "Explore profiles and academic activities, from the lead physician to the wider team.",
+    "chief": "Lead Physician",
+    "team": "Meet the Team",
+    "teamDescription": "Select a profile to explore their background and academic activities.",
+    "notice": "Design preview only. These AI-generated fictional people are not our lead physician or affiliated doctors. Verified physician information will replace these previews.",
+    "details": "View full profile",
+    "close": "Close profile",
+    "education": "Education",
+    "career": "Professional Experience",
+    "publications": "Publications & Academic Activities",
+    "liveSurgery": "Live Surgery",
+    "pending": "Verified information to be added"
+  },
   "legal": {
     "notice": "Official policies are being prepared",
     "reviewTitle": "To be confirmed before publication",
@@ -224,9 +240,9 @@
     { "id": "body", "name": "Body", "nameEn": "Body", "lead": "Individualized body contouring", "description": "The goal is not weight loss, but a more balanced flow through each contour.", "concerns": ["Abdomen", "Thighs", "Upper arms", "Post-pregnancy shape"], "image": "/images/category-body.jpg", "href": "/service/body" }
   ],
   "doctors": [
-    {"id":"doctor-1","name":"Fictional person 1","role":"AI fictional person · not an actual clinician","specialties":[],"philosophy":"A fictional person used to preview the profile design. No real education, experience or specialist qualifications are represented.","image":"/images/ai-doctor-demo-1.jpg","href":"/about/doctors/doctor-1","imageAlt":"AI fictional person · not an actual clinician 1"},
-    {"id":"doctor-2","name":"Fictional person 2","role":"AI fictional person · not an actual clinician","specialties":[],"philosophy":"A fictional person used to preview the profile design. No real education, experience or specialist qualifications are represented.","image":"/images/ai-doctor-demo-2.jpg","href":"/about/doctors/doctor-2","imageAlt":"AI fictional person · not an actual clinician 2"},
-    {"id":"doctor-3","name":"Fictional person 3","role":"AI fictional person · not an actual clinician","specialties":[],"philosophy":"A fictional person used to preview the profile design. No real education, experience or specialist qualifications are represented.","image":"/images/ai-doctor-demo-3.jpg","href":"/about/doctors/doctor-3","imageAlt":"AI fictional person · not an actual clinician 3"}
+    {"id":"doctor-1","name":"Fictional person 1","role":"AI fictional person · not an actual clinician","education":[],"career":[],"publications":[],"liveSurgery":[],"specialties":[],"philosophy":"A fictional person used to preview the profile design. No real education, experience or specialist qualifications are represented.","image":"/images/ai-doctor-demo-1.jpg","href":"/about/doctors/doctor-1","imageAlt":"AI fictional person · not an actual clinician 1"},
+    {"id":"doctor-2","name":"Fictional person 2","role":"AI fictional person · not an actual clinician","education":[],"career":[],"publications":[],"liveSurgery":[],"specialties":[],"philosophy":"A fictional person used to preview the profile design. No real education, experience or specialist qualifications are represented.","image":"/images/ai-doctor-demo-2.jpg","href":"/about/doctors/doctor-2","imageAlt":"AI fictional person · not an actual clinician 2"},
+    {"id":"doctor-3","name":"Fictional person 3","role":"AI fictional person · not an actual clinician","education":[],"career":[],"publications":[],"liveSurgery":[],"specialties":[],"philosophy":"A fictional person used to preview the profile design. No real education, experience or specialist qualifications are represented.","image":"/images/ai-doctor-demo-3.jpg","href":"/about/doctors/doctor-3","imageAlt":"AI fictional person · not an actual clinician 3"}
   ],
   "posts": [
     { "id": "post-1", "category": "Treatment Guide", "title": "How are eyelid surgery methods selected?", "excerpt": "The choice between incisional and non-incisional methods depends on lid thickness and skin laxity—not trends.", "date": "2026-08-28", "image": "/images/blog-1.jpg", "href": "/blog/post-1", "imageAlt": "Guide to choosing an eyelid surgery method" },

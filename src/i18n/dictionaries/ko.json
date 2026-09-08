@@ -1,4 +1,20 @@
 {
+  "aboutMedical": {
+    "heading": "의료진 소개",
+    "kicker": "Our Medical Team",
+    "description": "대표원장부터 함께하는 의료진까지, 프로필과 학술 활동을 살펴보세요.",
+    "chief": "대표원장 소개",
+    "team": "함께하는 의료진",
+    "teamDescription": "관심 있는 프로필을 선택하면 자세한 이력과 학술 활동을 확인할 수 있습니다.",
+    "notice": "디자인 검토용 시안입니다. 아래 사진은 AI 가상 인물이며 실제 대표원장 또는 소속 의료진이 아닙니다. 실제 의료진 자료 확인 후 교체합니다.",
+    "details": "상세 프로필 보기",
+    "close": "프로필 닫기",
+    "education": "학력",
+    "career": "경력",
+    "publications": "논문 및 학술 활동",
+    "liveSurgery": "라이브 서저리",
+    "pending": "확인된 자료 등록 예정"
+  },
   "legal": {
     "notice": "정식 정책 게시 준비 중",
     "reviewTitle": "정식 게시 전 확인할 내용",
@@ -224,9 +240,9 @@
     { "id": "body", "name": "바디", "nameEn": "Body", "lead": "체형별 지방 성형", "description": "체중 감량이 아니라 선의 흐름을 다듬는 관점으로 부위를 설계합니다.", "concerns": ["복부", "허벅지", "팔뚝", "출산 후 체형"], "image": "/images/category-body.jpg", "href": "/service/body" }
   ],
   "doctors": [
-    {"id":"doctor-1","name":"가상 인물 1","role":"AI 가상 인물 · 실제 의료진 아님","specialties":[],"philosophy":"프로필 디자인을 보여주기 위한 가상 인물입니다. 실제 학력·경력·전문의 자격을 나타내지 않습니다.","image":"/images/ai-doctor-demo-1.jpg","href":"/about/doctors/doctor-1","imageAlt":"AI 가상 인물 · 실제 의료진 아님 1"},
-    {"id":"doctor-2","name":"가상 인물 2","role":"AI 가상 인물 · 실제 의료진 아님","specialties":[],"philosophy":"프로필 디자인을 보여주기 위한 가상 인물입니다. 실제 학력·경력·전문의 자격을 나타내지 않습니다.","image":"/images/ai-doctor-demo-2.jpg","href":"/about/doctors/doctor-2","imageAlt":"AI 가상 인물 · 실제 의료진 아님 2"},
-    {"id":"doctor-3","name":"가상 인물 3","role":"AI 가상 인물 · 실제 의료진 아님","specialties":[],"philosophy":"프로필 디자인을 보여주기 위한 가상 인물입니다. 실제 학력·경력·전문의 자격을 나타내지 않습니다.","image":"/images/ai-doctor-demo-3.jpg","href":"/about/doctors/doctor-3","imageAlt":"AI 가상 인물 · 실제 의료진 아님 3"}
+    {"id":"doctor-1","name":"가상 인물 1","role":"AI 가상 인물 · 실제 의료진 아님","education":[],"career":[],"publications":[],"liveSurgery":[],"specialties":[],"philosophy":"프로필 디자인을 보여주기 위한 가상 인물입니다. 실제 학력·경력·전문의 자격을 나타내지 않습니다.","image":"/images/ai-doctor-demo-1.jpg","href":"/about/doctors/doctor-1","imageAlt":"AI 가상 인물 · 실제 의료진 아님 1"},
+    {"id":"doctor-2","name":"가상 인물 2","role":"AI 가상 인물 · 실제 의료진 아님","education":[],"career":[],"publications":[],"liveSurgery":[],"specialties":[],"philosophy":"프로필 디자인을 보여주기 위한 가상 인물입니다. 실제 학력·경력·전문의 자격을 나타내지 않습니다.","image":"/images/ai-doctor-demo-2.jpg","href":"/about/doctors/doctor-2","imageAlt":"AI 가상 인물 · 실제 의료진 아님 2"},
+    {"id":"doctor-3","name":"가상 인물 3","role":"AI 가상 인물 · 실제 의료진 아님","education":[],"career":[],"publications":[],"liveSurgery":[],"specialties":[],"philosophy":"프로필 디자인을 보여주기 위한 가상 인물입니다. 실제 학력·경력·전문의 자격을 나타내지 않습니다.","image":"/images/ai-doctor-demo-3.jpg","href":"/about/doctors/doctor-3","imageAlt":"AI 가상 인물 · 실제 의료진 아님 3"}
   ],
   "posts": [
     { "id": "post-1", "category": "시술 정보", "title": "쌍꺼풀 수술 방법은 어떻게 나뉘고, 무엇을 기준으로 정할까", "excerpt": "절개와 비절개를 나누는 기준은 유행이 아니라 눈꺼풀 두께와 피부 늘어짐의 정도입니다.", "date": "2026-08-28", "image": "/images/blog-1.jpg", "href": "/blog/post-1", "imageAlt": "쌍꺼풀 수술 방법 안내 글 대표 이미지" },
