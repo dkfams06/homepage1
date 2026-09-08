@@ -56,10 +56,18 @@ export function CategoryMarqueeTrack({
       : SPEED_DESKTOP;
 
     let frame = 0;
+    // Some browsers round scrollLeft assignments to whole CSS pixels.
+    // Preserve fractional motion so a speed below 0.5px does not stall.
+    let fractionalScroll = 0;
     const step = () => {
       const hold = holdRef.current;
       if (playingRef.current && !hold.hover && !hold.focus && !hold.dragging) {
-        scroller.scrollLeft += speed;
+        fractionalScroll += speed;
+        const pixels = Math.floor(fractionalScroll);
+        if (pixels > 0) {
+          scroller.scrollLeft += pixels;
+          fractionalScroll -= pixels;
+        }
       }
       // 목록을 두 벌 렌더링하므로 절반을 지나면 되돌려 무한 루프처럼 보이게 한다.
       const half = scroller.scrollWidth / 2;

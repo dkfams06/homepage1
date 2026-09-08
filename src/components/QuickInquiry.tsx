@@ -11,8 +11,6 @@ export function openQuickInquiry() {
   window.dispatchEvent(new CustomEvent(OPEN_INQUIRY_EVENT));
 }
 
-type Status = "idle" | "submitting" | "done";
-
 /**
  * 빠른 상담 슬라이드 패널 — MAIN_PAGE_PLAN.md §6.10
  * 항목: 이름, 연락처, 관심 시술, 상담 방식, 개인정보 동의
@@ -20,24 +18,22 @@ type Status = "idle" | "submitting" | "done";
  */
 export function QuickInquiry({
   locale,
-  site,
+  availability,
   categories,
   ui,
 }: {
   locale: Locale;
-  site: Dictionary["site"];
+  availability: Dictionary["inquiryAvailability"];
   categories: Dictionary["categories"];
   ui: Dictionary["ui"]["quickInquiry"];
 }) {
   const [open, setOpen] = useState(false);
-  const [status, setStatus] = useState<Status>("idle");
   const panelRef = useRef<HTMLDivElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
   const restoreFocusRef = useRef<HTMLElement | null>(null);
 
   const close = useCallback(() => {
     setOpen(false);
-    setStatus("idle");
     restoreFocusRef.current?.focus();
   }, []);
 
@@ -65,7 +61,7 @@ export function QuickInquiry({
       if (event.key !== "Tab" || !panelRef.current) return;
 
       const focusables = panelRef.current.querySelectorAll<HTMLElement>(
-        'a[href], button:not([disabled]), input:not([disabled]), select, textarea, [tabindex]:not([tabindex="-1"])',
+        'a[href], button:not(:disabled), input:not(:disabled), select:not(:disabled), textarea:not(:disabled), [tabindex]:not([tabindex="-1"])',
       );
       if (focusables.length === 0) return;
 
@@ -88,16 +84,8 @@ export function QuickInquiry({
     };
   }, [open, close]);
 
-  const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    // TODO(연동): 상담 접수 API 또는 알림 채널을 연결한다.
-    // 엔드포인트 연결 전까지 실제 전송은 이루어지지 않는다.
-    setStatus("submitting");
-    window.setTimeout(() => setStatus("done"), 400);
-  };
-
   return (
-    <div aria-hidden={!open} className={open ? "" : "pointer-events-none"}>
+    <div inert={!open} aria-hidden={!open} className={open ? "" : "pointer-events-none"}>
       <div
         onClick={close}
         className={`fixed inset-0 z-50 bg-ink/40 transition-opacity duration-400 ${
@@ -129,24 +117,12 @@ export function QuickInquiry({
           </button>
         </div>
 
-        {status === "done" ? (
-          <div className="flex flex-1 flex-col items-center justify-center gap-4 px-8 text-center">
-            <p className="font-serif text-2xl">{ui.doneTitle}</p>
-            <p className="text-sm leading-relaxed text-ink-muted">
-              {ui.doneBody}
-              <br />
-              {ui.urgent.replace("{phone}", site.phone)}
-            </p>
-            <button
-              type="button"
-              onClick={close}
-              className="mt-2 border-b border-rose/40 pb-1 text-sm text-rose"
-            >
-              {ui.close}
-            </button>
+        <form onSubmit={(event) => event.preventDefault()} className="flex flex-1 flex-col gap-5 overflow-y-auto px-7 py-7">
+          <div role="status" className="border-l-2 border-rose bg-bg-blush p-4 text-sm leading-relaxed">
+            <p className="mb-2 font-medium">{availability.title}</p>
+            <p className="text-ink-muted">{availability.body}</p>
           </div>
-        ) : (
-          <form onSubmit={onSubmit} className="flex flex-1 flex-col gap-5 overflow-y-auto px-7 py-7">
+          <fieldset disabled className="flex flex-col gap-5">
             <Field label={ui.name} htmlFor="qi-name" optionalLabel={ui.optional}>
               <input
                 id="qi-name"
@@ -234,13 +210,13 @@ export function QuickInquiry({
 
             <button
               type="submit"
-              disabled={status === "submitting"}
+              disabled
               className="mt-auto bg-rose px-7 py-4 text-sm tracking-wide text-white transition-colors hover:bg-rose-deep disabled:opacity-60"
             >
-              {status === "submitting" ? ui.submitting : ui.submit}
+              {availability.title}
             </button>
-          </form>
-        )}
+          </fieldset>
+        </form>
       </div>
     </div>
   );

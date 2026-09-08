@@ -1,4 +1,31 @@
 {
+  "legal": {
+    "notice": "正式な方針・規約を準備中",
+    "reviewTitle": "正式公開前の確認事項",
+    "home": "ホームに戻る",
+    "privacy": {
+      "title": "プライバシーポリシー",
+      "body": "現在、オンライン相談の受付は行っておらず、フォームへの入力と送信は無効になっています。このページは準備状況の案内であり、正式なプライバシーポリシーではありません。",
+      "review": "運営主体と連絡先、収集項目・目的・保管期間、削除手順、委託・第三者提供の有無、利用者の権利と請求方法を実際の運用に合わせて確認した後に公開します。"
+    },
+    "terms": {
+      "title": "利用規約",
+      "body": "このページは準備状況の案内であり、正式な利用規約ではありません。現在、サイトの相談機能で予約や受付は完了しません。",
+      "review": "運営主体と連絡先、サービス範囲、利用手続き、双方の責任、変更や紛争への対応方針を確認した後に公開します。"
+    }
+  },
+  "feedback": {
+    "home": "ホームに戻る",
+    "notFoundTitle": "ページが見つかりません",
+    "notFoundBody": "アドレスが変更されたか、存在しないページです。ホームからお探しください。",
+    "errorTitle": "ページを読み込めませんでした",
+    "errorBody": "しばらくしてから再試行するか、ホームに戻ってください。",
+    "retry": "再試行"
+  },
+  "inquiryAvailability": {
+    "title": "オンライン受付を準備中",
+    "body": "現在、このフォームでは相談を受け付けていません。入力と送信は無効になっており、準備が整い次第ご案内します。"
+  },
   "homeNavigation": {
     "label": "Home",
     "subLabel": "ホーム",
@@ -220,7 +247,7 @@
     "header": { "skip": "本文へ移動", "mainNav": "メインナビゲーション", "mobileNav": "モバイルナビゲーション", "consult": "カウンセリング予約", "phone": "電話相談", "openMenu": "メニューを開く", "closeMenu": "メニューを閉じる", "language": "言語を選択", "languages": { "ko": "한국어", "en": "English", "zh": "简体中文", "ja": "日本語" } },
     "footer": { "menu": "メニュー", "service": "診療案内", "contact": "お問い合わせ", "location": "アクセス", "privacy": "個人情報保護方針", "terms": "利用規約", "disclaimer": "本サイトの医療情報は一般的なご案内であり、診断や治療に代わるものではありません。施術結果や副作用には個人差があるため、必ず資格を持つ専門医にご相談ください。" },
     "mobileCta": { "phone": "電話相談", "directions": "アクセス", "consult": "相談予約" },
-    "quickInquiry": { "dialogLabel": "簡単カウンセリング予約", "kicker": "Quick Inquiry", "title": "簡単カウンセリング予約", "closeLabel": "相談パネルを閉じる", "doneTitle": "相談を受け付けました", "doneBody": "診療時間内の1営業日以内に担当者よりご連絡します。", "urgent": "お急ぎの場合は{phone}までお電話ください。", "close": "閉じる", "name": "お名前", "namePlaceholder": "お名前を入力してください", "phone": "電話番号", "category": "ご希望の施術", "categoryEmpty": "まだ決めていません", "method": "ご希望の連絡方法", "methods": ["電話", "KakaoTalk", "来院相談"], "message": "ご相談内容", "optional": "任意", "messagePlaceholder": "気になる点を簡単にご記入ください", "consent": "カウンセリングのための個人情報の収集・利用に同意します。", "consentDetail": "収集項目：氏名、電話番号、ご希望の施術・保管期間：相談完了後1年間", "details": "詳しく見る", "submitting": "送信中...", "submit": "相談を申し込む" },
+    "quickInquiry": { "dialogLabel": "簡単カウンセリング予約", "kicker": "Quick Inquiry", "title": "簡単カウンセリング予約", "closeLabel": "相談パネルを閉じる", "name": "お名前", "namePlaceholder": "お名前を入力してください", "phone": "電話番号", "category": "ご希望の施術", "categoryEmpty": "まだ決めていません", "method": "ご希望の連絡方法", "methods": ["電話", "KakaoTalk", "来院相談"], "message": "ご相談内容", "optional": "任意", "messagePlaceholder": "気になる点を簡単にご記入ください", "consent": "カウンセリングのための個人情報の収集・利用に同意します。", "consentDetail": "収集項目と保管期間は正式な方針でご案内します。", "details": "詳しく見る" },
     "services": { "tabLabel": "施術カテゴリー", "concerns": "よくあるお悩み", "detailsSuffix": "詳しく見る", "imageSuffix": "イメージ" },
     "marquee": { "imageSuffix": "カテゴリー画像", "reduced": "自動スクロール停止中（視差効果を軽減）", "pause": "自動スクロールを停止", "play": "自動スクロールを再開" },
     "beforeAfter": {"before":"仮想A","after":"仮想B","sliderLabel":"術前と術後の比較位置を調整","valueText":"術前{before}パーセント、術後{after}パーセントを表示","status":"術前{before}%・術後{after}%を表示中","procedure":"比較項目","timing":"制作方法","condition":"画像基準"},

@@ -1,4 +1,31 @@
 {
+  "legal": {
+    "notice": "Official policies are being prepared",
+    "reviewTitle": "To be confirmed before publication",
+    "home": "Return home",
+    "privacy": {
+      "title": "Privacy Policy",
+      "body": "Online inquiries are not currently available. Form entry and submission are disabled. This page is a preparation notice, not the official privacy policy.",
+      "review": "The operator and contact details, collection purposes and fields, retention and deletion, processors and disclosures, and individual rights and request procedures will be confirmed against actual operations before publication."
+    },
+    "terms": {
+      "title": "Terms of Use",
+      "body": "This page is a preparation notice, not the official terms of use. The site's inquiry feature does not currently complete bookings or submit inquiries.",
+      "review": "The operator and contact details, service scope, usage procedures, responsibilities, changes and dispute-handling arrangements will be confirmed before publication."
+    }
+  },
+  "feedback": {
+    "home": "Return home",
+    "notFoundTitle": "Page not found",
+    "notFoundBody": "This address may have changed or does not exist. Please start again from the homepage.",
+    "errorTitle": "We couldn't load this page",
+    "errorBody": "Please try again in a moment or return to the homepage.",
+    "retry": "Try again"
+  },
+  "inquiryAvailability": {
+    "title": "Online inquiries coming soon",
+    "body": "This form does not currently submit inquiries. Entry and submission are disabled until the service is ready."
+  },
   "homeNavigation": {
     "label": "Home",
     "subLabel": "Home",
@@ -220,7 +247,7 @@
     "header": { "skip": "Skip to main content", "mainNav": "Main navigation", "mobileNav": "Mobile navigation", "consult": "Consultation", "phone": "Call", "openMenu": "Open menu", "closeMenu": "Close menu", "language": "Select language", "languages": { "ko": "한국어", "en": "English", "zh": "简体中文", "ja": "日本語" } },
     "footer": { "menu": "Menu", "service": "Service", "contact": "Contact", "location": "Directions", "privacy": "Privacy Policy", "terms": "Terms of Use", "disclaimer": "The medical information on this site is general guidance and does not replace diagnosis or treatment. Results and side effects vary by individual; consult a qualified specialist." },
     "mobileCta": { "phone": "Call", "directions": "Directions", "consult": "Consultation" },
-    "quickInquiry": { "dialogLabel": "Quick consultation request", "kicker": "Quick Inquiry", "title": "Request a consultation", "closeLabel": "Close consultation panel", "doneTitle": "Your request has been received", "doneBody": "Our team will contact you within one business day during clinic hours.", "urgent": "For urgent inquiries, call {phone}.", "close": "Close", "name": "Name", "namePlaceholder": "Enter your name", "phone": "Phone", "category": "Area of interest", "categoryEmpty": "I have not decided yet", "method": "Preferred contact", "methods": ["Phone", "KakaoTalk", "In-person visit"], "message": "Message", "optional": "Optional", "messagePlaceholder": "Tell us briefly what you would like to discuss", "consent": "I agree to the collection and use of my personal information for consultation.", "consentDetail": "Collected: name, phone, area of interest · Retained: one year after consultation", "details": "View details", "submitting": "Submitting...", "submit": "Request consultation" },
+    "quickInquiry": { "dialogLabel": "Quick consultation request", "kicker": "Quick Inquiry", "title": "Request a consultation", "closeLabel": "Close consultation panel", "name": "Name", "namePlaceholder": "Enter your name", "phone": "Phone", "category": "Area of interest", "categoryEmpty": "I have not decided yet", "method": "Preferred contact", "methods": ["Phone", "KakaoTalk", "In-person visit"], "message": "Message", "optional": "Optional", "messagePlaceholder": "Tell us briefly what you would like to discuss", "consent": "I agree to the collection and use of my personal information for consultation.", "consentDetail": "Collection fields and retention periods will be published in the official policy.", "details": "View details" },
     "services": { "tabLabel": "Treatment categories", "concerns": "Common concerns", "detailsSuffix": "Learn more", "imageSuffix": "representative image" },
     "marquee": { "imageSuffix": "category image", "reduced": "Auto-scroll off (reduced motion)", "pause": "Pause auto-scroll", "play": "Resume auto-scroll" },
     "beforeAfter": {"before":"Concept A","after":"Concept B","sliderLabel":"Adjust the Before and After comparison","valueText":"Before {before} percent, After {after} percent visible","status":"Before {before}% · After {after}% visible","procedure":"Comparison","timing":"Production","condition":"Image basis"},

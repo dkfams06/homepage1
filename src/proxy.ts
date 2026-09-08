@@ -20,7 +20,11 @@ export function proxy(request: NextRequest) {
     (locale) => pathname === `/${locale}` || pathname.startsWith(`/${locale}/`),
   );
 
-  if (hasLocale) return NextResponse.next();
+  if (hasLocale) {
+    const requestHeaders = new Headers(request.headers);
+    requestHeaders.set("x-site-locale", pathname.split("/")[1]);
+    return NextResponse.next({ request: { headers: requestHeaders } });
+  }
 
   const url = request.nextUrl.clone();
   url.pathname = `/${preferredLocale(request)}${pathname === "/" ? "" : pathname}`;
@@ -28,5 +32,5 @@ export function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!api|_next/static|_next/image|favicon.ico|images|.*\\..*).*)"],
+  matcher: ["/(ko|en|zh|ja)/:path*", "/((?!api|_next/static|_next/image|favicon.ico|images|.*\\..*).*)"],
 };

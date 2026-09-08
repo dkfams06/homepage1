@@ -1,14 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import {
-  Cormorant_Garamond,
-  Noto_Sans_JP,
-  Noto_Sans_KR,
-  Noto_Sans_SC,
-  Noto_Serif_JP,
-  Noto_Serif_KR,
-  Noto_Serif_SC,
-} from "next/font/google";
+import { fontVariables } from "../fonts";
 import { QuickInquiry } from "@/components/QuickInquiry";
 import { Header } from "@/components/sections/Header";
 import { Footer } from "@/components/sections/Footer";
@@ -17,55 +9,6 @@ import { FloatingContact } from "@/components/FloatingContact";
 import { getDictionary } from "@/i18n/dictionaries";
 import { isLocale, locales } from "@/i18n/config";
 import "../globals.css";
-
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["300", "400", "500"],
-  variable: "--font-cormorant",
-  display: "swap",
-});
-
-const serifKr = Noto_Serif_KR({
-  subsets: ["latin"],
-  weight: ["400", "600"],
-  variable: "--font-serif-kr",
-  display: "swap",
-});
-
-const sansKr = Noto_Sans_KR({
-  subsets: ["latin"],
-  weight: ["400", "500"],
-  variable: "--font-sans-kr",
-  display: "swap",
-});
-
-const serifSc = Noto_Serif_SC({
-  weight: ["400", "600"],
-  variable: "--font-serif-sc",
-  display: "swap",
-  preload: false,
-});
-
-const sansSc = Noto_Sans_SC({
-  weight: ["400", "500"],
-  variable: "--font-sans-sc",
-  display: "swap",
-  preload: false,
-});
-
-const serifJp = Noto_Serif_JP({
-  weight: ["400", "600"],
-  variable: "--font-serif-jp",
-  display: "swap",
-  preload: false,
-});
-
-const sansJp = Noto_Sans_JP({
-  weight: ["400", "500"],
-  variable: "--font-sans-jp",
-  display: "swap",
-  preload: false,
-});
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -110,7 +53,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`${cormorant.variable} ${serifKr.variable} ${sansKr.variable} ${serifSc.variable} ${sansSc.variable} ${serifJp.variable} ${sansJp.variable}`}
+      className={fontVariables}
     >
       <body>
         <Header locale={locale} site={dictionary.site} nav={dictionary.nav} ui={dictionary.ui.header} homeNavigation={dictionary.homeNavigation} />
@@ -126,7 +69,7 @@ export default async function LocaleLayout({
         <FloatingContact content={dictionary.contact} />
         <QuickInquiry
           locale={locale}
-          site={dictionary.site}
+          availability={dictionary.inquiryAvailability}
           categories={dictionary.categories}
           ui={dictionary.ui.quickInquiry}
         />

@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  experimental: { globalNotFound: true },
   images: {
     // 히어로 이미지(hero.png)를 quality 90으로 내보내기 위해 허용 목록에 추가한다.
     qualities: [75, 90],

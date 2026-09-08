@@ -1,4 +1,31 @@
 {
+  "legal": {
+    "notice": "正式政策准备中",
+    "reviewTitle": "正式发布前需确认的内容",
+    "home": "返回首页",
+    "privacy": {
+      "title": "隐私政策",
+      "body": "目前尚未开放在线咨询，表单填写和提交已停用。本页面仅为准备公告，并非正式隐私政策。",
+      "review": "将根据实际运营情况确认运营主体和联系方式、收集项目与目的、保存期限与删除流程、委托处理与信息提供情况，以及用户权利和申请方式后发布。"
+    },
+    "terms": {
+      "title": "使用条款",
+      "body": "本页面仅为准备公告，并非正式使用条款。目前网站的咨询功能无法完成预约或提交咨询。",
+      "review": "将在确认运营主体和联系方式、服务范围、使用流程、双方责任、变更及争议处理规则后发布。"
+    }
+  },
+  "feedback": {
+    "home": "返回首页",
+    "notFoundTitle": "找不到页面",
+    "notFoundBody": "该地址可能已更改或不存在，请返回首页重新查找。",
+    "errorTitle": "页面加载失败",
+    "errorBody": "请稍后重试或返回首页。",
+    "retry": "重试"
+  },
+  "inquiryAvailability": {
+    "title": "在线咨询准备中",
+    "body": "目前此表单无法提交咨询，填写和提交均已停用。服务准备完成后将另行通知。"
+  },
   "homeNavigation": {
     "label": "Home",
     "subLabel": "首页",
@@ -220,7 +247,7 @@
     "header": { "skip": "跳至主要内容", "mainNav": "主导航", "mobileNav": "移动端导航", "consult": "申请咨询", "phone": "电话咨询", "openMenu": "打开菜单", "closeMenu": "关闭菜单", "language": "选择语言", "languages": { "ko": "한국어", "en": "English", "zh": "简体中文", "ja": "日本語" } },
     "footer": { "menu": "菜单", "service": "诊疗项目", "contact": "联系方式", "location": "来院路线", "privacy": "个人信息处理方针", "terms": "使用条款", "disclaimer": "本网站的医疗信息仅供一般参考，不能替代诊断或治疗。治疗效果及副作用因个人情况而异，请务必咨询具备资质的专科医生。" },
     "mobileCta": { "phone": "电话咨询", "directions": "路线导航", "consult": "申请咨询" },
-    "quickInquiry": { "dialogLabel": "快速咨询申请", "kicker": "Quick Inquiry", "title": "申请快速咨询", "closeLabel": "关闭咨询面板", "doneTitle": "咨询申请已提交", "doneBody": "工作人员将在门诊时间内于1个工作日内与您联系。", "urgent": "如需紧急咨询，请致电{phone}。", "close": "关闭", "name": "姓名", "namePlaceholder": "请输入姓名", "phone": "联系电话", "category": "感兴趣的项目", "categoryEmpty": "尚未决定", "method": "希望的咨询方式", "methods": ["电话咨询", "KakaoTalk咨询", "到院咨询"], "message": "咨询内容", "optional": "选填", "messagePlaceholder": "请简单描述您希望咨询的问题", "consent": "我同意为咨询目的收集及使用个人信息。", "consentDetail": "收集项目：姓名、联系电话、感兴趣的项目 · 保存期限：咨询结束后1年", "details": "查看详情", "submitting": "提交中...", "submit": "提交咨询申请" },
+    "quickInquiry": { "dialogLabel": "快速咨询申请", "kicker": "Quick Inquiry", "title": "申请快速咨询", "closeLabel": "关闭咨询面板", "name": "姓名", "namePlaceholder": "请输入姓名", "phone": "联系电话", "category": "感兴趣的项目", "categoryEmpty": "尚未决定", "method": "希望的咨询方式", "methods": ["电话咨询", "KakaoTalk咨询", "到院咨询"], "message": "咨询内容", "optional": "选填", "messagePlaceholder": "请简单描述您希望咨询的问题", "consent": "我同意为咨询目的收集及使用个人信息。", "consentDetail": "收集项目及保存期限将在正式政策中公布。", "details": "查看详情" },
     "services": { "tabLabel": "诊疗项目分类", "concerns": "常见困扰", "detailsSuffix": "了解详情", "imageSuffix": "代表图片" },
     "marquee": { "imageSuffix": "分类图片", "reduced": "自动滚动已关闭（减少动态效果）", "pause": "暂停自动滚动", "play": "继续自动滚动" },
     "beforeAfter": {"before":"虚拟A","after":"虚拟B","sliderLabel":"调整术前与术后图片的比较位置","valueText":"术前显示{before}%，术后显示{after}%","status":"当前显示：术前{before}% · 术后{after}%","procedure":"对比项目","timing":"制作方式","condition":"图像标准"},
