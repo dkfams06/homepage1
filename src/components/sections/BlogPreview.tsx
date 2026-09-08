@@ -20,7 +20,7 @@ export function BlogPreview({
   locale: Locale;
 }) {
   return (
-    <Section tone="base">
+    <Section id="blog" tone="base">
       <Container>
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <Reveal className="flex flex-col gap-4">

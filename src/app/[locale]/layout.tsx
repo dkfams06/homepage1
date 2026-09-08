@@ -13,6 +13,7 @@ import { QuickInquiry } from "@/components/QuickInquiry";
 import { Header } from "@/components/sections/Header";
 import { Footer } from "@/components/sections/Footer";
 import { MobileCtaBar } from "@/components/MobileCtaBar";
+import { FloatingContact } from "@/components/FloatingContact";
 import { getDictionary } from "@/i18n/dictionaries";
 import { isLocale, locales } from "@/i18n/config";
 import "../globals.css";
@@ -112,8 +113,8 @@ export default async function LocaleLayout({
       className={`${cormorant.variable} ${serifKr.variable} ${sansKr.variable} ${serifSc.variable} ${sansSc.variable} ${serifJp.variable} ${sansJp.variable}`}
     >
       <body>
-        <Header locale={locale} site={dictionary.site} nav={dictionary.nav} ui={dictionary.ui.header} />
-        <main id="main">{children}</main>
+        <Header locale={locale} site={dictionary.site} nav={dictionary.nav} ui={dictionary.ui.header} homeNavigation={dictionary.homeNavigation} />
+        <main id="main" tabIndex={-1}>{children}</main>
         <Footer
           locale={locale}
           site={dictionary.site}
@@ -122,6 +123,7 @@ export default async function LocaleLayout({
           ui={dictionary.ui.footer}
         />
         <MobileCtaBar site={dictionary.site} ui={dictionary.ui.mobileCta} />
+        <FloatingContact content={dictionary.contact} />
         <QuickInquiry
           locale={locale}
           site={dictionary.site}

@@ -20,7 +20,7 @@ export function CategoryMarquee({
   const readyMap = resolveAssets(categories.map((category) => category.image));
 
   return (
-    <section className="overflow-hidden bg-bg py-20 md:py-28 lg:py-32">
+    <section id="categories" className="overflow-hidden bg-bg py-20 md:py-28 lg:py-32">
       <Container>
         <Reveal className="flex flex-col gap-4">
           <p className="kicker">{content.kicker}</p>

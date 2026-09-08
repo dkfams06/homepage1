@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { HomeNavigation } from "@/components/HomeNavigation";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { openQuickInquiry } from "@/components/QuickInquiry";
@@ -16,11 +17,13 @@ export function Header({
   site,
   nav,
   ui,
+  homeNavigation,
 }: {
   locale: Locale;
   site: Dictionary["site"];
   nav: Dictionary["nav"];
   ui: Dictionary["ui"]["header"];
+  homeNavigation: Dictionary["homeNavigation"];
 }) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -79,7 +82,8 @@ export function Header({
             {site.nameEn.split(" ")[0]}
           </Link>
 
-          <nav aria-label={ui.mainNav} className="hidden items-center gap-9 lg:flex">
+          <nav aria-label={ui.mainNav} className="hidden items-center gap-5 xl:gap-9 lg:flex">
+            <HomeNavigation locale={locale} content={homeNavigation} solid={solid} />
             {nav.map((item) => (
               <Link
                 key={item.href}
@@ -185,9 +189,10 @@ export function Header({
       <div
         id="mobile-menu"
         hidden={!menuOpen}
-        className="fixed inset-0 z-30 flex flex-col bg-bg pt-18 lg:hidden"
+        className="fixed inset-0 z-30 flex flex-col overflow-y-auto bg-bg pt-22 pb-16 lg:hidden"
       >
-        <nav aria-label={ui.mobileNav} className="flex flex-1 flex-col justify-center gap-2 px-8">
+        <nav aria-label={ui.mobileNav} className="flex flex-1 flex-col gap-2 px-8 pb-6">
+          <HomeNavigation locale={locale} content={homeNavigation} mobile onNavigate={() => setMenuOpen(false)} />
           {nav.map((item) => (
             <Link
               key={item.href}

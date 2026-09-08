@@ -5,7 +5,7 @@ import type { Dictionary } from "@/i18n/dictionaries";
 /** 병원의 차별점 — MAIN_PAGE_PLAN.md §6.7 */
 export function Differences({ content }: { content: Dictionary["home"]["differences"] }) {
   return (
-    <Section tone="base">
+    <Section id="differences" tone="base">
       <Container>
         <SectionHeading
           kicker={content.kicker}

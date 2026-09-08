@@ -1,4 +1,86 @@
 {
+  "homeNavigation": {
+    "label": "Home",
+    "subLabel": "首页",
+    "toggle": "首页版块",
+    "sections": [
+      {
+        "id": "hero",
+        "label": "首页"
+      },
+      {
+        "id": "philosophy",
+        "label": "诊疗理念"
+      },
+      {
+        "id": "services",
+        "label": "核心项目"
+      },
+      {
+        "id": "categories",
+        "label": "项目分类"
+      },
+      {
+        "id": "comparison",
+        "label": "对比设计"
+      },
+      {
+        "id": "body",
+        "label": "身体塑形"
+      },
+      {
+        "id": "differences",
+        "label": "诊疗原则"
+      },
+      {
+        "id": "team",
+        "label": "人物设计"
+      },
+      {
+        "id": "trust",
+        "label": "诊疗流程"
+      },
+      {
+        "id": "inquire",
+        "label": "咨询"
+      },
+      {
+        "id": "blog",
+        "label": "博客"
+      },
+      {
+        "id": "contact",
+        "label": "联系我们"
+      },
+      {
+        "id": "location",
+        "label": "交通指南"
+      }
+    ]
+  },
+  "contact": {
+    "kicker": "Contact Us",
+    "heading": "与 LIAN 轻松联系",
+    "description": "在这里查看到访信息，选择适合您的咨询方式。",
+    "representative": "负责人",
+    "address": "地址",
+    "phone": "电话",
+    "email": "电子邮箱",
+    "pending": "即将开放",
+    "mapTitle": "诊所位置地图",
+    "mapPending": "位置信息准备中",
+    "mapNotice": "诊所地址确认后，即可在此查看地图。",
+    "channelsLabel": "咨询与社交渠道",
+    "floatingLabel": "快捷联系渠道",
+    "backToTop": "返回顶部",
+    "channels": {
+      "whatsapp": "WhatsApp",
+      "kakao": "KakaoTalk",
+      "instagram": "Instagram",
+      "naver": "Naver",
+      "phone": "拨打电话"
+    }
+  },
   "meta": {
     "title": "LIAN丽安整形外科｜细致设计自然之美",
     "description": "尊重个人面部与身体比例的定制化美学诊疗，由整形外科专科医生陪伴咨询、治疗与恢复全过程。",

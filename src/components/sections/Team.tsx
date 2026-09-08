@@ -20,7 +20,7 @@ export function Team({
   locale: Locale;
 }) {
   return (
-    <Section tone="blush">
+    <Section id="team" tone="blush">
       <Container>
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between md:gap-16">
           <SectionHeading

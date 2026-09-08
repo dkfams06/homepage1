@@ -22,7 +22,7 @@ export function Hero({
   const ready = assetExists(content.image.src);
 
   return (
-    <section className="relative isolate flex min-h-[88svh] flex-col justify-end overflow-hidden md:min-h-[92svh]">
+    <section id="hero" className="relative isolate flex min-h-[88svh] flex-col justify-end overflow-hidden md:min-h-[92svh]">
       {ready ? (
         <Image
           src={content.image.src}

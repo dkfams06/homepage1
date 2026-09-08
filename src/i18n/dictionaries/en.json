@@ -1,4 +1,86 @@
 {
+  "homeNavigation": {
+    "label": "Home",
+    "subLabel": "Home",
+    "toggle": "Homepage sections",
+    "sections": [
+      {
+        "id": "hero",
+        "label": "Welcome"
+      },
+      {
+        "id": "philosophy",
+        "label": "Our philosophy"
+      },
+      {
+        "id": "services",
+        "label": "Treatments"
+      },
+      {
+        "id": "categories",
+        "label": "Treatment categories"
+      },
+      {
+        "id": "comparison",
+        "label": "Comparison concept"
+      },
+      {
+        "id": "body",
+        "label": "Body"
+      },
+      {
+        "id": "differences",
+        "label": "Our approach"
+      },
+      {
+        "id": "team",
+        "label": "Profile concepts"
+      },
+      {
+        "id": "trust",
+        "label": "Care journey"
+      },
+      {
+        "id": "inquire",
+        "label": "Inquiry"
+      },
+      {
+        "id": "blog",
+        "label": "Journal"
+      },
+      {
+        "id": "contact",
+        "label": "Contact us"
+      },
+      {
+        "id": "location",
+        "label": "Visit us"
+      }
+    ]
+  },
+  "contact": {
+    "kicker": "Contact Us",
+    "heading": "A closer connection to LIAN.",
+    "description": "Find our location and your preferred way to get in touch.",
+    "representative": "Representative",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "pending": "Coming soon",
+    "mapTitle": "Clinic location map",
+    "mapPending": "Location coming soon",
+    "mapNotice": "The map will be available once the clinic address is confirmed.",
+    "channelsLabel": "Contact and social channels",
+    "floatingLabel": "Quick contact channels",
+    "backToTop": "Back to top",
+    "channels": {
+      "whatsapp": "WhatsApp",
+      "kakao": "KakaoTalk",
+      "instagram": "Instagram",
+      "naver": "Naver",
+      "phone": "Call us"
+    }
+  },
   "meta": {
     "title": "LIAN Plastic Surgery | Natural Beauty, Thoughtfully Designed",
     "description": "Personalized aesthetic care guided by your natural facial and body proportions, from consultation through treatment and recovery.",

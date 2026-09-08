@@ -17,7 +17,7 @@ export function BeforeAfterSection({
   ui: Dictionary["ui"]["beforeAfter"];
 }) {
   return (
-    <Section tone="base">
+    <Section id="comparison" tone="base">
       <Container>
         <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)] lg:items-center lg:gap-20">
           <Reveal>

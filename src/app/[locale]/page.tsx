@@ -11,6 +11,7 @@ import { TrustSection } from "@/components/sections/TrustSection";
 import { InquireCta } from "@/components/sections/InquireCta";
 import { BlogPreview } from "@/components/sections/BlogPreview";
 import { Location } from "@/components/sections/Location";
+import { ContactUs } from "@/components/sections/ContactUs";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 
@@ -55,6 +56,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         posts={dictionary.posts}
         locale={locale}
       />
+      <ContactUs content={dictionary.contact} site={dictionary.site} />
       <Location
         content={dictionary.home.location}
         site={dictionary.site}

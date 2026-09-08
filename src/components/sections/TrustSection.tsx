@@ -16,7 +16,7 @@ export function TrustSection({
   reviews: Dictionary["reviews"];
 }) {
   return (
-    <Section tone="base">
+    <Section id="trust" tone="base">
       <Container>
         <SectionHeading
           kicker={content.kicker}

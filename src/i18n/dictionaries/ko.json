@@ -1,4 +1,86 @@
 {
+  "homeNavigation": {
+    "label": "Home",
+    "subLabel": "홈",
+    "toggle": "메인페이지 섹션",
+    "sections": [
+      {
+        "id": "hero",
+        "label": "첫 화면"
+      },
+      {
+        "id": "philosophy",
+        "label": "진료 철학"
+      },
+      {
+        "id": "services",
+        "label": "핵심 시술"
+      },
+      {
+        "id": "categories",
+        "label": "시술 카테고리"
+      },
+      {
+        "id": "comparison",
+        "label": "비교 디자인"
+      },
+      {
+        "id": "body",
+        "label": "바디"
+      },
+      {
+        "id": "differences",
+        "label": "진료 원칙"
+      },
+      {
+        "id": "team",
+        "label": "프로필 디자인"
+      },
+      {
+        "id": "trust",
+        "label": "진료 과정"
+      },
+      {
+        "id": "inquire",
+        "label": "상담 문의"
+      },
+      {
+        "id": "blog",
+        "label": "블로그"
+      },
+      {
+        "id": "contact",
+        "label": "연락처"
+      },
+      {
+        "id": "location",
+        "label": "오시는 길"
+      }
+    ]
+  },
+  "contact": {
+    "kicker": "Contact Us",
+    "heading": "편안하게, 리안과 연결되세요.",
+    "description": "방문 안내부터 상담 채널까지 한곳에서 확인하세요.",
+    "representative": "대표자명",
+    "address": "주소",
+    "phone": "전화번호",
+    "email": "이메일",
+    "pending": "준비 중",
+    "mapTitle": "병원 위치 지도",
+    "mapPending": "위치 안내 준비 중",
+    "mapNotice": "정확한 병원 주소가 확정되면 이곳에서 지도를 확인하실 수 있습니다.",
+    "channelsLabel": "상담 및 소셜 채널",
+    "floatingLabel": "빠른 연락 채널",
+    "backToTop": "맨 위로 이동",
+    "channels": {
+      "whatsapp": "WhatsApp",
+      "kakao": "카카오톡",
+      "instagram": "Instagram",
+      "naver": "네이버",
+      "phone": "전화 연결"
+    }
+  },
   "meta": {
     "title": "리안 성형외과 | 자연스러운 아름다움을 섬세하게 설계합니다",
     "description": "개인의 얼굴과 신체 비율을 존중하는 맞춤 설계. 성형외과 전문의가 상담부터 수술, 회복까지 직접 함께합니다.",

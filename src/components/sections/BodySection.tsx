@@ -18,7 +18,7 @@ export function BodySection({
   locale: Locale;
 }) {
   return (
-    <Section tone="blush">
+    <Section id="body" tone="blush">
       <Container>
         <div className="grid items-center gap-12 md:gap-16 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:gap-24">
           <div className="flex flex-col gap-8">

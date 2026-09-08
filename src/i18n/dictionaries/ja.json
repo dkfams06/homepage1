@@ -1,4 +1,86 @@
 {
+  "homeNavigation": {
+    "label": "Home",
+    "subLabel": "ホーム",
+    "toggle": "ホームのセクション",
+    "sections": [
+      {
+        "id": "hero",
+        "label": "トップ"
+      },
+      {
+        "id": "philosophy",
+        "label": "診療理念"
+      },
+      {
+        "id": "services",
+        "label": "主な施術"
+      },
+      {
+        "id": "categories",
+        "label": "施術カテゴリー"
+      },
+      {
+        "id": "comparison",
+        "label": "比較デザイン"
+      },
+      {
+        "id": "body",
+        "label": "ボディ"
+      },
+      {
+        "id": "differences",
+        "label": "診療方針"
+      },
+      {
+        "id": "team",
+        "label": "プロフィールデザイン"
+      },
+      {
+        "id": "trust",
+        "label": "診療の流れ"
+      },
+      {
+        "id": "inquire",
+        "label": "ご相談"
+      },
+      {
+        "id": "blog",
+        "label": "ブログ"
+      },
+      {
+        "id": "contact",
+        "label": "お問い合わせ先"
+      },
+      {
+        "id": "location",
+        "label": "アクセス"
+      }
+    ]
+  },
+  "contact": {
+    "kicker": "Contact Us",
+    "heading": "リアンと、気軽につながる。",
+    "description": "アクセス情報やご希望の相談窓口をご確認ください。",
+    "representative": "代表者名",
+    "address": "住所",
+    "phone": "電話番号",
+    "email": "メールアドレス",
+    "pending": "準備中",
+    "mapTitle": "クリニックの地図",
+    "mapPending": "アクセス情報を準備中",
+    "mapNotice": "所在地の確定後、こちらに地図を表示します。",
+    "channelsLabel": "相談・ソーシャル窓口",
+    "floatingLabel": "クイック連絡窓口",
+    "backToTop": "ページの先頭へ",
+    "channels": {
+      "whatsapp": "WhatsApp",
+      "kakao": "カカオトーク",
+      "instagram": "Instagram",
+      "naver": "Naver",
+      "phone": "電話する"
+    }
+  },
   "meta": {
     "title": "LIAN美容外科｜自然な美しさを、丁寧にデザイン",
     "description": "一人ひとりの顔と身体のバランスを尊重したオーダーメイド診療。美容外科専門医がカウンセリングから施術、回復まで寄り添います。",
