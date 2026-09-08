@@ -5,10 +5,6 @@
     "toggle": "首页版块",
     "sections": [
       {
-        "id": "hero",
-        "label": "首页"
-      },
-      {
         "id": "philosophy",
         "label": "诊疗理念"
       },
@@ -17,32 +13,8 @@
         "label": "核心项目"
       },
       {
-        "id": "categories",
-        "label": "项目分类"
-      },
-      {
-        "id": "comparison",
-        "label": "对比设计"
-      },
-      {
-        "id": "body",
-        "label": "身体塑形"
-      },
-      {
-        "id": "differences",
-        "label": "诊疗原则"
-      },
-      {
         "id": "team",
         "label": "人物设计"
-      },
-      {
-        "id": "trust",
-        "label": "诊疗流程"
-      },
-      {
-        "id": "inquire",
-        "label": "咨询"
       },
       {
         "id": "blog",
@@ -51,10 +23,6 @@
       {
         "id": "contact",
         "label": "联系我们"
-      },
-      {
-        "id": "location",
-        "label": "交通指南"
       }
     ]
   },

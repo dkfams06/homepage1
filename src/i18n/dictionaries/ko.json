@@ -5,10 +5,6 @@
     "toggle": "메인페이지 섹션",
     "sections": [
       {
-        "id": "hero",
-        "label": "첫 화면"
-      },
-      {
         "id": "philosophy",
         "label": "진료 철학"
       },
@@ -17,32 +13,8 @@
         "label": "핵심 시술"
       },
       {
-        "id": "categories",
-        "label": "시술 카테고리"
-      },
-      {
-        "id": "comparison",
-        "label": "비교 디자인"
-      },
-      {
-        "id": "body",
-        "label": "바디"
-      },
-      {
-        "id": "differences",
-        "label": "진료 원칙"
-      },
-      {
         "id": "team",
         "label": "프로필 디자인"
-      },
-      {
-        "id": "trust",
-        "label": "진료 과정"
-      },
-      {
-        "id": "inquire",
-        "label": "상담 문의"
       },
       {
         "id": "blog",
@@ -51,10 +23,6 @@
       {
         "id": "contact",
         "label": "연락처"
-      },
-      {
-        "id": "location",
-        "label": "오시는 길"
       }
     ]
   },

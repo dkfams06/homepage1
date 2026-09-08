@@ -3,8 +3,9 @@ import { Container, Section, SectionHeading } from "@/components/ui/Section";
 import { ContactChannels } from "@/components/ContactChannels";
 import { contactDetails } from "@/content/contact";
 import type { Dictionary } from "@/i18n/dictionaries";
+import { InquiryButton } from "@/components/ui/InquiryButton";
 
-export function ContactUs({ content, site }: { content: Dictionary["contact"]; site: Dictionary["site"] }) {
+export function ContactUs({ content, site, ui }: { content: Dictionary["contact"]; site: Dictionary["site"]; ui: Dictionary["ui"]["location"] }) {
   const details = [
     [content.representative, contactDetails.representative || content.pending],
     [content.address, site.address],
@@ -12,6 +13,7 @@ export function ContactUs({ content, site }: { content: Dictionary["contact"]; s
     [content.email, contactDetails.email || content.pending],
   ];
   return (
+    <div id="location">
     <Section id="contact" tone="surface">
       <Container>
         <SectionHeading kicker={content.kicker} heading={content.heading} description={content.description} className="mb-12" />
@@ -41,7 +43,28 @@ export function ContactUs({ content, site }: { content: Dictionary["contact"]; s
             <ContactChannels content={content} />
           </div>
         </div>
+        <dl className="mt-12 grid gap-8 border-t border-line pt-8 md:grid-cols-3">
+          <div>
+            <dt className="mb-4 font-serif text-lg">{ui.hours}</dt>
+            <dd><ul className="space-y-2 text-sm leading-relaxed text-ink-muted">
+              {site.hours.map((entry) => <li key={entry.day} className="flex flex-wrap justify-between gap-x-4"><span>{entry.day}</span><span>{entry.time}</span></li>)}
+            </ul></dd>
+          </div>
+          <div>
+            <dt className="mb-4 font-serif text-lg">{ui.transit}</dt>
+            <dd className="space-y-3 text-sm leading-relaxed text-ink-muted">
+              <p>{site.addressDetail}</p>
+              <ul className="space-y-2">{site.transit.map((line) => <li key={line}>{line}</li>)}</ul>
+            </dd>
+          </div>
+          <div>
+            <dt className="mb-4 font-serif text-lg">{ui.parking}</dt>
+            <dd className="space-y-3 text-sm leading-relaxed text-ink-muted"><p>{site.parking}</p><p>{site.landmark}</p></dd>
+          </div>
+        </dl>
+        <div className="mt-8"><InquiryButton variant="primary">{ui.consult}</InquiryButton></div>
       </Container>
     </Section>
+    </div>
   );
 }
