@@ -44,7 +44,7 @@ for (const [locale, d] of Object.entries({ ko, en, zh, ja })) {
     await expect(cards.first()).toBeFocused();
     await expect(page.locator("#contact")).toHaveCount(1);
     await page.locator("#contact").scrollIntoViewIfNeeded();
-    await expect(page.locator("#contact dt")).toHaveCount(7);
+    await expect(page.locator("#contact dt")).toHaveCount(8);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   });
 }

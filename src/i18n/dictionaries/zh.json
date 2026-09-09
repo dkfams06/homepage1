@@ -40,7 +40,9 @@
   },
   "inquiryAvailability": {
     "title": "在线咨询准备中",
-    "body": "目前此表单无法提交咨询，填写和提交均已停用。服务准备完成后将另行通知。"
+    "body": "目前此表单无法提交咨询，填写和提交均已停用。服务准备完成后将另行通知。",
+    "alternativeTitle": "希望现在咨询?",
+    "alternativeBody": "在线受理开放前,我们通过电话与即时通讯为您提供咨询。"
   },
   "homeNavigation": {
     "label": "Home",
@@ -54,6 +56,10 @@
       {
         "id": "services",
         "label": "核心项目"
+      },
+      {
+        "id": "process",
+        "label": "咨询流程"
       },
       {
         "id": "team",
@@ -77,6 +83,8 @@
     "address": "地址",
     "phone": "电话",
     "email": "电子邮箱",
+    "responseLabel": "回复时间",
+    "responseTime": "一个工作日内",
     "pending": "即将开放",
     "mapTitle": "诊所位置地图",
     "mapPending": "位置信息准备中",
@@ -203,6 +211,19 @@
       ],
       "notice": "本内容用于说明诊疗原则，实际治疗效果与恢复过程因个人情况而异。"
     },
+    "process": {
+      "kicker": "Process",
+      "heading": "咨询这样进行",
+      "description": "从您第一次联系,到回归日常生活,我们提前说明每个阶段确认什么、决定什么。",
+      "steps": [
+        { "id": "inquiry", "title": "咨询受理", "description": "电话、KakaoTalk 或在线表单,选择方便的方式即可。此阶段无需决定是否接受手术。", "note": "预计约 5 分钟" },
+        { "id": "consultation", "title": "专科医生一对一咨询", "description": "一起确认面部与身体的比例,沟通您期望的印象与可行的范围。", "note": "预计约 30 分钟" },
+        { "id": "plan", "title": "方案设计与确认", "description": "整理手术方式、预计恢复期与费用后告知您。请充分考虑后再做决定。", "note": "当日或再次来院" },
+        { "id": "surgery", "title": "手术与治疗", "description": "完成术前检查与麻醉咨询后进行,由为您咨询的专科医生亲自主刀。", "note": "因术式而异" },
+        { "id": "aftercare", "title": "术后观察与管理", "description": "按既定日程确认恢复情况,必要时调整来院时间。", "note": "术后定期确认" }
+      ],
+      "notice": "以上为一般流程说明,阶段与所需时间可能因术式与个人状况而有所不同。"
+    },
     "team": {
       "kicker": "AI Profile Study",
       "heading": "医疗团队介绍设计预览",
@@ -226,10 +247,56 @@
       "secondaryCta": { "label": "详细咨询页面", "href": "/inquire" },
       "image": { "src": "/images/inquire.jpg", "alt": "在温暖灯光下轻松交谈的画面" },
       "phoneLabel": "电话咨询",
-      "hoursNotice": "门诊时间内可接听电话，其他时段提交的咨询将在下一个工作日依次回复。"
+      "hoursNotice": "电话咨询仅在诊疗时间内接通。",
+      "responseNotice": "在线咨询可全天提交,我们将在一个工作日内回复。夜间与节假日提交的咨询将于下一个工作日依次回复。"
     },
     "blog": { "kicker": "Journal", "heading": "到院前值得阅读的内容", "cta": { "label": "查看全部文章", "href": "/blog" } },
     "location": { "kicker": "Visit", "heading": "来院路线" }
+  },
+  "faq": {
+    "kicker": "FAQ",
+    "heading": "常见问题",
+    "description": "汇总了咨询前最常被问到的问题。若此处未能解答,请在咨询时直接向我们提出。",
+    "linkLabel": "查看常见问题",
+    "groups": [
+      {
+        "id": "consultation",
+        "label": "咨询",
+        "items": [
+          { "id": "reservation", "question": "咨询需要预约吗?", "answer": "不预约也可以到院咨询,但可能需要较长时间等候。提前联系我们,可为您安排合适的时间。" },
+          { "id": "fee", "question": "咨询需要费用吗?", "answer": "咨询本身不收取费用。如需同时进行诊疗或检查,我们会先行告知后再进行。" },
+          { "id": "prepare", "question": "咨询时需要准备什么?", "answer": "带上您期望效果的照片或既往的诊疗记录会很有帮助。若正在服用药物,也请一并告知。" }
+        ]
+      },
+      {
+        "id": "procedure",
+        "label": "手术与治疗",
+        "items": [
+          { "id": "anesthesia", "question": "麻醉以何种方式进行?", "answer": "根据手术范围采用局部麻醉或睡眠麻醉,方式与注意事项将在术前咨询中说明。" },
+          { "id": "revision", "question": "在其他医院做过的手术可以咨询吗?", "answer": "可以。由于需要确认既往手术的时间与方式,如有相关记录请一并带来。" },
+          { "id": "guardian", "question": "手术当天需要家属陪同吗?", "answer": "根据麻醉方式,返家时可能需要有人陪同。手术方案确定后我们会提前告知。" }
+        ]
+      },
+      {
+        "id": "recovery",
+        "label": "恢复与管理",
+        "items": [
+          { "id": "downtime", "question": "多久可以回归日常生活?", "answer": "因术式与个人恢复速度差异较大。我们会在咨询时为您整理预计的时间安排。" },
+          { "id": "revisit", "question": "术后何时需要复诊?", "answer": "为拆线与确认恢复情况,您将按既定日程来院,日程会在术前提前告知。" },
+          { "id": "swelling", "question": "肿胀或淤青如何护理?", "answer": "术后我们会以书面形式说明护理方法与注意事项,并根据恢复情况补充说明所需处理。" }
+        ]
+      },
+      {
+        "id": "cost",
+        "label": "费用",
+        "items": [
+          { "id": "estimate", "question": "费用如何确定?", "answer": "根据手术范围、方式与麻醉种类而定。方案在咨询中确定后,我们会整理全部金额告知您。" },
+          { "id": "quote", "question": "不咨询可以只了解费用吗?", "answer": "准确金额需在确认状况后核算。大致范围可通过电话或即时通讯咨询了解。" },
+          { "id": "additional", "question": "术后还会产生额外费用吗?", "answer": "定期复诊已包含在方案中。如需追加处置或检查,我们会在进行前提前告知。" }
+        ]
+      }
+    ],
+    "notice": "以上答复为一般诊疗基准的说明,不能替代诊断或处方。个人情况可能有所不同,请务必与专科医生咨询。"
   },
   "categories": [
     { "id": "eyes", "name": "眼部整形", "nameEn": "Eyes", "lead": "自然粘连双眼皮", "description": "综合考虑眼裂方向、眼睑厚度以及眉眼间距后设计自然线条。", "concerns": ["眼神显疲惫", "双眼不对称", "修复手术", "眼睑矫正"], "image": "/images/category-eyes.jpg", "href": "/service/eyes" },
@@ -262,7 +329,7 @@
   ],
   "ui": {
     "header": { "skip": "跳至主要内容", "mainNav": "主导航", "mobileNav": "移动端导航", "consult": "申请咨询", "phone": "电话咨询", "openMenu": "打开菜单", "closeMenu": "关闭菜单", "language": "选择语言", "languages": { "ko": "한국어", "en": "English", "zh": "简体中文", "ja": "日本語" } },
-    "footer": { "menu": "菜单", "service": "诊疗项目", "contact": "联系方式", "location": "来院路线", "privacy": "个人信息处理方针", "terms": "使用条款", "disclaimer": "本网站的医疗信息仅供一般参考，不能替代诊断或治疗。治疗效果及副作用因个人情况而异，请务必咨询具备资质的专科医生。" },
+    "footer": { "menu": "菜单", "service": "诊疗项目", "contact": "联系方式", "location": "来院路线", "faq": "常见问题", "privacy": "个人信息处理方针", "terms": "使用条款", "disclaimer": "本网站的医疗信息仅供一般参考，不能替代诊断或治疗。治疗效果及副作用因个人情况而异，请务必咨询具备资质的专科医生。" },
     "mobileCta": { "phone": "电话咨询", "directions": "路线导航", "consult": "申请咨询" },
     "quickInquiry": { "dialogLabel": "快速咨询申请", "kicker": "Quick Inquiry", "title": "申请快速咨询", "closeLabel": "关闭咨询面板", "name": "姓名", "namePlaceholder": "请输入姓名", "phone": "联系电话", "category": "感兴趣的项目", "categoryEmpty": "尚未决定", "method": "希望的咨询方式", "methods": ["电话咨询", "KakaoTalk咨询", "到院咨询"], "message": "咨询内容", "optional": "选填", "messagePlaceholder": "请简单描述您希望咨询的问题", "consent": "我同意为咨询目的收集及使用个人信息。", "consentDetail": "收集项目及保存期限将在正式政策中公布。", "details": "查看详情" },
     "services": { "tabLabel": "诊疗项目分类", "concerns": "常见困扰", "detailsSuffix": "了解详情", "imageSuffix": "代表图片" },

@@ -11,6 +11,7 @@ export function ContactUs({ content, site, ui }: { content: Dictionary["contact"
     [content.address, site.address],
     [content.phone, site.phone],
     [content.email, contactDetails.email || content.pending],
+    [content.responseLabel, content.responseTime],
   ];
   return (
     <div id="location">

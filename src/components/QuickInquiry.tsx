@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { InquiryAlternatives } from "@/components/InquiryAlternatives";
 import type { Dictionary } from "@/i18n/dictionaries";
 import { localizeHref, type Locale } from "@/i18n/config";
 
@@ -20,11 +21,15 @@ export function QuickInquiry({
   locale,
   availability,
   categories,
+  contact,
+  site,
   ui,
 }: {
   locale: Locale;
   availability: Dictionary["inquiryAvailability"];
   categories: Dictionary["categories"];
+  contact: Dictionary["contact"];
+  site: Dictionary["site"];
   ui: Dictionary["ui"]["quickInquiry"];
 }) {
   const [open, setOpen] = useState(false);
@@ -122,6 +127,7 @@ export function QuickInquiry({
             <p className="mb-2 font-medium">{availability.title}</p>
             <p className="text-ink-muted">{availability.body}</p>
           </div>
+          <InquiryAlternatives availability={availability} contact={contact} site={site} />
           <fieldset disabled className="flex flex-col gap-5">
             <Field label={ui.name} htmlFor="qi-name" optionalLabel={ui.optional}>
               <input

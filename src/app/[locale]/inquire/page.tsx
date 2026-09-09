@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import { Location } from "@/components/sections/Location";
+import { InquiryAlternatives } from "@/components/InquiryAlternatives";
 import { AssetImage } from "@/components/ui/AssetImage";
 import { InquiryButton } from "@/components/ui/InquiryButton";
 import { Container, Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import { getDictionary } from "@/i18n/dictionaries";
-import { isLocale } from "@/i18n/config";
+import { isLocale, localizeHref } from "@/i18n/config";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -41,11 +43,21 @@ export default async function InquirePage({ params }: Props) {
               <p className="max-w-[48ch] text-[15px] leading-[1.95] text-ink-muted">{content.description}</p>
               <InquiryButton variant="primary" className="self-start">{content.primaryCta.label}</InquiryButton>
               <p className="text-sm leading-relaxed text-ink-muted">
-                {content.phoneLabel}{" "}
-                <a href={dictionary.site.phoneHref} className="text-rose underline underline-offset-4">{dictionary.site.phone}</a>
-                <br />
                 {content.hoursNotice}
+                <br />
+                {content.responseNotice}
               </p>
+              <InquiryAlternatives
+                availability={dictionary.inquiryAvailability}
+                contact={dictionary.contact}
+                site={dictionary.site}
+              />
+              <Link
+                href={localizeHref(locale, "/about/faq")}
+                className="self-start border-b border-rose/40 pb-1 text-sm tracking-wide text-rose transition-colors hover:border-rose"
+              >
+                {dictionary.faq.linkLabel}
+              </Link>
             </Reveal>
             <Reveal delay={100}>
               <AssetImage src={content.image.src} alt={content.image.alt} ratio="4/5" sizes="(min-width: 1024px) 40vw, 100vw" />

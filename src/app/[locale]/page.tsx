@@ -6,6 +6,7 @@ import { CategoryMarquee } from "@/components/sections/CategoryMarquee";
 import { BeforeAfterSection } from "@/components/sections/BeforeAfterSection";
 import { BodySection } from "@/components/sections/BodySection";
 import { Differences } from "@/components/sections/Differences";
+import { Process } from "@/components/sections/Process";
 import { Team } from "@/components/sections/Team";
 import { TrustSection } from "@/components/sections/TrustSection";
 import { InquireCta } from "@/components/sections/InquireCta";
@@ -43,6 +44,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       />
       <BodySection content={dictionary.home.body} locale={locale} />
       <Differences content={dictionary.home.differences} />
+      <Process content={dictionary.home.process} />
       <Team content={dictionary.home.team} doctors={dictionary.doctors} locale={locale} />
       <TrustSection
         content={dictionary.home.trust}

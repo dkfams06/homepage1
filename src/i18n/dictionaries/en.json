@@ -40,7 +40,9 @@
   },
   "inquiryAvailability": {
     "title": "Online inquiries coming soon",
-    "body": "This form does not currently submit inquiries. Entry and submission are disabled until the service is ready."
+    "body": "This form does not currently submit inquiries. Entry and submission are disabled until the service is ready.",
+    "alternativeTitle": "Prefer to talk now?",
+    "alternativeBody": "Until online submissions open, we can help you by phone or messenger."
   },
   "homeNavigation": {
     "label": "Home",
@@ -54,6 +56,10 @@
       {
         "id": "services",
         "label": "Treatments"
+      },
+      {
+        "id": "process",
+        "label": "Process"
       },
       {
         "id": "team",
@@ -77,6 +83,8 @@
     "address": "Address",
     "phone": "Phone",
     "email": "Email",
+    "responseLabel": "Response time",
+    "responseTime": "Within one business day",
     "pending": "Coming soon",
     "mapTitle": "Clinic location map",
     "mapPending": "Location coming soon",
@@ -203,6 +211,19 @@
       ],
       "notice": "This section explains our care principles. Results and recovery vary by individual."
     },
+    "process": {
+      "kicker": "Process",
+      "heading": "How a consultation unfolds",
+      "description": "From your first message to the day you return to your routine, here is what each stage looks at and what you decide.",
+      "steps": [
+        { "id": "inquiry", "title": "Getting in touch", "description": "Reach us by phone, KakaoTalk, or the online form, whichever is easiest. Nothing has to be decided at this stage.", "note": "About 5 minutes" },
+        { "id": "consultation", "title": "One-to-one specialist consultation", "description": "We review your facial and body proportions together and talk through the impression you want and what is realistically possible.", "note": "About 30 minutes" },
+        { "id": "plan", "title": "Planning and confirmation", "description": "We summarise the surgical approach, the expected recovery period, and the cost. Take the time you need before deciding.", "note": "Same day or a second visit" },
+        { "id": "surgery", "title": "Surgery and treatment", "description": "Pre-operative testing and an anaesthesia review come first. The specialist who consulted with you performs the procedure.", "note": "Varies by procedure" },
+        { "id": "aftercare", "title": "Follow-up and aftercare", "description": "We check your recovery against a set schedule and adjust the timing of your visits where it is needed.", "note": "Scheduled checks after surgery" }
+      ],
+      "notice": "This outline describes the general flow. The stages and the time each one takes may differ depending on the procedure and your individual condition."
+    },
     "team": {
       "kicker": "AI Profile Study",
       "heading": "Medical team design preview",
@@ -226,10 +247,56 @@
       "secondaryCta": { "label": "Detailed inquiry", "href": "/inquire" },
       "image": { "src": "/images/inquire.jpg", "alt": "A relaxed conversation in a warmly lit setting" },
       "phoneLabel": "Call us",
-      "hoursNotice": "Calls are answered during clinic hours. Later inquiries are handled on the next business day."
+      "hoursNotice": "Phone consultations connect during clinic hours only.",
+      "responseNotice": "Online enquiries can be submitted at any time and we reply within one business day. Requests received at night or on holidays are answered on the next business day."
     },
     "blog": { "kicker": "Journal", "heading": "Helpful reading before your visit", "cta": { "label": "View all articles", "href": "/blog" } },
     "location": { "kicker": "Visit", "heading": "Visit the clinic" }
+  },
+  "faq": {
+    "kicker": "FAQ",
+    "heading": "Frequently asked questions",
+    "description": "The questions we are asked most often before a consultation. If yours is not answered here, please raise it with us directly.",
+    "linkLabel": "Read the FAQ",
+    "groups": [
+      {
+        "id": "consultation",
+        "label": "Consultation",
+        "items": [
+          { "id": "reservation", "question": "Do I need an appointment?", "answer": "Walk-in consultations are possible, but the wait can be long. Contact us in advance and we will hold a time that suits you." },
+          { "id": "fee", "question": "Is there a fee for a consultation?", "answer": "The consultation itself is free of charge. If an examination or treatment is needed alongside it, we explain that before proceeding." },
+          { "id": "prepare", "question": "What should I bring to a consultation?", "answer": "Photographs of the look you have in mind and any previous medical records are helpful. Please also tell us about any medication you are taking." }
+        ]
+      },
+      {
+        "id": "procedure",
+        "label": "Surgery and treatment",
+        "items": [
+          { "id": "anesthesia", "question": "What kind of anaesthesia is used?", "answer": "Local or sedation anaesthesia is used depending on the extent of the procedure. The method and its precautions are explained during the pre-operative consultation." },
+          { "id": "revision", "question": "Can I consult about surgery performed at another clinic?", "answer": "Yes. We need to know when and how the earlier surgery was performed, so please bring any related records with you." },
+          { "id": "guardian", "question": "Does someone need to accompany me on the day?", "answer": "Depending on the anaesthesia, you may need someone with you when you leave. We confirm this in advance once the surgical plan is set." }
+        ]
+      },
+      {
+        "id": "recovery",
+        "label": "Recovery and care",
+        "items": [
+          { "id": "downtime", "question": "How long until I can return to my routine?", "answer": "This varies considerably with the procedure and with individual recovery. We set out an expected timeline during your consultation." },
+          { "id": "revisit", "question": "When do I come back after surgery?", "answer": "You return on a set schedule for suture removal and progress checks. That schedule is shared with you before surgery." },
+          { "id": "swelling", "question": "How are swelling and bruising managed?", "answer": "You receive written aftercare instructions and precautions immediately after surgery, with further guidance as your recovery progresses." }
+        ]
+      },
+      {
+        "id": "cost",
+        "label": "Cost",
+        "items": [
+          { "id": "estimate", "question": "How is the cost determined?", "answer": "It depends on the extent and method of the procedure and the type of anaesthesia. We summarise the full amount once the plan is confirmed in consultation." },
+          { "id": "quote", "question": "Can I get a price without a consultation?", "answer": "An exact figure requires an assessment first. We can give an approximate range by phone or messenger." },
+          { "id": "additional", "question": "Are there additional costs after surgery?", "answer": "Scheduled progress checks are included in the plan. If further treatment or testing is needed, we explain that before going ahead." }
+        ]
+      }
+    ],
+    "notice": "These answers describe general clinical practice and do not replace a diagnosis or prescription. Outcomes vary from person to person, so please consult a specialist directly."
   },
   "categories": [
     { "id": "eyes", "name": "Eye Surgery", "nameEn": "Eyes", "lead": "Natural-adhesion eyelid surgery", "description": "We consider eye direction, lid thickness, and the distance between brow and eye before defining a crease.", "concerns": ["Tired-looking eyes", "Asymmetry", "Revision", "Ptosis"], "image": "/images/category-eyes.jpg", "href": "/service/eyes" },
@@ -262,7 +329,7 @@
   ],
   "ui": {
     "header": { "skip": "Skip to main content", "mainNav": "Main navigation", "mobileNav": "Mobile navigation", "consult": "Consultation", "phone": "Call", "openMenu": "Open menu", "closeMenu": "Close menu", "language": "Select language", "languages": { "ko": "한국어", "en": "English", "zh": "简体中文", "ja": "日本語" } },
-    "footer": { "menu": "Menu", "service": "Service", "contact": "Contact", "location": "Directions", "privacy": "Privacy Policy", "terms": "Terms of Use", "disclaimer": "The medical information on this site is general guidance and does not replace diagnosis or treatment. Results and side effects vary by individual; consult a qualified specialist." },
+    "footer": { "menu": "Menu", "service": "Service", "contact": "Contact", "location": "Directions", "faq": "FAQ", "privacy": "Privacy Policy", "terms": "Terms of Use", "disclaimer": "The medical information on this site is general guidance and does not replace diagnosis or treatment. Results and side effects vary by individual; consult a qualified specialist." },
     "mobileCta": { "phone": "Call", "directions": "Directions", "consult": "Consultation" },
     "quickInquiry": { "dialogLabel": "Quick consultation request", "kicker": "Quick Inquiry", "title": "Request a consultation", "closeLabel": "Close consultation panel", "name": "Name", "namePlaceholder": "Enter your name", "phone": "Phone", "category": "Area of interest", "categoryEmpty": "I have not decided yet", "method": "Preferred contact", "methods": ["Phone", "KakaoTalk", "In-person visit"], "message": "Message", "optional": "Optional", "messagePlaceholder": "Tell us briefly what you would like to discuss", "consent": "I agree to the collection and use of my personal information for consultation.", "consentDetail": "Collection fields and retention periods will be published in the official policy.", "details": "View details" },
     "services": { "tabLabel": "Treatment categories", "concerns": "Common concerns", "detailsSuffix": "Learn more", "imageSuffix": "representative image" },

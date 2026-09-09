@@ -53,6 +53,8 @@ export function InquireCta({
                 </a>
                 <br />
                 {content.hoursNotice}
+                <br />
+                {content.responseNotice}
               </p>
             </Reveal>
           </div>

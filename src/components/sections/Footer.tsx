@@ -54,6 +54,11 @@ export function Footer({
                 </li>
               ))}
               <li>
+                <Link href={localizeHref(locale, "/about/faq")} className="transition-colors hover:text-rose">
+                  {ui.faq}
+                </Link>
+              </li>
+              <li>
                 <Link
                   href={`${localizeHref(locale, "/")}#location`}
                   className="transition-colors hover:text-rose"

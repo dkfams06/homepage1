@@ -71,6 +71,8 @@ export default async function LocaleLayout({
           locale={locale}
           availability={dictionary.inquiryAvailability}
           categories={dictionary.categories}
+          contact={dictionary.contact}
+          site={dictionary.site}
           ui={dictionary.ui.quickInquiry}
         />
       </body>

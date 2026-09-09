@@ -52,12 +52,12 @@ for (const locale of ["ko", "en", "zh", "ja"] as const) {
     if (isMobile) await page.locator('button[aria-controls="mobile-menu"]').click();
     const menu = isMobile ? "home-sections-mobile" : "home-sections-desktop";
     await page.locator(`button[aria-controls="${menu}"]`).click();
-    await expect(page.locator(`#${menu} a`)).toHaveCount(5);
+    await expect(page.locator(`#${menu} a`)).toHaveCount(6);
     await page.locator(`#${menu} a[href$="#contact"]`).click();
     await expect(page).toHaveURL(new RegExp(`/${locale}#contact$`));
-    await expect(page.locator("main section")).toHaveCount(12);
+    await expect(page.locator("main section")).toHaveCount(13);
     await expect(page.locator("section#location")).toHaveCount(0);
-    await expect(page.locator("#contact dt")).toHaveCount(7);
+    await expect(page.locator("#contact dt")).toHaveCount(8);
     await expect.poll(() => page.locator("#contact").evaluate(el => Math.round(el.getBoundingClientRect().top))).toBe(80);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     await page.locator('header button[aria-haspopup="menu"]').click();
@@ -78,6 +78,33 @@ for (const locale of ["ko", "en", "zh", "ja"] as const) {
     }
   });
 }
+
+test("faq is reachable from the footer, expands, and exposes structured data", async ({ page }) => {
+  await page.goto("/ko");
+  await page.locator('footer a[href="/ko/about/faq"]').click();
+  await expect(page).toHaveURL(/\/ko\/about\/faq$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(ko.faq.heading);
+
+  const questions = page.locator("main details");
+  const expected = ko.faq.groups.reduce((total, group) => total + group.items.length, 0);
+  await expect(questions).toHaveCount(expected);
+
+  const first = questions.first();
+  const answer = first.locator("p");
+  await expect(answer).toBeHidden();
+  await first.locator("summary").click();
+  await expect(answer).toBeVisible();
+  await expect(answer).toHaveText(ko.faq.groups[0].items[0].answer);
+
+  const jsonLd = await page.locator('script[type="application/ld+json"]').textContent();
+  const parsed = JSON.parse(jsonLd ?? "{}");
+  expect(parsed["@type"]).toBe("FAQPage");
+  expect(parsed.mainEntity).toHaveLength(expected);
+
+  // 문의 페이지에서도 같은 로케일을 유지한 채 연결된다.
+  await page.goto("/en/inquire");
+  await expect(page.locator('main a[href="/en/about/faq"]')).toHaveCount(1);
+});
 
 test("comparison supports keyboard and pointer dragging", async ({ page }) => {
   await page.goto("/en");
