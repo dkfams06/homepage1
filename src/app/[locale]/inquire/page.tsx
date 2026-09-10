@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { Location } from "@/components/sections/Location";
+import { ContactUs } from "@/components/sections/ContactUs";
 import { InquiryAlternatives } from "@/components/InquiryAlternatives";
 import { AssetImage } from "@/components/ui/AssetImage";
 import { InquiryButton } from "@/components/ui/InquiryButton";
@@ -65,7 +65,7 @@ export default async function InquirePage({ params }: Props) {
           </div>
         </Container>
       </Section>
-      <Location content={dictionary.home.location} site={dictionary.site} ui={dictionary.ui.location} />
+      <ContactUs content={dictionary.contact} site={dictionary.site} ui={dictionary.ui.location} />
     </>
   );
 }

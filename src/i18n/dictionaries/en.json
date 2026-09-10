@@ -1,4 +1,38 @@
 {
+  "clinicEssentials": {
+    "heading": "Before your visit",
+    "description": "Essential information about safety arrangements, follow-up care and clinic spaces.",
+    "notice": "Details will be published after the clinic's records and photographs are verified. The items below do not guarantee available services or facilities.",
+    "groups": [
+      {
+        "id": "safety",
+        "title": "Safety arrangements",
+        "items": [
+          "Anaesthesia management and staffing",
+          "Assessment, infection control and emergency procedures"
+        ],
+        "status": "Verified operating information pending"
+      },
+      {
+        "id": "aftercare",
+        "title": "Follow-up care",
+        "items": [
+          "Follow-up schedules and care coverage",
+          "Before/after guidance and contact options"
+        ],
+        "status": "Confirmed care arrangements pending"
+      },
+      {
+        "id": "space",
+        "title": "Clinic spaces",
+        "items": [
+          "Consultation, waiting and recovery areas",
+          "Actual photographs and accessibility information"
+        ],
+        "status": "Verified facility details and photographs pending"
+      }
+    ]
+  },
   "aboutMedical": {
     "heading": "Meet Our Medical Team",
     "kicker": "Our Medical Team",
@@ -41,8 +75,8 @@
   "inquiryAvailability": {
     "title": "Online inquiries coming soon",
     "body": "This form does not currently submit inquiries. Entry and submission are disabled until the service is ready.",
-    "alternativeTitle": "Prefer to talk now?",
-    "alternativeBody": "Until online submissions open, we can help you by phone or messenger."
+    "alternativeTitle": "Contact channel availability",
+    "alternativeBody": "Only confirmed channels are linked. Channels marked as pending cannot receive inquiries yet."
   },
   "homeNavigation": {
     "label": "Home",
@@ -56,10 +90,6 @@
       {
         "id": "services",
         "label": "Treatments"
-      },
-      {
-        "id": "process",
-        "label": "Process"
       },
       {
         "id": "team",
@@ -84,7 +114,7 @@
     "phone": "Phone",
     "email": "Email",
     "responseLabel": "Response time",
-    "responseTime": "Within one business day",
+    "responseTime": "To be confirmed",
     "pending": "Coming soon",
     "mapTitle": "Clinic location map",
     "mapPending": "Location coming soon",
@@ -109,23 +139,23 @@
     "name": "LIAN Plastic Surgery",
     "nameEn": "LIAN Plastic Surgery",
     "tagline": "Natural beauty, thoughtfully designed",
-    "phone": "02-0000-0000",
-    "phoneHref": "tel:0200000000",
-    "address": "Floor 0, 00 000-ro, Gangnam-gu, Seoul",
-    "addressDetail": "3 minutes on foot from Exit 0 of 000 Station, Line 0",
-    "parking": "Underground parking is available. Two hours of complimentary parking are provided with a consultation.",
-    "transit": ["3 minutes on foot from Exit 0 of 000 Station, Line 0", "Take trunk bus 000 or 000 and get off at 000 stop"],
-    "landmark": "From the lobby of 000 Building, take the dedicated elevator to Floor 0.",
+    "phone": "To be confirmed",
+    "phoneHref": "",
+    "address": "To be confirmed",
+    "addressDetail": "To be confirmed",
+    "parking": "To be confirmed",
+    "transit": ["To be confirmed", "To be confirmed"],
+    "landmark": "To be confirmed",
     "hours": [
-      { "day": "Weekdays", "time": "10:00 – 19:00" },
-      { "day": "Thursday", "time": "10:00 – 21:00 (Evening clinic)" },
-      { "day": "Saturday", "time": "10:00 – 16:00" },
-      { "day": "Sunday & holidays", "time": "Closed" }
+      { "day": "Weekdays", "time": "To be confirmed" },
+      { "day": "Thursday", "time": "To be confirmed" },
+      { "day": "Saturday", "time": "To be confirmed" },
+      { "day": "Sunday & holidays", "time": "To be confirmed" }
     ],
     "business": {
-      "ceo": "Medical Director 000",
-      "registration": "Business registration 000-00-00000",
-      "manager": "Privacy Officer 000"
+      "ceo": "Representative: To be confirmed",
+      "registration": "Business registration: To be confirmed",
+      "manager": "Privacy contact: To be confirmed"
     },
     "social": [
       { "label": "Instagram", "href": "#" },
@@ -214,13 +244,13 @@
     "process": {
       "kicker": "Process",
       "heading": "How a consultation unfolds",
-      "description": "From your first message to the day you return to your routine, here is what each stage looks at and what you decide.",
+      "description": "These are the points to check before arranging care. Actual procedures and staffing will be published after confirmation.",
       "steps": [
-        { "id": "inquiry", "title": "Getting in touch", "description": "Reach us by phone, KakaoTalk, or the online form, whichever is easiest. Nothing has to be decided at this stage.", "note": "About 5 minutes" },
-        { "id": "consultation", "title": "One-to-one specialist consultation", "description": "We review your facial and body proportions together and talk through the impression you want and what is realistically possible.", "note": "About 30 minutes" },
-        { "id": "plan", "title": "Planning and confirmation", "description": "We summarise the surgical approach, the expected recovery period, and the cost. Take the time you need before deciding.", "note": "Same day or a second visit" },
-        { "id": "surgery", "title": "Surgery and treatment", "description": "Pre-operative testing and an anaesthesia review come first. The specialist who consulted with you performs the procedure.", "note": "Varies by procedure" },
-        { "id": "aftercare", "title": "Follow-up and aftercare", "description": "We check your recovery against a set schedule and adjust the timing of your visits where it is needed.", "note": "Scheduled checks after surgery" }
+        { "id": "inquiry", "title": "Getting in touch", "description": "Check available contact channels and booking methods.", "note": "To be confirmed" },
+        { "id": "consultation", "title": "Clinical consultation", "description": "Confirm who provides consultations and which services are available.", "note": "To be confirmed" },
+        { "id": "plan", "title": "Planning and confirmation", "description": "Clarify the proposed procedure, timing, costs and precautions.", "note": "To be confirmed" },
+        { "id": "surgery", "title": "Surgery and treatment", "description": "Confirm assessment, anaesthesia arrangements and the treating physician.", "note": "To be confirmed" },
+        { "id": "aftercare", "title": "Follow-up and aftercare", "description": "Check follow-up scheduling, care coverage and contact options.", "note": "To be confirmed" }
       ],
       "notice": "This outline describes the general flow. The stages and the time each one takes may differ depending on the procedure and your individual condition."
     },
@@ -242,13 +272,13 @@
     "inquire": {
       "kicker": "Inquire",
       "heading": ["Start with", "a simple question"],
-      "description": "Leave a few details and our team will contact you. A consultation does not require you to proceed with treatment.",
+      "description": "Find consultation options and information to check before visiting. Online submissions are not yet available; fees and contact channels will be published once confirmed.",
       "primaryCta": { "label": "Quick inquiry", "href": "#inquire" },
       "secondaryCta": { "label": "Detailed inquiry", "href": "/inquire" },
       "image": { "src": "/images/inquire.jpg", "alt": "A relaxed conversation in a warmly lit setting" },
       "phoneLabel": "Call us",
-      "hoursNotice": "Phone consultations connect during clinic hours only.",
-      "responseNotice": "Online enquiries can be submitted at any time and we reply within one business day. Requests received at night or on holidays are answered on the next business day."
+      "hoursNotice": "Clinic and telephone hours will be published once confirmed.",
+      "responseNotice": "Online submissions are currently unavailable. Contact channels and response standards will be published once confirmed."
     },
     "blog": { "kicker": "Journal", "heading": "Helpful reading before your visit", "cta": { "label": "View all articles", "href": "/blog" } },
     "location": { "kicker": "Visit", "heading": "Visit the clinic" }
@@ -256,43 +286,43 @@
   "faq": {
     "kicker": "FAQ",
     "heading": "Frequently asked questions",
-    "description": "The questions we are asked most often before a consultation. If yours is not answered here, please raise it with us directly.",
+    "description": "Basic questions to check before visiting. Clinic-specific arrangements will be published after verification.",
     "linkLabel": "Read the FAQ",
     "groups": [
       {
         "id": "consultation",
         "label": "Consultation",
         "items": [
-          { "id": "reservation", "question": "Do I need an appointment?", "answer": "Walk-in consultations are possible, but the wait can be long. Contact us in advance and we will hold a time that suits you." },
-          { "id": "fee", "question": "Is there a fee for a consultation?", "answer": "The consultation itself is free of charge. If an examination or treatment is needed alongside it, we explain that before proceeding." },
-          { "id": "prepare", "question": "What should I bring to a consultation?", "answer": "Photographs of the look you have in mind and any previous medical records are helpful. Please also tell us about any medication you are taking." }
+          { "id": "reservation", "question": "Do I need an appointment?", "answer": "Booking methods and walk-in availability are not yet confirmed. Online bookings are currently unavailable." },
+          { "id": "fee", "question": "Is there a fee for a consultation?", "answer": "Consultation and examination fees are not yet confirmed. Free consultations are not guaranteed." },
+          { "id": "prepare", "question": "What should I bring to a consultation?", "answer": "Required documents and preparation information will be published with confirmed booking guidance." }
         ]
       },
       {
         "id": "procedure",
         "label": "Surgery and treatment",
         "items": [
-          { "id": "anesthesia", "question": "What kind of anaesthesia is used?", "answer": "Local or sedation anaesthesia is used depending on the extent of the procedure. The method and its precautions are explained during the pre-operative consultation." },
-          { "id": "revision", "question": "Can I consult about surgery performed at another clinic?", "answer": "Yes. We need to know when and how the earlier surgery was performed, so please bring any related records with you." },
-          { "id": "guardian", "question": "Does someone need to accompany me on the day?", "answer": "Depending on the anaesthesia, you may need someone with you when you leave. We confirm this in advance once the surgical plan is set." }
+          { "id": "anesthesia", "question": "What kind of anaesthesia is used?", "answer": "Procedure-specific anaesthesia arrangements and staffing will be published after verification." },
+          { "id": "revision", "question": "Can I consult about surgery performed at another clinic?", "answer": "Consultations following surgery elsewhere and any required records need confirmation from the clinic." },
+          { "id": "guardian", "question": "Does someone need to accompany me on the day?", "answer": "Ask the treating team whether an accompanying adult is required for your individual plan." }
         ]
       },
       {
         "id": "recovery",
         "label": "Recovery and care",
         "items": [
-          { "id": "downtime", "question": "How long until I can return to my routine?", "answer": "This varies considerably with the procedure and with individual recovery. We set out an expected timeline during your consultation." },
-          { "id": "revisit", "question": "When do I come back after surgery?", "answer": "You return on a set schedule for suture removal and progress checks. That schedule is shared with you before surgery." },
-          { "id": "swelling", "question": "How are swelling and bruising managed?", "answer": "You receive written aftercare instructions and precautions immediately after surgery, with further guidance as your recovery progresses." }
+          { "id": "downtime", "question": "How long until I can return to my routine?", "answer": "Return-to-routine timing depends on the procedure and individual circumstances and needs confirmation from the treating team." },
+          { "id": "revisit", "question": "When do I come back after surgery?", "answer": "Follow-up scheduling will be published once actual care arrangements are confirmed." },
+          { "id": "swelling", "question": "How are swelling and bruising managed?", "answer": "Follow individual instructions from your treating team. This page does not provide treatment instructions." }
         ]
       },
       {
         "id": "cost",
         "label": "Cost",
         "items": [
-          { "id": "estimate", "question": "How is the cost determined?", "answer": "It depends on the extent and method of the procedure and the type of anaesthesia. We summarise the full amount once the plan is confirmed in consultation." },
-          { "id": "quote", "question": "Can I get a price without a consultation?", "answer": "An exact figure requires an assessment first. We can give an approximate range by phone or messenger." },
-          { "id": "additional", "question": "Are there additional costs after surgery?", "answer": "Scheduled progress checks are included in the plan. If further treatment or testing is needed, we explain that before going ahead." }
+          { "id": "estimate", "question": "How is the cost determined?", "answer": "Check the cost breakdown and inclusions against your actual care plan and the clinic's confirmed information." },
+          { "id": "quote", "question": "Can I get a price without a consultation?", "answer": "Telephone or messenger estimates are not yet confirmed as an available service." },
+          { "id": "additional", "question": "Are there additional costs after surgery?", "answer": "Whether aftercare or additional examinations are included is not yet confirmed." }
         ]
       }
     ],

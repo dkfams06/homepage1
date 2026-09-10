@@ -1,3 +1,4 @@
+import { AvailableLink } from "@/components/ui/AvailableLink";
 import { ContactChannels } from "@/components/ContactChannels";
 import type { Dictionary } from "@/i18n/dictionaries";
 
@@ -22,12 +23,12 @@ export function InquiryAlternatives({
         <p className="font-serif text-lg leading-snug">{availability.alternativeTitle}</p>
         <p className="text-[13px] leading-relaxed text-ink-muted">{availability.alternativeBody}</p>
       </div>
-      <a
+      <AvailableLink
         href={site.phoneHref}
         className="font-display text-2xl tracking-wide text-rose underline-offset-4 transition-colors hover:text-rose-deep hover:underline"
       >
         {site.phone}
-      </a>
+      </AvailableLink>
       <ContactChannels content={contact} />
     </div>
   );

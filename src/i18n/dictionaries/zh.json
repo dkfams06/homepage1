@@ -1,4 +1,38 @@
 {
+  "clinicEssentials": {
+    "heading": "到院前须知",
+    "description": "安全管理、术后随访与医院空间的基本信息。",
+    "notice": "医院运营资料与照片核实后将予以公布。以下项目不代表已提供相关服务或设施。",
+    "groups": [
+      {
+        "id": "safety",
+        "title": "安全管理",
+        "items": [
+          "麻醉管理方式与人员配置",
+          "检查、感染控制及应急流程"
+        ],
+        "status": "待公布经核实的运营资料"
+      },
+      {
+        "id": "aftercare",
+        "title": "术后随访",
+        "items": [
+          "复诊安排与护理范围",
+          "诊疗前后说明与联系渠道"
+        ],
+        "status": "待公布确认后的护理标准"
+      },
+      {
+        "id": "space",
+        "title": "医院空间",
+        "items": [
+          "咨询、等候及恢复区域",
+          "真实空间照片与无障碍信息"
+        ],
+        "status": "待公布真实设施资料与照片"
+      }
+    ]
+  },
   "aboutMedical": {
     "heading": "医疗团队介绍",
     "kicker": "医疗团队",
@@ -41,8 +75,8 @@
   "inquiryAvailability": {
     "title": "在线咨询准备中",
     "body": "目前此表单无法提交咨询，填写和提交均已停用。服务准备完成后将另行通知。",
-    "alternativeTitle": "希望现在咨询?",
-    "alternativeBody": "在线受理开放前,我们通过电话与即时通讯为您提供咨询。"
+    "alternativeTitle": "咨询渠道状态",
+    "alternativeBody": "仅已确认的渠道可点击联系。标记为准备中的渠道暂不接受咨询。"
   },
   "homeNavigation": {
     "label": "Home",
@@ -56,10 +90,6 @@
       {
         "id": "services",
         "label": "核心项目"
-      },
-      {
-        "id": "process",
-        "label": "咨询流程"
       },
       {
         "id": "team",
@@ -84,7 +114,7 @@
     "phone": "电话",
     "email": "电子邮箱",
     "responseLabel": "回复时间",
-    "responseTime": "一个工作日内",
+    "responseTime": "确认后公布",
     "pending": "即将开放",
     "mapTitle": "诊所位置地图",
     "mapPending": "位置信息准备中",
@@ -109,23 +139,23 @@
     "name": "LIAN丽安整形外科",
     "nameEn": "LIAN Plastic Surgery",
     "tagline": "细致设计自然之美",
-    "phone": "02-0000-0000",
-    "phoneHref": "tel:0200000000",
-    "address": "首尔特别市江南区000路00号0层",
-    "addressDetail": "地铁0号线000站0号出口步行3分钟",
-    "parking": "可使用大楼地下停车场。到院咨询可享2小时免费停车。",
-    "transit": ["从地铁0号线000站0号出口步行3分钟", "乘坐干线公交000、000路，在000站下车"],
-    "landmark": "请从000大楼1层大厅乘坐专用电梯前往0层。",
+    "phone": "确认后公布",
+    "phoneHref": "",
+    "address": "确认后公布",
+    "addressDetail": "确认后公布",
+    "parking": "确认后公布",
+    "transit": ["确认后公布", "确认后公布"],
+    "landmark": "确认后公布",
     "hours": [
-      { "day": "工作日", "time": "10:00 – 19:00" },
-      { "day": "星期四", "time": "10:00 – 21:00（夜间门诊）" },
-      { "day": "星期六", "time": "10:00 – 16:00" },
-      { "day": "星期日及法定节假日", "time": "休诊" }
+      { "day": "工作日", "time": "确认后公布" },
+      { "day": "星期四", "time": "确认后公布" },
+      { "day": "星期六", "time": "确认后公布" },
+      { "day": "星期日及法定节假日", "time": "确认后公布" }
     ],
     "business": {
-      "ceo": "代表院长 000",
-      "registration": "营业执照号 000-00-00000",
-      "manager": "个人信息保护负责人 000"
+      "ceo": "负责人: 确认后公布",
+      "registration": "营业登记号码: 确认后公布",
+      "manager": "隐私负责人: 确认后公布"
     },
     "social": [
       { "label": "Instagram", "href": "#" },
@@ -214,13 +244,13 @@
     "process": {
       "kicker": "Process",
       "heading": "咨询这样进行",
-      "description": "从您第一次联系,到回归日常生活,我们提前说明每个阶段确认什么、决定什么。",
+      "description": "以下是咨询前需要确认的事项。具体流程与人员配置将在医院核实后公布。",
       "steps": [
-        { "id": "inquiry", "title": "咨询受理", "description": "电话、KakaoTalk 或在线表单,选择方便的方式即可。此阶段无需决定是否接受手术。", "note": "预计约 5 分钟" },
-        { "id": "consultation", "title": "专科医生一对一咨询", "description": "一起确认面部与身体的比例,沟通您期望的印象与可行的范围。", "note": "预计约 30 分钟" },
-        { "id": "plan", "title": "方案设计与确认", "description": "整理手术方式、预计恢复期与费用后告知您。请充分考虑后再做决定。", "note": "当日或再次来院" },
-        { "id": "surgery", "title": "手术与治疗", "description": "完成术前检查与麻醉咨询后进行,由为您咨询的专科医生亲自主刀。", "note": "因术式而异" },
-        { "id": "aftercare", "title": "术后观察与管理", "description": "按既定日程确认恢复情况,必要时调整来院时间。", "note": "术后定期确认" }
+        { "id": "inquiry", "title": "咨询受理", "description": "确认可用的联系渠道及预约方式。", "note": "确认后公布" },
+        { "id": "consultation", "title": "诊疗咨询", "description": "确认咨询人员与可提供的诊疗项目。", "note": "确认后公布" },
+        { "id": "plan", "title": "方案设计与确认", "description": "确认诊疗方案、时间安排、费用及注意事项。", "note": "确认后公布" },
+        { "id": "surgery", "title": "手术与治疗", "description": "确认检查、麻醉管理方式及实际主治医生。", "note": "确认后公布" },
+        { "id": "aftercare", "title": "术后观察与管理", "description": "确认复诊安排、护理范围及联系渠道。", "note": "确认后公布" }
       ],
       "notice": "以上为一般流程说明,阶段与所需时间可能因术式与个人状况而有所不同。"
     },
@@ -242,13 +272,13 @@
     "inquire": {
       "kicker": "Inquire",
       "heading": ["有任何疑问，", "都可以先问我们"],
-      "description": "留下简单信息后，工作人员会与您联系。咨询并不代表必须接受治疗。",
+      "description": "了解咨询方式与到院前须知。目前在线提交尚未开放，咨询费用及可用渠道将在确认后公布。",
       "primaryCta": { "label": "快速咨询", "href": "#inquire" },
       "secondaryCta": { "label": "详细咨询页面", "href": "/inquire" },
       "image": { "src": "/images/inquire.jpg", "alt": "在温暖灯光下轻松交谈的画面" },
       "phoneLabel": "电话咨询",
-      "hoursNotice": "电话咨询仅在诊疗时间内接通。",
-      "responseNotice": "在线咨询可全天提交,我们将在一个工作日内回复。夜间与节假日提交的咨询将于下一个工作日依次回复。"
+      "hoursNotice": "门诊及电话咨询时间将在确认后公布。",
+      "responseNotice": "目前不接受在线提交。咨询渠道及回复标准将在确认后公布。"
     },
     "blog": { "kicker": "Journal", "heading": "到院前值得阅读的内容", "cta": { "label": "查看全部文章", "href": "/blog" } },
     "location": { "kicker": "Visit", "heading": "来院路线" }
@@ -256,43 +286,43 @@
   "faq": {
     "kicker": "FAQ",
     "heading": "常见问题",
-    "description": "汇总了咨询前最常被问到的问题。若此处未能解答,请在咨询时直接向我们提出。",
+    "description": "到院前需要确认的基本问题。医院具体运营条件将在核实后公布。",
     "linkLabel": "查看常见问题",
     "groups": [
       {
         "id": "consultation",
         "label": "咨询",
         "items": [
-          { "id": "reservation", "question": "咨询需要预约吗?", "answer": "不预约也可以到院咨询,但可能需要较长时间等候。提前联系我们,可为您安排合适的时间。" },
-          { "id": "fee", "question": "咨询需要费用吗?", "answer": "咨询本身不收取费用。如需同时进行诊疗或检查,我们会先行告知后再进行。" },
-          { "id": "prepare", "question": "咨询时需要准备什么?", "answer": "带上您期望效果的照片或既往的诊疗记录会很有帮助。若正在服用药物,也请一并告知。" }
+          { "id": "reservation", "question": "咨询需要预约吗?", "answer": "预约方式及是否接受直接到院尚未确认。目前不接受在线预约。" },
+          { "id": "fee", "question": "咨询需要费用吗?", "answer": "咨询费与检查费尚未确定，不保证免费咨询。" },
+          { "id": "prepare", "question": "咨询时需要准备什么?", "answer": "咨询所需资料与准备事项将在预约流程确认后公布。" }
         ]
       },
       {
         "id": "procedure",
         "label": "手术与治疗",
         "items": [
-          { "id": "anesthesia", "question": "麻醉以何种方式进行?", "answer": "根据手术范围采用局部麻醉或睡眠麻醉,方式与注意事项将在术前咨询中说明。" },
-          { "id": "revision", "question": "在其他医院做过的手术可以咨询吗?", "answer": "可以。由于需要确认既往手术的时间与方式,如有相关记录请一并带来。" },
-          { "id": "guardian", "question": "手术当天需要家属陪同吗?", "answer": "根据麻醉方式,返家时可能需要有人陪同。手术方案确定后我们会提前告知。" }
+          { "id": "anesthesia", "question": "麻醉以何种方式进行?", "answer": "各项目的麻醉方式与人员配置将在核实后公布。" },
+          { "id": "revision", "question": "在其他医院做过的手术可以咨询吗?", "answer": "是否接受外院术后咨询及所需资料须向医院确认。" },
+          { "id": "guardian", "question": "手术当天需要家属陪同吗?", "answer": "是否需要陪同人员须根据个人诊疗计划向医护团队确认。" }
         ]
       },
       {
         "id": "recovery",
         "label": "恢复与管理",
         "items": [
-          { "id": "downtime", "question": "多久可以回归日常生活?", "answer": "因术式与个人恢复速度差异较大。我们会在咨询时为您整理预计的时间安排。" },
-          { "id": "revisit", "question": "术后何时需要复诊?", "answer": "为拆线与确认恢复情况,您将按既定日程来院,日程会在术前提前告知。" },
-          { "id": "swelling", "question": "肿胀或淤青如何护理?", "answer": "术后我们会以书面形式说明护理方法与注意事项,并根据恢复情况补充说明所需处理。" }
+          { "id": "downtime", "question": "多久可以回归日常生活?", "answer": "恢复日常活动的时间因项目和个人情况而异，须由诊疗团队确认。" },
+          { "id": "revisit", "question": "术后何时需要复诊?", "answer": "复诊安排与随访方式将在实际管理标准确认后公布。" },
+          { "id": "swelling", "question": "肿胀或淤青如何护理?", "answer": "具体护理方法须遵循诊疗团队的个别指导。本页不提供治疗指引。" }
         ]
       },
       {
         "id": "cost",
         "label": "费用",
         "items": [
-          { "id": "estimate", "question": "费用如何确定?", "answer": "根据手术范围、方式与麻醉种类而定。方案在咨询中确定后,我们会整理全部金额告知您。" },
-          { "id": "quote", "question": "不咨询可以只了解费用吗?", "answer": "准确金额需在确认状况后核算。大致范围可通过电话或即时通讯咨询了解。" },
-          { "id": "additional", "question": "术后还会产生额外费用吗?", "answer": "定期复诊已包含在方案中。如需追加处置或检查,我们会在进行前提前告知。" }
+          { "id": "estimate", "question": "费用如何确定?", "answer": "费用明细及包含范围须根据实际诊疗计划与医院确认的信息核实。" },
+          { "id": "quote", "question": "不咨询可以只了解费用吗?", "answer": "是否提供电话或即时通讯报价尚未确认。" },
+          { "id": "additional", "question": "术后还会产生额外费用吗?", "answer": "是否包含术后护理与额外检查费用尚未确认。" }
         ]
       }
     ],

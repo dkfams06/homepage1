@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ContactUs } from "@/components/sections/ContactUs";
+import { ClinicEssentials } from "@/components/sections/ClinicEssentials";
 import { DoctorDetails } from "@/components/DoctorDetails";
 import { DoctorProfileDialog } from "@/components/DoctorProfileDialog";
 import { AssetImage } from "@/components/ui/AssetImage";
@@ -78,6 +79,7 @@ export default async function AboutPage({ params }: Props) {
           </ul>
         </Container>
       </Section>
+      <ClinicEssentials content={dictionary.clinicEssentials} faqLabel={dictionary.faq.linkLabel} locale={locale} />
       <ContactUs content={dictionary.contact} site={dictionary.site} ui={dictionary.ui.location} />
     </>
   );

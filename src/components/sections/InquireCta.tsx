@@ -1,3 +1,4 @@
+import { AvailableLink } from "@/components/ui/AvailableLink";
 import { Container, Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 import { AssetImage } from "@/components/ui/AssetImage";
@@ -48,9 +49,9 @@ export function InquireCta({
             <Reveal delay={190}>
               <p className="text-[13px] leading-relaxed text-ink-muted">
                 {content.phoneLabel}{" "}
-                <a href={site.phoneHref} className="text-rose underline underline-offset-4">
+                <AvailableLink href={site.phoneHref} className="text-rose underline underline-offset-4">
                   {site.phone}
-                </a>
+                </AvailableLink>
                 <br />
                 {content.hoursNotice}
                 <br />

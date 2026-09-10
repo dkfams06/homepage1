@@ -1,6 +1,7 @@
+import { AvailableLink } from "@/components/ui/AvailableLink";
+import { contactDetails } from "@/content/contact";
 import { Container, Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
-import { CtaLink } from "@/components/ui/Button";
 import { InquiryButton } from "@/components/ui/InquiryButton";
 import type { Dictionary } from "@/i18n/dictionaries";
 
@@ -14,7 +15,7 @@ export function Location({
   site: Dictionary["site"];
   ui: Dictionary["ui"]["location"];
 }) {
-  const mapSearch = `https://map.naver.com/p/search/${encodeURIComponent(site.address)}`;
+  const mapSearch = contactDetails.directionsUrl;
 
   return (
     <Section id="location" tone="blush">
@@ -33,9 +34,9 @@ export function Location({
                   <span className="mt-1 block text-[13px] text-ink-muted">{site.addressDetail}</span>
                 </Row>
                 <Row term={ui.phone}>
-                  <a href={site.phoneHref} className="text-rose underline underline-offset-4">
+                  <AvailableLink href={site.phoneHref} className="text-rose underline underline-offset-4">
                     {site.phone}
-                  </a>
+                  </AvailableLink>
                 </Row>
                 <Row term={ui.hours}>
                   <ul className="flex flex-col gap-1.5">
@@ -50,8 +51,8 @@ export function Location({
                 <Row term={ui.parking}>{site.parking}</Row>
                 <Row term={ui.transit}>
                   <ul className="flex flex-col gap-1.5">
-                    {site.transit.map((line) => (
-                      <li key={line}>{line}</li>
+                    {site.transit.map((line, index) => (
+                      <li key={index}>{line}</li>
                     ))}
                   </ul>
                 </Row>
@@ -59,9 +60,9 @@ export function Location({
             </Reveal>
 
             <Reveal delay={160} className="flex flex-wrap items-center gap-3">
-              <CtaLink href={mapSearch} variant="secondary">
+              <AvailableLink href={mapSearch} className="border border-line px-6 py-3 text-sm">
                 {ui.directions}
-              </CtaLink>
+              </AvailableLink>
               <InquiryButton variant="primary">{ui.consult}</InquiryButton>
             </Reveal>
           </div>

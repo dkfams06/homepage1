@@ -8,7 +8,7 @@ for (const [locale, d] of Object.entries({ ko, en, zh, ja })) {
   test(`${locale}: chief profile, team dialogs and shared contact`, async ({ page }) => {
     await page.goto(`/${locale}/about`);
     await expect(page.getByRole("heading", { level: 1 })).toHaveText(d.aboutMedical.heading);
-    await expect(page.locator("main > section, main > div#location")).toHaveCount(3);
+    await expect(page.locator("main > section, main > div#location")).toHaveCount(4);
     await expect(page.locator("#chief-doctor")).toContainText(d.doctors[0].name);
     await expect(page.locator("#chief-doctor")).toContainText(d.aboutMedical.notice);
     for (const field of ["education", "career", "publications", "liveSurgery"] as const) {

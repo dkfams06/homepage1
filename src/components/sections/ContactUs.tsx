@@ -55,7 +55,7 @@ export function ContactUs({ content, site, ui }: { content: Dictionary["contact"
             <dt className="mb-4 font-serif text-lg">{ui.transit}</dt>
             <dd className="space-y-3 text-sm leading-relaxed text-ink-muted">
               <p>{site.addressDetail}</p>
-              <ul className="space-y-2">{site.transit.map((line) => <li key={line}>{line}</li>)}</ul>
+              <ul className="space-y-2">{site.transit.map((line, index) => <li key={index}>{line}</li>)}</ul>
             </dd>
           </div>
           <div>

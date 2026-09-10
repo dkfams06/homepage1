@@ -52,7 +52,7 @@ for (const locale of ["ko", "en", "zh", "ja"] as const) {
     if (isMobile) await page.locator('button[aria-controls="mobile-menu"]').click();
     const menu = isMobile ? "home-sections-mobile" : "home-sections-desktop";
     await page.locator(`button[aria-controls="${menu}"]`).click();
-    await expect(page.locator(`#${menu} a`)).toHaveCount(6);
+    await expect(page.locator(`#${menu} a`)).toHaveCount(5);
     await page.locator(`#${menu} a[href$="#contact"]`).click();
     await expect(page).toHaveURL(new RegExp(`/${locale}#contact$`));
     await expect(page.locator("main section")).toHaveCount(13);

@@ -1,3 +1,4 @@
+import { AvailableLink } from "@/components/ui/AvailableLink";
 import Link from "next/link";
 import { Container } from "@/components/ui/Section";
 import type { Dictionary } from "@/i18n/dictionaries";
@@ -33,12 +34,12 @@ export function Footer({
             <ul className="mt-2 flex flex-wrap gap-x-5 gap-y-2">
               {site.social.map((item) => (
                 <li key={item.label}>
-                  <a
+                  <AvailableLink
                     href={item.href}
                     className="text-[13px] text-ink-muted underline-offset-4 transition-colors hover:text-rose hover:underline"
                   >
                     {item.label}
-                  </a>
+                  </AvailableLink>
                 </li>
               ))}
             </ul>
@@ -80,9 +81,9 @@ export function Footer({
 
             <FooterColumn title={ui.contact}>
               <li>
-                <a href={site.phoneHref} className="transition-colors hover:text-rose">
+                <AvailableLink href={site.phoneHref} className="transition-colors hover:text-rose">
                   {site.phone}
-                </a>
+                </AvailableLink>
               </li>
               <li className="leading-relaxed">{site.address}</li>
               {site.hours.map((entry) => (

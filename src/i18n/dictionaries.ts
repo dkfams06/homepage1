@@ -2,6 +2,7 @@ import "server-only";
 
 import type { Locale } from "./config";
 import ko from "./dictionaries/ko.json";
+import { contactDetails } from "@/content/contact";
 
 export type Dictionary = typeof ko;
 
@@ -13,5 +14,17 @@ const dictionaries: Record<Locale, () => Promise<Dictionary>> = {
 };
 
 export async function getDictionary(locale: Locale): Promise<Dictionary> {
-  return dictionaries[locale]();
+  const dictionary = await dictionaries[locale]();
+  return {
+    ...dictionary,
+    site: {
+      ...dictionary.site,
+      phoneHref: contactDetails.channels.phone,
+      phone: contactDetails.channels.phone ? dictionary.site.phone : dictionary.contact.pending,
+      social: dictionary.site.social.map((item, index) => ({
+        ...item,
+        href: [contactDetails.channels.instagram, contactDetails.channels.naver, contactDetails.channels.kakao][index] || "",
+      })),
+    },
+  };
 }

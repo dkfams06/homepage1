@@ -1,5 +1,7 @@
 "use client";
 
+import { AvailableLink } from "@/components/ui/AvailableLink";
+
 import Link from "next/link";
 import { HomeNavigation } from "@/components/HomeNavigation";
 import { usePathname } from "next/navigation";
@@ -145,14 +147,14 @@ export function Header({
                 ))}
               </div>
             </div>
-            <a
+            <AvailableLink
               href={site.phoneHref}
               className={`hidden text-[13px] tracking-wide transition-colors md:block ${
                 solid ? "text-ink-muted hover:text-ink" : "text-white/80 hover:text-white"
               }`}
             >
               {site.phone}
-            </a>
+            </AvailableLink>
             <button
               type="button"
               onClick={openQuickInquiry}
@@ -217,12 +219,12 @@ export function Header({
           >
             {ui.consult}
           </button>
-          <a
+          <AvailableLink
             href={site.phoneHref}
             className="border border-ink/20 px-6 py-4 text-center text-sm tracking-wide"
           >
             {ui.phone} {site.phone}
-          </a>
+          </AvailableLink>
         </div>
       </div>
     </>

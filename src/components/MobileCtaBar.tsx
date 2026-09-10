@@ -1,5 +1,8 @@
 "use client";
 
+import { AvailableLink } from "@/components/ui/AvailableLink";
+import { contactDetails } from "@/content/contact";
+
 import { openQuickInquiry } from "./QuickInquiry";
 import type { Dictionary } from "@/i18n/dictionaries";
 
@@ -15,23 +18,23 @@ export function MobileCtaBar({
   site: Dictionary["site"];
   ui: Dictionary["ui"]["mobileCta"];
 }) {
-  const mapSearch = `https://map.naver.com/p/search/${encodeURIComponent(site.address)}`;
+  const mapSearch = contactDetails.directionsUrl;
 
   return (
     <div className="fixed inset-x-0 bottom-0 z-30 border-t border-line bg-bg/95 backdrop-blur-sm pb-[env(safe-area-inset-bottom)] md:hidden">
       <div className="grid grid-cols-3">
-        <a
+        <AvailableLink
           href={site.phoneHref}
           className="flex min-h-14 items-center justify-center border-r border-line text-[13px] tracking-wide"
         >
           {ui.phone}
-        </a>
-        <a
+        </AvailableLink>
+        <AvailableLink
           href={mapSearch}
           className="flex min-h-14 items-center justify-center border-r border-line text-[13px] tracking-wide"
         >
           {ui.directions}
-        </a>
+        </AvailableLink>
         <button
           type="button"
           onClick={openQuickInquiry}

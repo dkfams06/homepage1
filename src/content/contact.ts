@@ -3,6 +3,7 @@ export const contactDetails = {
   representative: "",
   email: "",
   mapEmbedUrl: "",
+  directionsUrl: "",
   channels: {
     whatsapp: "",
     kakao: "",
